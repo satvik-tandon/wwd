@@ -1,12 +1,12 @@
 {
-  "name": "wazuh",
+  "name": "tbSIEM",
   "version": "4.3.8",
   "revision": "4309",
   "code": "4309",
   "pluginPlatform": {
     "version": "1.2.0"
   },
-  "description": "Wazuh dashboard",
+  "description": "tbSIEM dashboard",
   "keywords": [
     "opensearch_dashboards",
     "wazuh",
