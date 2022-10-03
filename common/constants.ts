@@ -47,7 +47,7 @@ export const WAZUH_STATISTICS_DEFAULT_FREQUENCY = 900;
 export const WAZUH_STATISTICS_DEFAULT_CRON_FREQ = '0 */5 * * * *';
 
 // Job - Wazuh initialize
-export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'TechBridge-kibana';
+export const WAZUH_PLUGIN_PLATFORM_TEMPLATE_NAME = 'wazuh-kibana';
 
 // Permissions
 export const WAZUH_ROLE_ADMINISTRATOR_ID = 1;
