@@ -382,7 +382,7 @@ function discoverController(
   $scope.searchSource.setParent(timeRangeSearchSource);
 
   const pageTitleSuffix = savedSearch.id && savedSearch.title ? `: ${savedSearch.title}` : '';
-  chrome.docTitle.change(`tbSIEM${pageTitleSuffix}`);
+  chrome.docTitle.change(`Wazuh${pageTitleSuffix}`);
   const discoverBreadcrumbsTitle = i18n.translate('discover.discoverBreadcrumbTitle', {
     defaultMessage: 'tbSIEM',
   });
