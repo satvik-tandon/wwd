@@ -54,14 +54,14 @@ import { getThemeAssetURL, getAssetURL } from '../../../utils/assets';
 
 const checks = {
   api: {
-    title: 'Check Wazuh API connection',
+    title: 'Check tbSIEM API connection',
     label: 'API connection',
     validator: checkApiService,
     awaitFor: [],
     canRetry: true,
   },
   setup: {
-    title: 'Check Wazuh API version',
+    title: 'Check tbSIEM API version',
     label: 'API version',
     validator: checkSetupService,
     awaitFor: ["api"],
@@ -170,7 +170,7 @@ function HealthCheckComponent() {
   }
 
 
-  const logoUrl = getHttp().basePath.prepend(appConfig.data['customization.logo.healthcheck'] ? getAssetURL(appConfig.data['customization.logo.healthcheck']) : getThemeAssetURL('logo.svg'));
+  const logoUrl = getHttp().basePath.prepend(appConfig.data['customization.logo.healthcheck'] ? getAssetURL(appConfig.data['customization.logo.healthcheck']) : getThemeAssetURL('tbSIEM_mini.JPG'));
   const thereAreErrors = Object.keys(checkErrors).length > 0;
 
   const renderChecks = () => {
