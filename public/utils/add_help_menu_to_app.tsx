@@ -30,7 +30,7 @@ export function addHelpMenuToAppChrome(){
       {
         linkType: 'custom',
         href: webDocumentationLink(''),
-        content: <span><EuiIcon type={getHttp().basePath.prepend(getThemeAssetURL('icon.svg'))}></EuiIcon> Documentation</span>
+        content: <span><EuiIcon type={getHttp().basePath.prepend(getThemeAssetURL('tbSIEM_mini.JPG'))}></EuiIcon> Documentation</span>
       },
       {
         linkType: 'custom',
