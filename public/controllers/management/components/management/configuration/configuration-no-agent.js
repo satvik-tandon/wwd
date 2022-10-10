@@ -27,7 +27,7 @@ export const WzAgentNeverConnectedPrompt = () => (
           The agent has been registered but has not yet connected to the manager.
         </p>
         <a href={documentationLink} target="_blank">
-          Checking connection with the Wazuh server
+          Checking connection with the tbSIEM server
         </a>
       </Fragment>
     }
