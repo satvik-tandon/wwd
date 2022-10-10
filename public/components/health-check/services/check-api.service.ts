@@ -1,16 +1,3 @@
-/*
- * Wazuh app - Check APIs service
- *
- * Copyright (C) 2015-2022 Wazuh, Inc.
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * Find more information about this on the LICENSE file.
- *
- */
 
 import { getToasts } from '../../../kibana-services';
 import { ApiCheck, AppState, GenericRequest } from '../../../react-services';
@@ -90,7 +77,7 @@ export const checkApiService = (appInfo: any) => async (checkLogger: CheckLogger
       checkLogger.info(`Set cluster info in cookie`);
     }
     if (data === 3099) {
-      checkLogger.error('Wazuh not ready yet');
+      checkLogger.error('tbSIEM not ready yet');
     } else if (data.data.error || data.data.data.apiIsDown) {
       const errorMessage = data.data.data.apiIsDown
       ? 'tbSIEM API is down'
