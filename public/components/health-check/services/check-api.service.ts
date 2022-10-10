@@ -78,7 +78,7 @@ export const checkApiService = (appInfo: any) => async (checkLogger: CheckLogger
       checkLogger.info(`Set current API in cookie: id [${api.id}], name [${name}]`);
       getToasts().add({
         color: 'warning',
-        title: 'Selected Wazuh API has been updated',
+        title: 'Selected tbSIEM API has been updated',
         text: '',
         toastLifeTimeMs: 3000,
       });
@@ -93,7 +93,7 @@ export const checkApiService = (appInfo: any) => async (checkLogger: CheckLogger
       checkLogger.error('Wazuh not ready yet');
     } else if (data.data.error || data.data.data.apiIsDown) {
       const errorMessage = data.data.data.apiIsDown
-      ? 'Wazuh API is down'
+      ? 'tbSIEM API is down'
       : `Error connecting to the API: ${
           data.data.error && data.data.error.message ? ` ${data.data.error.message}` : ''
         }`;
