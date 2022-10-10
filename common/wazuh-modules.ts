@@ -130,7 +130,7 @@ export const WAZUH_MODULES = {
   },
   devTools: {
     title: 'API console',
-    description: 'Test the Wazuh API endpoints.'
+    description: 'Test the tbSIEM API endpoints.'
   },
   logtest: {
     title: 'Test your logs',
