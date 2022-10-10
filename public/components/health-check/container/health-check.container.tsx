@@ -42,14 +42,14 @@ import { getThemeAssetURL, getAssetURL } from '../../../utils/assets';
 
 const checks = {
   api: {
-    title: 'Check tbSIEM API connection',
+    title: 'Check Wazuh API connection',
     label: 'API connection',
     validator: checkApiService,
     awaitFor: [],
     canRetry: true,
   },
   setup: {
-    title: 'Check tbSIEM API version',
+    title: 'Check Wazuh API version',
     label: 'API version',
     validator: checkSetupService,
     awaitFor: ["api"],
