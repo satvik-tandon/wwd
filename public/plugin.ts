@@ -41,7 +41,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
     core.application.register({
       id: `wazuh`,
       title: 'tbSIEM',
-      icon: core.http.basePath.prepend(getThemeAssetURL('icon.svg', UI_THEME)),
+      icon: core.http.basePath.prepend(getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
       mount: async (params: AppMountParameters) => {
         try {
           if (!this.initializeInnerAngular) {
@@ -81,7 +81,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
                 id: 'wazuh',
                 label: 'tbSIEM',
                 order: 0,
-                euiIconType: core.http.basePath.prepend(response.data.logoSidebar ? getAssetURL(response.data.logoSidebar) : getThemeAssetURL('icon.svg', UI_THEME)),
+                euiIconType: core.http.basePath.prepend(response.data.logoSidebar ? getAssetURL(response.data.logoSidebar) : getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
               }}
           })
           return () => {
@@ -95,7 +95,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
         id: 'wazuh',
         label: 'tbSIEM',
         order: 0,
-        euiIconType: core.http.basePath.prepend(getThemeAssetURL('icon.svg', UI_THEME)),
+        euiIconType: core.http.basePath.prepend(getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
       },
       updater$: this.stateUpdater
     });

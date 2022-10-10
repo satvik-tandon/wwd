@@ -22,7 +22,7 @@ export const withUserLogged = (WrappedComponent) => (props) => {
     
     return withUserLogged ? <WrappedComponent {...props}/> : (
       <div className="withUserLogged">
-        <img src={getHttp().basePath.prepend(customAppLogo ? getAssetURL(customAppLogo) : getThemeAssetURL('logo.svg'))} className="withUserLogged-logo" alt=""></img>
+        <img src={getHttp().basePath.prepend(customAppLogo ? getAssetURL(customAppLogo) : getThemeAssetURL('tbSIEM_logo.jpg'))} className="withUserLogged-logo" alt=""></img>
         <EuiSpacer size="s" />
         <EuiText className="subdued-color">Loading ...</EuiText>
         <EuiSpacer size="s" />
