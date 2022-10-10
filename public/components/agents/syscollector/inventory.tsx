@@ -32,7 +32,7 @@ export function SyscollectorInventory({ agent }) {
               href={webDocumentationLink('user-manual/agents/agent-connection.html')}
               target="_blank"
             >
-              Checking connection with the Wazuh server
+              Checking connection with the tbSIEM server
             </a>
           </Fragment>
         }
