@@ -25,11 +25,11 @@ export const ClusterDisabled = withErrorBoundary (class ClusterDisabled extends 
           <Fragment>
             {!this.props.enabled && (
               <p>
-                Visit the documentation on{' '}
-                <a href={webDocumentationLink('user-manual/configuring-cluster/index.html')}>
-                  this link
-                </a>{' '}
-                to learn about how to enable it.
+//                 Visit the documentation on{' '}
+//                 <a href={webDocumentationLink('user-manual/configuring-cluster/index.html')}>
+//                   this link
+//                 </a>{' '}
+//                 to learn about how to enable it.
               </p>
             )}
             {!this.props.running && (
