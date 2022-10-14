@@ -21,7 +21,7 @@ export const PromptStatisticsNoIndices = () => {
   useEffect(() => {
     const wazuhConfig = new WazuhConfig();
     const config = wazuhConfig.getConfig();
-    setIndexName(`${config["cron.prefix"] || 'wazuh'}-${config["cron.statistics.index.name"] || 'stastistics'}-*`)
+    setIndexName(`${config["cron.prefix"] || 'tbSIEM'}-${config["cron.statistics.index.name"] || 'stastistics'}-*`)
   }, []);
 
   return (
