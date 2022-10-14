@@ -35,7 +35,7 @@ export const WAZUH_MONITORING_DEFAULT_CRON_FREQ = '0 * * * * *';
 
 // Job - Wazuh statistics
 export const WAZUH_INDEX_TYPE_STATISTICS = "statistics";
-export const WAZUH_STATISTICS_DEFAULT_PREFIX = "hello";
+export const WAZUH_STATISTICS_DEFAULT_PREFIX = "tbSIEM";
 export const WAZUH_STATISTICS_DEFAULT_NAME = "statistics";
 export const WAZUH_STATISTICS_PATTERN = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}-*`;
 export const WAZUH_STATISTICS_TEMPLATE_NAME = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}`;
@@ -54,7 +54,7 @@ export const WAZUH_ROLE_ADMINISTRATOR_ID = 1;
 export const WAZUH_ROLE_ADMINISTRATOR_NAME = 'administrator';
 
 // Sample data
-export const WAZUH_SAMPLE_ALERT_PREFIX = 'wazuh-alerts-4.x-';
+export const WAZUH_SAMPLE_ALERT_PREFIX = 'tbSIEM-alerts-4.x-';
 export const WAZUH_SAMPLE_ALERTS_INDEX_SHARDS = 1;
 export const WAZUH_SAMPLE_ALERTS_INDEX_REPLICAS = 0;
 export const WAZUH_SAMPLE_ALERTS_CATEGORY_SECURITY = 'security';
