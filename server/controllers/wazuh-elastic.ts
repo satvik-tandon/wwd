@@ -100,7 +100,7 @@ export class WazuhElasticCtrl {
         return item.includes(pattern) || pattern.includes(item);
       });
       log(
-        'wazuh-elastic:getTemplate',
+        'tbSIEM-elastic:getTemplate',
         `Template is valid: ${isIncluded && Array.isArray(isIncluded) && isIncluded.length
           ? 'yes'
           : 'no'
@@ -123,7 +123,7 @@ export class WazuhElasticCtrl {
           }
         });
     } catch (error) {
-      log('wazuh-elastic:getTemplate', error.message || error);
+      log('tbSIEM-elastic:getTemplate', error.message || error);
       return ErrorResponse(
         `Could not retrieve templates from Elasticsearch due to ${error.message ||
         error}`,
@@ -149,7 +149,7 @@ export class WazuhElasticCtrl {
         item => item.attributes.title === request.params.pattern
       );
       log(
-        'wazuh-elastic:checkPattern',
+        'tbSIEM-elastic:checkPattern',
         `Index pattern found: ${existsIndexPattern ? existsIndexPattern.attributes.title : 'no'}`,
         'debug'
       );
@@ -166,7 +166,7 @@ export class WazuhElasticCtrl {
           }
         });
     } catch (error) {
-      log('wazuh-elastic:checkPattern', error.message || error);
+      log('tbSIEM-elastic:checkPattern', error.message || error);
       return ErrorResponse(
         `Something went wrong retrieving index-patterns from Elasticsearch due to ${error.message ||
         error}`,
@@ -256,7 +256,7 @@ export class WazuhElasticCtrl {
           }
         });
     } catch (error) {
-      log('wazuh-elastic:getFieldTop', error.message || error);
+      log('tbSIEM-elastic:getFieldTop', error.message || error);
       return ErrorResponse(error.message || error, 4004, 500, response);
     }
   }
@@ -331,7 +331,7 @@ export class WazuhElasticCtrl {
         }
       });
     } catch (error) {
-      log('wazuh-elastic:getCurrentPlatform', error.message || error);
+      log('tbSIEM-elastic:getCurrentPlatform', error.message || error);
       return ErrorResponse(error.message || error, 4011, 500, response);
     }
   }
@@ -347,12 +347,12 @@ export class WazuhElasticCtrl {
       let monitoringPattern =
         (config || {})['wazuh.monitoring.pattern'] || WAZUH_MONITORING_PATTERN;
       log(
-        'wazuh-elastic:buildVisualizationsRaw',
+        'tbSIEM-elastic:buildVisualizationsRaw',
         `Building ${app_objects.length} visualizations`,
         'debug'
       );
       log(
-        'wazuh-elastic:buildVisualizationsRaw',
+        'tbSIEM-elastic:buildVisualizationsRaw',
         `Index pattern ID: ${id}`,
         'debug'
       );
@@ -418,7 +418,7 @@ export class WazuhElasticCtrl {
       }
       return visArray;
     } catch (error) {
-      log('wazuh-elastic:buildVisualizationsRaw', error.message || error);
+      log('tbSIEM-elastic:buildVisualizationsRaw', error.message || error);
       return Promise.reject(error);
     }
   }
@@ -458,26 +458,26 @@ export class WazuhElasticCtrl {
 
         if (visState.type && visState.type === 'timelion') {
           let query = '';
-          if (title === 'Wazuh App Cluster Overview') {
+          if (title === 'tbSIEM App Cluster Overview') {
             for (const node of nodes) {
               query += `.es(index=${pattern_name},q="cluster.name: ${name} AND cluster.node: ${node.name}").label("${node.name}"),`;
             }
             query = query.substring(0, query.length - 1);
-          } else if (title === 'Wazuh App Cluster Overview Manager') {
+          } else if (title === 'tbSIEM App Cluster Overview Manager') {
             query += `.es(index=${pattern_name},q="cluster.name: ${name}").label("${name} cluster")`;
           } else {
-            if (title.startsWith('Wazuh App Statistics')) {
+            if (title.startsWith('tbSIEM App Statistics')) {
               const { searchSourceJSON } = bulk_content.visualization.kibanaSavedObjectMeta;
               bulk_content.visualization.kibanaSavedObjectMeta.searchSourceJSON = searchSourceJSON.replace('wazuh-statistics-*', pattern_name);
             }
-            if (title.startsWith('Wazuh App Statistics') && name !== '-' && name !== 'all' && visState.params.expression.includes('q=')) {
+            if (title.startsWith('tbSIEM App Statistics') && name !== '-' && name !== 'all' && visState.params.expression.includes('q=')) {
               const expressionRegex = /q='\*'/gi;
               const _visState = bulk_content.visualization.visStateByNode
                 ? JSON.parse(bulk_content.visualization.visStateByNode)
                 : visState;
               query += _visState.params.expression.replace(/wazuh-statistics-\*/g, pattern_name).replace(expressionRegex, `q="nodeName.keyword:${name} AND apiName.keyword:${master_node}"`)
                 .replace("NODE_NAME", name)
-            } else if (title.startsWith('Wazuh App Statistics')) {
+            } else if (title.startsWith('tbSIEM App Statistics')) {
               const expressionRegex = /q='\*'/gi
               query += visState.params.expression.replace(/wazuh-statistics-\*/g, pattern_name).replace(expressionRegex, `q="apiName.keyword:${master_node}"`)
             } else {
@@ -500,7 +500,7 @@ export class WazuhElasticCtrl {
       return visArray;
     } catch (error) {
       log(
-        'wazuh-elastic:buildClusterVisualizationsRaw',
+        'tbSIEM-elastic:buildClusterVisualizationsRaw',
         error.message || error
       );
       return Promise.reject(error);
@@ -537,7 +537,7 @@ export class WazuhElasticCtrl {
       if (!file) {
         return response.notFound({body:{message: `Visualizations not found for ${request.params.tab}`}});
       }
-      log('wazuh-elastic:createVis', `${tabPrefix}[${tabSufix}] with index pattern ${request.params.pattern}`, 'debug');
+      log('tbSIEM-elastic:createVis', `${tabPrefix}[${tabSufix}] with index pattern ${request.params.pattern}`, 'debug');
       const raw = await this.buildVisualizationsRaw(
         file,
         request.params.pattern
@@ -546,7 +546,7 @@ export class WazuhElasticCtrl {
         body: { acknowledge: true, raw: raw }
       });
     } catch (error) {
-      log('wazuh-elastic:createVis', error.message || error);
+      log('tbSIEM-elastic:createVis', error.message || error);
       return ErrorResponse(error.message || error, 4007, 500, response);
     }
   }
@@ -594,7 +594,7 @@ export class WazuhElasticCtrl {
         body: { acknowledge: true, raw: raw }
       });
     } catch (error) {
-      log('wazuh-elastic:createClusterVis', error.message || error);
+      log('tbSIEM-elastic:createClusterVis', error.message || error);
       return ErrorResponse(error.message || error, 4009, 500, response);
     }
   }
@@ -641,7 +641,7 @@ export class WazuhElasticCtrl {
       })
     } catch (error) {
       log(
-        'wazuh-elastic:haveSampleAlertsOfCategory',
+        'tbSIEM-elastic:haveSampleAlertsOfCategory',
         `Error checking if there are sample alerts indices: ${error.message || error}`
       );
 
@@ -725,7 +725,7 @@ export class WazuhElasticCtrl {
           body: configuration
         });
         log(
-          'wazuh-elastic:createSampleAlerts',
+          'tbSIEM-elastic:createSampleAlerts',
           `Created ${sampleAlertsIndex} index`,
           'debug'
         );
@@ -736,7 +736,7 @@ export class WazuhElasticCtrl {
         body: bulk
       });
       log(
-        'wazuh-elastic:createSampleAlerts',
+        'tbSIEM-elastic:createSampleAlerts',
         `Added sample alerts to ${sampleAlertsIndex} index`,
         'debug'
       );
@@ -745,7 +745,7 @@ export class WazuhElasticCtrl {
       });
     } catch (error) {
       log(
-        'wazuh-elastic:createSampleAlerts',
+        'tbSIEM-elastic:createSampleAlerts',
         `Error adding sample alerts to ${sampleAlertsIndex} index: ${error.message || error}`
       );
       
@@ -797,7 +797,7 @@ export class WazuhElasticCtrl {
         // Delete Wazuh sample alerts index
         await context.core.opensearch.client.asCurrentUser.indices.delete({ index: sampleAlertsIndex });
         log(
-          'wazuh-elastic:deleteSampleAlerts',
+          'tbSIEM-elastic:deleteSampleAlerts',
           `Deleted ${sampleAlertsIndex} index`,
           'debug'
         );
@@ -809,7 +809,7 @@ export class WazuhElasticCtrl {
       }
     } catch (error) {
       log(
-        'wazuh-elastic:deleteSampleAlerts',
+        'tbSIEM-elastic:deleteSampleAlerts',
         `Error deleting sample alerts of ${sampleAlertsIndex} index: ${error.message || error}`
       );
       const [statusCode, errorMessage] = this.getErrorDetails(error);
@@ -825,7 +825,7 @@ export class WazuhElasticCtrl {
         body: data.body
       });
     } catch (error) {
-      log('wazuh-elastic:alerts', error.message || error);
+      log('tbSIEM-elastic:alerts', error.message || error);
       return ErrorResponse(error.message || error, 4010, 500, response);
     }
   }
@@ -834,7 +834,7 @@ export class WazuhElasticCtrl {
   async existStatisticsIndices(context: RequestHandlerContext, request: OpenSearchDashboardsRequest, response: OpenSearchDashboardsResponseFactory) {
     try {
       const config = getConfiguration();
-      const statisticsPattern = `${config['cron.prefix'] || 'wazuh'}-${config['cron.statistics.index.name'] || 'statistics'}*`; //TODO: replace by default as constants instead hardcoded ('wazuh' and 'statistics')
+      const statisticsPattern = `${config['cron.prefix'] || 'tbSIEM'}-${config['cron.statistics.index.name'] || 'statistics'}*`; //TODO: replace by default as constants instead hardcoded ('wazuh' and 'statistics')
       const existIndex = await context.core.opensearch.client.asCurrentUser.indices.exists({
         index: statisticsPattern,
         allow_no_indices: false
@@ -843,7 +843,7 @@ export class WazuhElasticCtrl {
         body: existIndex.body
       });
     } catch (error) {
-      log('wazuh-elastic:existsStatisticsIndices', error.message || error);
+      log('tbSIEM-elastic:existsStatisticsIndices', error.message || error);
       return ErrorResponse(error.message || error, 1000, 500, response);
     }
   }
