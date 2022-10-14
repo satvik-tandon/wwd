@@ -115,7 +115,7 @@ This message should not be displayed again.`;
     clearBrowserInfo(appInfo);
   } else {
     if (window.history.state == 'refreshed') {
-      window.history.replaceState('', 'wazuh');
+      window.history.replaceState('', 'tbSIEM');
     }
     const storeAppInfo = localStorage.getItem('appInfo');
     !storeAppInfo && updateAppInfo(appInfo);
