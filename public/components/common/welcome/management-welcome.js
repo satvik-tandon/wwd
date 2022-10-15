@@ -145,8 +145,8 @@ class ManagementWelcome extends Component {
               <EuiCard title description betaBadgeLabel="Status and reports">
                 <EuiSpacer size="m" />
                 <EuiFlexGroup>
-                  <EuiFlexItem>
-{/* <EuiCard
+                   {/* <EuiFlexItem>
+                    <EuiCard
                       layout="horizontal"
                       className="homSynopsis__card"
                       icon={
@@ -155,8 +155,8 @@ class ManagementWelcome extends Component {
                       title="Status"
                       onClick={() => this.switchSection('status')}
                       description="Manage your tbSIEM cluster status."
-                    /> */}               />
-                  </EuiFlexItem>
+                    />
+                  </EuiFlexItem> */}
                   <EuiFlexItem>
                     <EuiCard
                       layout="horizontal"
