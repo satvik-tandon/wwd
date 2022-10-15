@@ -346,23 +346,23 @@ export const UI_TOAST_COLOR = {
 };
 
 // Assets
-export const ASSETS_BASE_URL_PREFIX = '/plugins/wazuh/assets/';
-export const ASSETS_PUBLIC_URL = '/plugins/wazuh/public/assets/';
+export const ASSETS_BASE_URL_PREFIX = '/plugins/tbSIEM/assets/';
+export const ASSETS_PUBLIC_URL = '/plugins/tbSIEM/public/assets/';
 
 // Reports
 export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH = 'images/logo_reports.png';
-export const REPORTS_PRIMARY_COLOR = '#256BD1';
-export const REPORTS_PAGE_FOOTER_TEXT = 'Copyright © 2022 Wazuh, Inc.';
-export const REPORTS_PAGE_HEADER_TEXT = 'info@wazuh.com\nhttps://wazuh.com';
+export const REPORTS_PRIMARY_COLOR = '#d15925';
+export const REPORTS_PAGE_FOOTER_TEXT = 'TechBridge Consultancy Services LLP';
+export const REPORTS_PAGE_HEADER_TEXT = ' support@tech-bridge.biz\nhttps://tech-bridge.biz/';
 
 // Plugin platform
-export const PLUGIN_PLATFORM_NAME = 'Wazuh dashboard';
-export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/wazuh-dashboard/data/wazuh/';
-export const PLUGIN_PLATFORM_INSTALLATION_USER = 'wazuh-dashboard';
-export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'wazuh-dashboard';
+export const PLUGIN_PLATFORM_NAME = 'tbSIEM dashboard';
+export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/tbSIEM-dashboard/data/tbSIEM/';
+export const PLUGIN_PLATFORM_INSTALLATION_USER = 'tbSIEM-dashboard';
+export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'tbSIEM-dashboard';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_UPGRADE_PLATFORM = 'upgrade-guide';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_TROUBLESHOOTING = 'user-manual/elasticsearch/troubleshooting.html';
-export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/wazuh-dashboard/config-file.html';
+export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/tbSIEM-dashboard/config-file.html';
 export const PLUGIN_PLATFORM_URL_GUIDE = 'https://opensearch.org/docs/1.2/opensearch/index/';
 export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'OpenSearch guide';
 
