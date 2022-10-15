@@ -145,7 +145,7 @@ class ManagementWelcome extends Component {
               <EuiCard title description betaBadgeLabel="Status and reports">
                 <EuiSpacer size="m" />
                 <EuiFlexGroup>
-                  {/* <EuiFlexItem>
+                  <EuiFlexItem>
                     <EuiCard
                       layout="horizontal"
                       className="homSynopsis__card"
@@ -156,7 +156,7 @@ class ManagementWelcome extends Component {
                       onClick={() => this.switchSection('status')}
                       description="Manage your tbSIEM cluster status."
                     />
-                  </EuiFlexItem> */}
+                  </EuiFlexItem>
                   <EuiFlexItem>
                     <EuiCard
                       layout="horizontal"
