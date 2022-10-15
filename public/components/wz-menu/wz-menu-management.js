@@ -71,11 +71,6 @@ class WzMenuManagement extends Component {
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS_AND_REPORTS,
         text: 'Status and reports',
       },
-      statistics: {
-        id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATISTICS,
-        cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATISTICS,
-        text: 'Statistics',
-      },
       // status: {
       //   id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATUS,
       //   cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS,
@@ -96,7 +91,11 @@ class WzMenuManagement extends Component {
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.REPORTING,
         text: 'Reporting',
       },
-      
+      statistics: {
+        id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATISTICS,
+        cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATISTICS,
+        text: 'Statistics',
+      },
     };
 
     this.paths = {
