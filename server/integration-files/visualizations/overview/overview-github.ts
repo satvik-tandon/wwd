@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alerts-Evolution-By-Organization',
+    _id: 'tbSIEM-App-Overview-GitHub-Alerts-Evolution-By-Organization',
     _source: {
       title: 'Alerts evolution by organization',
       visState: JSON.stringify({
@@ -152,7 +152,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
     _source: {
       title: 'Top 5 organizations by alerts',
       visState: JSON.stringify({
@@ -208,7 +208,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Users-With-More-Alerts',
+    _id: 'tbSIEM-App-Overview-GitHub-Users-With-More-Alerts',
     _source: {
       title: 'Users with more alerts',
       visState: JSON.stringify({
@@ -343,7 +343,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alert-Action-Type-By-Organization',
+    _id: 'tbSIEM-App-Overview-GitHub-Alert-Action-Type-By-Organization',
     _source: {
       title: 'Top alerts by alert action type and organization',
       visState: JSON.stringify({
@@ -415,7 +415,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alert-Summary',
+    _id: 'tbSIEM-App-Overview-GitHub-Alert-Summary',
     _source: {
       title: 'Alert summary',
       visState: JSON.stringify({
@@ -504,7 +504,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Ten-Organizations',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Ten-Organizations',
     _source: {
       title: 'Top 10 organizations',
       visState: JSON.stringify({
@@ -563,7 +563,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Countries',
+    _id: 'tbSIEM-App-Overview-GitHub-Countries',
     _source: {
       title: 'Countries',
       visState: JSON.stringify({
@@ -616,7 +616,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Events',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Events',
     _source: {
       title: 'GitHub top events',
       visState: JSON.stringify({
@@ -675,7 +675,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Stats',
+    _id: 'tbSIEM-App-Overview-GitHub-Stats',
     _source: {
       title: 'GitHub Stats',
       visState: JSON.stringify({
@@ -748,7 +748,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Organization-Heatmap',
+    _id: 'tbSIEM-App-Overview-GitHub-Organization-Heatmap',
     _source: {
       title: 'GitHub Organization Heatmap',
       visState: JSON.stringify({
@@ -840,7 +840,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Ten-Organizations',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Ten-Organizations',
     _source: {
       title: 'GitHub top 10 organizations',
       visState: JSON.stringify({
@@ -899,7 +899,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Ten-Actors',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Ten-Actors',
     _source: {
       title: 'Top 10 actors',
       visState: JSON.stringify({
@@ -958,7 +958,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Ten-Repositories',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Ten-Repositories',
     _source: {
       title: 'Top 10 repositories',
       visState: JSON.stringify({
@@ -1017,7 +1017,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-Ten-Actions',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-Ten-Actions',
     _source: {
       title: 'Top 10 actions',
       visState: JSON.stringify({
@@ -1076,7 +1076,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alert-Level-Evolution',
+    _id: 'tbSIEM-App-Overview-GitHub-Alert-Level-Evolution',
     _source: {
       title: 'Alert level evolution',
       visState: JSON.stringify({

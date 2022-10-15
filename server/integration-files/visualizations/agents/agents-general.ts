@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-General-Top-5-alerts',
+    _id: 'tbSIEM-App-Agents-General-Top-5-alerts',
     _source: {
       title: 'Top 5 alerts',
       visState: JSON.stringify({
@@ -59,7 +59,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Metric-alerts',
+    _id: 'tbSIEM-App-Agents-General-Metric-alerts',
     _source: {
       title: 'Metric alerts',
       visState: JSON.stringify({
@@ -112,7 +112,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Level-12-alerts',
+    _id: 'tbSIEM-App-Agents-General-Level-12-alerts',
     _source: {
       title: 'Level 12 alerts',
       visState: JSON.stringify({
@@ -190,7 +190,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Authentication-failure',
+    _id: 'tbSIEM-App-Agents-General-Authentication-failure',
     _source: {
       title: 'Authentication failure',
       visState: JSON.stringify({
@@ -285,7 +285,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Authentication-success',
+    _id: 'tbSIEM-App-Agents-General-Authentication-success',
     _source: {
       title: 'Authentication success',
       visState: JSON.stringify({
@@ -365,7 +365,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Top-10-groups',
+    _id: 'tbSIEM-App-Agents-General-Top-10-groups',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -413,7 +413,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Top-5-PCI-DSS-Requirements',
+    _id: 'tbSIEM-App-Agents-General-Top-5-PCI-DSS-Requirements',
     _source: {
       title: 'Top 5 PCI DSS requirements',
       visState: JSON.stringify({
@@ -461,7 +461,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Alert-groups-evolution',
+    _id: 'tbSIEM-App-Agents-General-Alert-groups-evolution',
     _source: {
       title: 'Alert groups evolution',
       visState: JSON.stringify({
@@ -564,7 +564,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Alerts',
+    _id: 'tbSIEM-App-Agents-General-Alerts',
     _source: {
       title: 'Alerts',
       visState: JSON.stringify({
@@ -667,7 +667,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-General-Alerts-summary',
+    _id: 'tbSIEM-App-Agents-General-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -753,7 +753,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-General-Groups-summary',
+    _id: 'tbSIEM-App-Agents-General-Groups-summary',
     _type: 'visualization',
     _source: {
       title: 'Groups summary',

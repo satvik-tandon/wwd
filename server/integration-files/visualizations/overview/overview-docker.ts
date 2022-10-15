@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-Docker-top-5-actions',
+    _id: 'tbSIEM-App-Overview-Docker-top-5-actions',
     _type: 'visualization',
     _source: {
       title: 'Top 5 actions',
@@ -59,7 +59,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Docker-top-5-images',
+    _id: 'tbSIEM-App-Overview-Docker-top-5-images',
     _type: 'visualization',
     _source: {
       title: 'Top 5 images',
@@ -107,7 +107,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Docker-Events-summary',
+    _id: 'tbSIEM-App-Overview-Docker-Events-summary',
     _type: 'visualization',
     _source: {
       title: 'Events summary',
@@ -191,7 +191,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Docker-Types-over-time',
+    _id: 'tbSIEM-App-Overview-Docker-Types-over-time',
     _type: 'visualization',
     _source: {
       title: 'Types over time',
@@ -293,7 +293,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Docker-Actions-over-time',
+    _id: 'tbSIEM-App-Overview-Docker-Actions-over-time',
     _type: 'visualization',
     _source: {
       title: 'Actions over time',

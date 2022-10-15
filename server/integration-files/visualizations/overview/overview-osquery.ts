@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-Osquery-Alerts-over-time',
+    _id: 'tbSIEM-App-Overview-Osquery-Alerts-over-time',
     _type: 'visualization',
     _source: {
       title: 'Alerts over time',
@@ -94,7 +94,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-added',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-added',
     _type: 'visualization',
     _source: {
       title: 'Top 5 added',
@@ -157,7 +157,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-removed',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-removed',
     _type: 'visualization',
     _source: {
       title: 'Top 5 removed',
@@ -220,7 +220,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-Evolution',
+    _id: 'tbSIEM-App-Agents-Osquery-Evolution',
     _type: 'visualization',
     _source: {
       title: 'Evolution over time',
@@ -322,7 +322,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Most-common-packs',
+    _id: 'tbSIEM-App-Overview-Osquery-Most-common-packs',
     _type: 'visualization',
     _source: {
       title: 'Most common packs',
@@ -370,7 +370,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-rules',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-rules',
     _type: 'visualization',
     _source: {
       title: 'Top 5 rules',
@@ -439,7 +439,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-Agents',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-Agents',
     _type: 'visualization',
     _source: {
       title: 'Top 5 Agents',
@@ -502,7 +502,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Agents-reporting',
+    _id: 'tbSIEM-App-Overview-Osquery-Agents-reporting',
     _type: 'visualization',
     _source: {
       title: 'Agents reporting',
@@ -547,7 +547,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-Osquery-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',

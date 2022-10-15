@@ -32,7 +32,7 @@ export function WzStatisticsRemoted({clusterNodeSelected,  refreshVisualizations
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-remoted-Recv-bytes"
+                        "tbSIEM-App-Statistics-remoted-Recv-bytes"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -53,7 +53,7 @@ export function WzStatisticsRemoted({clusterNodeSelected,  refreshVisualizations
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-remoted-event-count"
+                        "tbSIEM-App-Statistics-remoted-event-count"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -77,7 +77,7 @@ export function WzStatisticsRemoted({clusterNodeSelected,  refreshVisualizations
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-remoted-messages"
+                        "tbSIEM-App-Statistics-remoted-messages"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -98,7 +98,7 @@ export function WzStatisticsRemoted({clusterNodeSelected,  refreshVisualizations
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-remoted-tcp-sessions"
+                        "tbSIEM-App-Statistics-remoted-tcp-sessions"
                       }
                       tab={"statistics"}
                     ></KibanaVis>

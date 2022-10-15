@@ -23,19 +23,19 @@ export const DrilldownConfigAction = {
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-GitHub-Top-Ten-Actors" tab="github" {...props} />
+            <VisCard id="tbSIEM-App-Overview-GitHub-Top-Ten-Actors" tab="github" {...props} />
           ),
         },
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-GitHub-Top-Ten-Repositories" tab="github" {...props} />
+            <VisCard id="tbSIEM-App-Overview-GitHub-Top-Ten-Repositories" tab="github" {...props} />
           ),
         },
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-GitHub-Top-Ten-Organizations" tab="github" {...props} />
+            <VisCard id="tbSIEM-App-Overview-GitHub-Top-Ten-Organizations" tab="github" {...props} />
           ),
         },
       ],
@@ -46,13 +46,13 @@ export const DrilldownConfigAction = {
         {
           width: 50,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-GitHub-Countries" tab="github" {...props} />
+            <VisCard id="tbSIEM-App-Overview-GitHub-Countries" tab="github" {...props} />
           ),
         },
         {
           width: 50,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-GitHub-Alert-Level-Evolution" tab="github" {...props} />
+            <VisCard id="tbSIEM-App-Overview-GitHub-Alert-Level-Evolution" tab="github" {...props} />
           ),
         },
       ],

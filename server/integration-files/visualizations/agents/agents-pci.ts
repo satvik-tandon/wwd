@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-PCI-Groups',
+    _id: 'tbSIEM-App-Agents-PCI-Groups',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -49,7 +49,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PCI-Rule',
+    _id: 'tbSIEM-App-Agents-PCI-Rule',
     _source: {
       title: 'Top 5 rules',
       visState: JSON.stringify({
@@ -87,7 +87,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PCI-Requirement',
+    _id: 'tbSIEM-App-Agents-PCI-Requirement',
     _source: {
       title: 'Top 5 requirements',
       visState: JSON.stringify({
@@ -125,7 +125,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PCI-Rule-level-distribution',
+    _id: 'tbSIEM-App-Agents-PCI-Rule-level-distribution',
     _source: {
       title: 'Rule level distribution',
       visState: JSON.stringify({
@@ -173,7 +173,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PCI-Requirements',
+    _id: 'tbSIEM-App-Agents-PCI-Requirements',
     _source: {
       title: 'Requirements',
       visState: JSON.stringify({
@@ -268,7 +268,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PCI-Last-alerts',
+    _id: 'tbSIEM-App-Agents-PCI-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Last alerts',

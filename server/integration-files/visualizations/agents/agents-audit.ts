@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-Audit-New-files-metric',
+    _id: 'tbSIEM-App-Agents-Audit-New-files-metric',
     _source: {
       title: 'New files metric',
       visState: JSON.stringify({
@@ -91,7 +91,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Read-files-metric',
+    _id: 'tbSIEM-App-Agents-Audit-Read-files-metric',
     _source: {
       title: 'Read files metric',
       visState: JSON.stringify({
@@ -171,7 +171,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Modified-files-metric',
+    _id: 'tbSIEM-App-Agents-Audit-Modified-files-metric',
     _source: {
       title: 'Modified files metric',
       visState: JSON.stringify({
@@ -257,7 +257,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Removed-files-metric',
+    _id: 'tbSIEM-App-Agents-Audit-Removed-files-metric',
     _source: {
       title: 'Removed files metric',
       visState: JSON.stringify({
@@ -337,7 +337,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Groups',
+    _id: 'tbSIEM-App-Agents-Audit-Groups',
     _source: {
       title: 'Groups',
       visState: JSON.stringify({
@@ -375,7 +375,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Files',
+    _id: 'tbSIEM-App-Agents-Audit-Files',
     _source: {
       title: 'Files',
       visState: JSON.stringify({
@@ -413,7 +413,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Alerts-over-time',
+    _id: 'tbSIEM-App-Agents-Audit-Alerts-over-time',
     _source: {
       title: 'Alerts over time',
       visState: JSON.stringify({
@@ -516,7 +516,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Commands',
+    _id: 'tbSIEM-App-Agents-Audit-Commands',
     _source: {
       title: 'Commands',
       visState: JSON.stringify({
@@ -551,7 +551,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-Audit-Last-alerts',
+    _id: 'tbSIEM-App-Agents-Audit-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Last alerts',

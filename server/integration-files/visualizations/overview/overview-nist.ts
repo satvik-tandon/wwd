@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-NIST-Requirements-over-time',
+    _id: 'tbSIEM-App-Overview-NIST-Requirements-over-time',
     _source: {
       title: 'Requirements over time',
       visState: JSON.stringify({
@@ -143,7 +143,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-Requirements-Agents-heatmap',
+    _id: 'tbSIEM-App-Overview-NIST-Requirements-Agents-heatmap',
     _type: 'visualization',
     _source: {
       title: 'Alerts volume by agent',
@@ -266,7 +266,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-requirements-by-agents',
+    _id: 'tbSIEM-App-Overview-NIST-requirements-by-agents',
     _source: {
       title: 'Requiments distribution by agent',
       visState: JSON.stringify({
@@ -397,7 +397,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-Metrics',
+    _id: 'tbSIEM-App-Overview-NIST-Metrics',
     _source: {
       title: 'Stats',
       visState: JSON.stringify({
@@ -455,7 +455,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-Top-10-requirements',
+    _id: 'tbSIEM-App-Overview-NIST-Top-10-requirements',
     _source: {
       title: 'Top 10 requirements',
       visState: JSON.stringify({
@@ -522,7 +522,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-Agents',
+    _id: 'tbSIEM-App-Overview-NIST-Agents',
     _source: {
       title: 'Most active agents',
       visState: JSON.stringify({
@@ -589,7 +589,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-NIST-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-NIST-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',

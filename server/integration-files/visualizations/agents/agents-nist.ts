@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-NIST-Stats',
+    _id: 'tbSIEM-App-Agents-NIST-Stats',
     _source: {
       title: 'Stats',
       visState: JSON.stringify({
@@ -69,7 +69,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-NIST-top-10-requirements',
+    _id: 'tbSIEM-App-Agents-NIST-top-10-requirements',
     _source: {
       title: 'Top 10 requirements',
       visState: JSON.stringify({
@@ -121,7 +121,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-NIST-Requirement-by-level',
+    _id: 'tbSIEM-App-Agents-NIST-Requirement-by-level',
     _source: {
       title: 'Requirements distributed by level',
       visState: JSON.stringify({
@@ -252,7 +252,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-NIST-Rule-level-distribution',
+    _id: 'tbSIEM-App-Agents-NIST-Rule-level-distribution',
     _source: {
       title: 'Rule level distribution',
       visState: JSON.stringify({
@@ -300,7 +300,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-NIST-Requirements-stacked-overtime',
+    _id: 'tbSIEM-App-Agents-NIST-Requirements-stacked-overtime',
     _source: {
       title: 'Requirements over time',
       visState: JSON.stringify({
@@ -432,7 +432,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-NIST-Last-alerts',
+    _id: 'tbSIEM-App-Agents-NIST-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',

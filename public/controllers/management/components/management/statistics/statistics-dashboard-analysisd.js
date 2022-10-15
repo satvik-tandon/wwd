@@ -33,7 +33,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-Events-By-Node"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-Events-By-Node"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -53,7 +53,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-Analysisd-Events-Dropped-By-Node"
+                        "tbSIEM-App-Statistics-Analysisd-Events-Dropped-By-Node"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -77,7 +77,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-Analysisd-Queues-Usage"
+                        "tbSIEM-App-Statistics-Analysisd-Queues-Usage"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -101,7 +101,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                   <WzReduxProvider>
                     <KibanaVis
                       visID={
-                        "Wazuh-App-Statistics-Analysisd-Overview-Events-Decoded"
+                        "tbSIEM-App-Statistics-Analysisd-Overview-Events-Decoded"
                       }
                       tab={"statistics"}
                     ></KibanaVis>
@@ -124,7 +124,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-Syscheck"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-Syscheck"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -143,7 +143,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-Syscollector"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-Syscollector"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -165,7 +165,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-Rootcheck"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-Rootcheck"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -184,7 +184,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-SCA"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-SCA"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -206,7 +206,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-HostInfo"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-HostInfo"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>
@@ -225,7 +225,7 @@ export function WzStatisticsAnalysisd({clusterNodeSelected, refreshVisualization
                 <div style={{ height: "365px" }}>
                   <WzReduxProvider>
                     <KibanaVis
-                      visID={"Wazuh-App-Statistics-Analysisd-Other"}
+                      visID={"tbSIEM-App-Statistics-Analysisd-Other"}
                       tab={"statistics"}
                     ></KibanaVis>
                   </WzReduxProvider>

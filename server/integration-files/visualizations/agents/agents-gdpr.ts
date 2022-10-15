@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-GDPR-Groups',
+    _id: 'tbSIEM-App-Agents-GDPR-Groups',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -49,7 +49,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-GDPR-Rule',
+    _id: 'tbSIEM-App-Agents-GDPR-Rule',
     _source: {
       title: 'Top 5 rules',
       visState: JSON.stringify({
@@ -87,7 +87,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-GDPR-Requirement',
+    _id: 'tbSIEM-App-Agents-GDPR-Requirement',
     _source: {
       title: 'Top 5 requirements',
       visState: JSON.stringify({
@@ -125,7 +125,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-GDPR-Rule-level-distribution',
+    _id: 'tbSIEM-App-Agents-GDPR-Rule-level-distribution',
     _source: {
       title: 'Rule level distribution',
       visState: JSON.stringify({
@@ -173,7 +173,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-GDPR-Requirements',
+    _id: 'tbSIEM-App-Agents-GDPR-Requirements',
     _source: {
       title: 'Requirements',
       visState: JSON.stringify({
@@ -262,7 +262,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-GDPR-Last-alerts',
+    _id: 'tbSIEM-App-Agents-GDPR-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Last alerts',

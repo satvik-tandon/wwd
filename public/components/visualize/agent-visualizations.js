@@ -18,10 +18,10 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alert groups evolution',
-            id: 'Wazuh-App-Agents-General-Alert-groups-evolution',
+            id: 'tbSIEM-App-Agents-General-Alert-groups-evolution',
             width: 50
           },
-          { title: 'Alerts', id: 'Wazuh-App-Agents-General-Alerts', width: 50 }
+          { title: 'Alerts', id: 'tbSIEM-App-Agents-General-Alerts', width: 50 }
         ]
       },
       {
@@ -29,17 +29,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 alerts',
-            id: 'Wazuh-App-Agents-General-Top-5-alerts',
+            id: 'tbSIEM-App-Agents-General-Top-5-alerts',
             width: 33
           },
           {
             title: 'Top 5 rule groups',
-            id: 'Wazuh-App-Agents-General-Top-10-groups',
+            id: 'tbSIEM-App-Agents-General-Top-10-groups',
             width: 33
           },
           {
             title: 'Top 5 PCI DSS Requirements',
-            id: 'Wazuh-App-Agents-General-Top-5-PCI-DSS-Requirements',
+            id: 'tbSIEM-App-Agents-General-Top-5-PCI-DSS-Requirements',
             width: 34
           }
         ]
@@ -49,12 +49,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-General-Alerts-summary',
+            id: 'tbSIEM-App-Agents-General-Alerts-summary',
             width: 60
           },
           {
             title: 'Groups summary',
-            id: 'Wazuh-App-Agents-General-Groups-summary',
+            id: 'tbSIEM-App-Agents-General-Groups-summary',
             width: 40
           }
         ]
@@ -68,22 +68,22 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Sources',
-            id: 'Wazuh-App-Agents-AWS-Top-sources',
+            id: 'tbSIEM-App-Agents-AWS-Top-sources',
             width: 25
           },
           {
             title: 'Accounts',
-            id: 'Wazuh-App-Agents-AWS-Top-accounts',
+            id: 'tbSIEM-App-Agents-AWS-Top-accounts',
             width: 25
           },
           {
             title: 'S3 buckets',
-            id: 'Wazuh-App-Agents-AWS-Top-buckets',
+            id: 'tbSIEM-App-Agents-AWS-Top-buckets',
             width: 25
           },
           {
             title: 'Regions',
-            id: 'Wazuh-App-Agents-AWS-Top-regions',
+            id: 'tbSIEM-App-Agents-AWS-Top-regions',
             width: 25
           }
         ]
@@ -93,12 +93,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Events by source over time',
-            id: 'Wazuh-App-Agents-AWS-Events-by-source',
+            id: 'tbSIEM-App-Agents-AWS-Events-by-source',
             width: 50
           },
           {
             title: 'Events by S3 bucket over time',
-            id: 'Wazuh-App-Agents-AWS-Events-by-s3-bucket',
+            id: 'tbSIEM-App-Agents-AWS-Events-by-s3-bucket',
             width: 50
           }
         ]
@@ -108,7 +108,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Geolocation map',
-            id: 'Wazuh-App-Agents-AWS-geo'
+            id: 'tbSIEM-App-Agents-AWS-geo'
           }
         ]
       },
@@ -117,7 +117,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-AWS-Alerts-summary'
+            id: 'tbSIEM-App-Agents-AWS-Alerts-summary'
           }
         ]
       }
@@ -130,17 +130,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Most active users',
-            id: 'Wazuh-App-Agents-FIM-Users',
+            id: 'tbSIEM-App-Agents-FIM-Users',
             width: 25
           },
           {
             title: 'Actions',
-            id: 'Wazuh-App-Agents-FIM-Actions',
+            id: 'tbSIEM-App-Agents-FIM-Actions',
             width: 25
           },
           {
             title: 'Events',
-            id: 'Wazuh-App-Agents-FIM-Events',
+            id: 'tbSIEM-App-Agents-FIM-Events',
             width: 50
           }
         ]
@@ -150,17 +150,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Files added',
-            id: 'Wazuh-App-Agents-FIM-Files-added',
+            id: 'tbSIEM-App-Agents-FIM-Files-added',
             width: 33
           },
           {
             title: 'Files modified',
-            id: 'Wazuh-App-Agents-FIM-Files-modified',
+            id: 'tbSIEM-App-Agents-FIM-Files-modified',
             width: 33
           },
           {
             title: 'Files deleted',
-            id: 'Wazuh-App-Agents-FIM-Files-deleted',
+            id: 'tbSIEM-App-Agents-FIM-Files-deleted',
             width: 34
           }
         ]
@@ -170,7 +170,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-FIM-Alerts-summary'
+            id: 'tbSIEM-App-Agents-FIM-Alerts-summary'
           }
         ]
       }
@@ -183,17 +183,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 rules',
-            id: 'Wazuh-App-Agents-GCP-Top-5-rules',
+            id: 'tbSIEM-App-Agents-GCP-Top-5-rules',
             width: 50
           },
           {
             title: 'Top query events',
-            id: 'Wazuh-App-Agents-GCP-Event-Query-Name',
+            id: 'tbSIEM-App-Agents-GCP-Event-Query-Name',
             width: 25
           },
           {
             title: 'Top 5 instances',
-            id: 'Wazuh-App-Agents-GCP-Top-5-instances',
+            id: 'tbSIEM-App-Agents-GCP-Top-5-instances',
             width: 25
           },
         ]
@@ -203,12 +203,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top project id by sourcetype',
-            id: 'Wazuh-App-Agents-GCP-Top-ProjectId-By-SourceType',
+            id: 'tbSIEM-App-Agents-GCP-Top-ProjectId-By-SourceType',
             width: 25
           },
           {
             title: 'GCP alerts evolution',
-            id: 'Wazuh-App-Agents-GCP-Events-Over-Time',
+            id: 'tbSIEM-App-Agents-GCP-Events-Over-Time',
             width: 75
           },
         ]
@@ -218,12 +218,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Auth answer count',
-            id: 'Wazuh-App-Agents-GCP-authAnswer-Bar',
+            id: 'tbSIEM-App-Agents-GCP-authAnswer-Bar',
             width: 40
           },
           {
             title: 'Resource type by project id',
-            id: 'Wazuh-App-Agents-GCP-Top-ResourceType-By-Project-Id',
+            id: 'tbSIEM-App-Agents-GCP-Top-ResourceType-By-Project-Id',
             width: 60
           },
         ]
@@ -233,7 +233,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-GCP-Alerts-summary'
+            id: 'tbSIEM-App-Agents-GCP-Alerts-summary'
           }
         ]
       }
@@ -246,17 +246,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 rule groups',
-            id: 'Wazuh-App-Agents-PCI-Groups',
+            id: 'tbSIEM-App-Agents-PCI-Groups',
             width: 33
           },
           {
             title: 'Top 5 rules',
-            id: 'Wazuh-App-Agents-PCI-Rule',
+            id: 'tbSIEM-App-Agents-PCI-Rule',
             width: 33
           },
           {
             title: 'Top 5 PCI DSS requirements',
-            id: 'Wazuh-App-Agents-PCI-Requirement',
+            id: 'tbSIEM-App-Agents-PCI-Requirement',
             width: 34
           }
         ]
@@ -266,12 +266,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'PCI Requirements',
-            id: 'Wazuh-App-Agents-PCI-Requirements',
+            id: 'tbSIEM-App-Agents-PCI-Requirements',
             width: 75
           },
           {
             title: 'Rule level distribution',
-            id: 'Wazuh-App-Agents-PCI-Rule-level-distribution',
+            id: 'tbSIEM-App-Agents-PCI-Rule-level-distribution',
             width: 25
           }
         ]
@@ -281,7 +281,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-PCI-Last-alerts'
+            id: 'tbSIEM-App-Agents-PCI-Last-alerts'
           }
         ]
       }
@@ -294,17 +294,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 rule groups',
-            id: 'Wazuh-App-Agents-GDPR-Groups',
+            id: 'tbSIEM-App-Agents-GDPR-Groups',
             width: 33
           },
           {
             title: 'Top 5 rules',
-            id: 'Wazuh-App-Agents-GDPR-Rule',
+            id: 'tbSIEM-App-Agents-GDPR-Rule',
             width: 33
           },
           {
             title: 'Top 5 GDPR requirements',
-            id: 'Wazuh-App-Agents-GDPR-Requirement',
+            id: 'tbSIEM-App-Agents-GDPR-Requirement',
             width: 34
           }
         ]
@@ -314,12 +314,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'GDPR Requirements',
-            id: 'Wazuh-App-Agents-GDPR-Requirements',
+            id: 'tbSIEM-App-Agents-GDPR-Requirements',
             width: 75
           },
           {
             title: 'Rule level distribution',
-            id: 'Wazuh-App-Agents-GDPR-Rule-level-distribution',
+            id: 'tbSIEM-App-Agents-GDPR-Rule-level-distribution',
             width: 25
           }
         ]
@@ -329,7 +329,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-GDPR-Last-alerts'
+            id: 'tbSIEM-App-Agents-GDPR-Last-alerts'
           }
         ]
       }
@@ -342,17 +342,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Stats',
-            id: 'Wazuh-App-Agents-NIST-Stats',
+            id: 'tbSIEM-App-Agents-NIST-Stats',
             width: 25
           },
           {
             title: 'Top 10 requirements',
-            id: 'Wazuh-App-Agents-NIST-top-10-requirements',
+            id: 'tbSIEM-App-Agents-NIST-top-10-requirements',
             width: 25
           },
           {
             title: 'Requirements distributed by level',
-            id: 'Wazuh-App-Agents-NIST-Requirement-by-level',
+            id: 'tbSIEM-App-Agents-NIST-Requirement-by-level',
             width: 50
           }
         ]
@@ -362,7 +362,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Requirements over time',
-            id: 'Wazuh-App-Agents-NIST-Requirements-stacked-overtime'
+            id: 'tbSIEM-App-Agents-NIST-Requirements-stacked-overtime'
           }
         ]
       },
@@ -371,7 +371,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-NIST-Last-alerts'
+            id: 'tbSIEM-App-Agents-NIST-Last-alerts'
           }
         ]
       }
@@ -384,17 +384,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 rule groups',
-            id: 'Wazuh-App-Agents-TSC-Groups',
+            id: 'tbSIEM-App-Agents-TSC-Groups',
             width: 33
           },
           {
             title: 'Top 5 rules',
-            id: 'Wazuh-App-Agents-TSC-Rule',
+            id: 'tbSIEM-App-Agents-TSC-Rule',
             width: 33
           },
           {
             title: 'Top 5 TSC requirements',
-            id: 'Wazuh-App-Agents-TSC-Requirement',
+            id: 'tbSIEM-App-Agents-TSC-Requirement',
             width: 34
           }
         ]
@@ -404,12 +404,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'TSC Requirements',
-            id: 'Wazuh-App-Agents-TSC-Requirements',
+            id: 'tbSIEM-App-Agents-TSC-Requirements',
             width: 75
           },
           {
             title: 'Rule level distribution',
-            id: 'Wazuh-App-Agents-TSC-Rule-level-distribution',
+            id: 'tbSIEM-App-Agents-TSC-Rule-level-distribution',
             width: 25
           }
         ]
@@ -419,7 +419,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Overview-TSC-Alerts-summary'
+            id: 'tbSIEM-App-Overview-TSC-Alerts-summary'
           }
         ]
       }
@@ -432,12 +432,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Requirements over time',
-            id: 'Wazuh-App-Agents-HIPAA-Requirements-Stacked-Overtime',
+            id: 'tbSIEM-App-Agents-HIPAA-Requirements-Stacked-Overtime',
             width: 50
           },
           {
             title: 'Top 10 requirements',
-            id: 'Wazuh-App-Agents-HIPAA-top-10',
+            id: 'tbSIEM-App-Agents-HIPAA-top-10',
             width: 50
           }
         ]
@@ -447,17 +447,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'HIPAA requirements',
-            id: 'Wazuh-App-Agents-HIPAA-Burbles',
+            id: 'tbSIEM-App-Agents-HIPAA-Burbles',
             width: 50
           },
           {
             title: 'Requirements distribution by level',
-            id: 'Wazuh-App-Agents-HIPAA-Distributed-By-Level',
+            id: 'tbSIEM-App-Agents-HIPAA-Distributed-By-Level',
             width: 25
           },
           {
             title: 'Most common alerts',
-            id: 'Wazuh-App-Agents-HIPAA-Most-Common',
+            id: 'tbSIEM-App-Agents-HIPAA-Most-Common',
             width: 25
           }
         ]
@@ -467,7 +467,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-HIPAA-Last-alerts'
+            id: 'tbSIEM-App-Agents-HIPAA-Last-alerts'
           }
         ]
       }
@@ -480,12 +480,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Last scanned files',
-            id: 'Wazuh-App-Agents-Virustotal-Last-Files-Pie',
+            id: 'tbSIEM-App-Agents-Virustotal-Last-Files-Pie',
             width: 25
           },
           {
             title: 'Malicious files alerts Evolution',
-            id: 'Wazuh-App-Agents-Virustotal-Malicious-Evolution',
+            id: 'tbSIEM-App-Agents-Virustotal-Malicious-Evolution',
             width: 75
           }
         ]
@@ -495,7 +495,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Last files',
-            id: 'Wazuh-App-Agents-Virustotal-Files-Table'
+            id: 'tbSIEM-App-Agents-Virustotal-Files-Table'
           }
         ]
       },
@@ -504,7 +504,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-Virustotal-Alerts-summary'
+            id: 'tbSIEM-App-Agents-Virustotal-Alerts-summary'
           }
         ]
       }
@@ -517,12 +517,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Most common Osquery actions',
-            id: 'Wazuh-App-Agents-Osquery-most-common-osquery-actions',
+            id: 'tbSIEM-App-Agents-Osquery-most-common-osquery-actions',
             width: 25
           },
           {
             title: 'Evolution of Osquery events per pack over time',
-            id: 'Wazuh-App-Agents-Osquery-Evolution',
+            id: 'tbSIEM-App-Agents-Osquery-Evolution',
             width: 75
           }
         ]
@@ -532,12 +532,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Most common Osquery packs being used',
-            id: 'Wazuh-App-Agents-Osquery-top-5-packs-being-used',
+            id: 'tbSIEM-App-Agents-Osquery-top-5-packs-being-used',
             width: 25
           },
           {
             title: 'Most common rules',
-            id: 'Wazuh-App-Agents-Osquery-monst-common-rules-being-fired',
+            id: 'tbSIEM-App-Agents-Osquery-monst-common-rules-being-fired',
             width: 75
           }
         ]
@@ -547,7 +547,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Overview-Osquery-Alerts-summary'
+            id: 'tbSIEM-App-Overview-Osquery-Alerts-summary'
           }
         ]
       }
@@ -560,12 +560,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts evolution over time',
-            id: 'Wazuh-App-Agents-MITRE-Alerts-Evolution',
+            id: 'tbSIEM-App-Agents-MITRE-Alerts-Evolution',
             width: 70
           },
           {
             title: 'Top tactics',
-            id: 'Wazuh-App-Agents-MITRE-Top-Tactics',
+            id: 'tbSIEM-App-Agents-MITRE-Top-Tactics',
             width: 30
           }
         ]
@@ -575,17 +575,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Rule level by attack',
-            id: 'Wazuh-App-Agents-MITRE-Level-By-Attack',
+            id: 'tbSIEM-App-Agents-MITRE-Level-By-Attack',
             width: 33
           },
           {
             title: 'MITRE attacks by tactic',
-            id: 'Wazuh-App-Agents-MITRE-Attacks-By-Tactic',
+            id: 'tbSIEM-App-Agents-MITRE-Attacks-By-Tactic',
             width: 34
           },
           {
             title: 'Rule level by tactic',
-            id: 'Wazuh-App-Agents-MITRE-Level-By-Tactic',
+            id: 'tbSIEM-App-Agents-MITRE-Level-By-Tactic',
             width: 34
           }
         ]
@@ -595,7 +595,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-MITRE-Alerts-summary'
+            id: 'tbSIEM-App-Agents-MITRE-Alerts-summary'
           }
         ]
       }
@@ -608,17 +608,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 images',
-            id: 'Wazuh-App-Agents-Docker-top-5-images',
+            id: 'tbSIEM-App-Agents-Docker-top-5-images',
             width: 25
           },
           {
             title: 'Top 5 events',
-            id: 'Wazuh-App-Agents-Docker-top-5-actions',
+            id: 'tbSIEM-App-Agents-Docker-top-5-actions',
             width: 25
           },
           {
             title: 'Resources usage over time',
-            id: 'Wazuh-App-Agents-Docker-Types-over-time',
+            id: 'tbSIEM-App-Agents-Docker-Types-over-time',
             width: 50
           }
         ]
@@ -628,7 +628,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Events occurred evolution',
-            id: 'Wazuh-App-Agents-Docker-Actions-over-time'
+            id: 'tbSIEM-App-Agents-Docker-Actions-over-time'
           }
         ]
       },
@@ -637,7 +637,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-Docker-Events-summary'
+            id: 'tbSIEM-App-Agents-Docker-Events-summary'
           }
         ]
       }
@@ -650,22 +650,22 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 Scans',
-            id: 'Wazuh-App-Agents-OSCAP-Scans',
+            id: 'tbSIEM-App-Agents-OSCAP-Scans',
             width: 25
           },
           {
             title: 'Top 5 Profiles',
-            id: 'Wazuh-App-Agents-OSCAP-Profiles',
+            id: 'tbSIEM-App-Agents-OSCAP-Profiles',
             width: 25
           },
           {
             title: 'Top 5 Content',
-            id: 'Wazuh-App-Agents-OSCAP-Content',
+            id: 'tbSIEM-App-Agents-OSCAP-Content',
             width: 25
           },
           {
             title: 'Top 5 Severity',
-            id: 'Wazuh-App-Agents-OSCAP-Severity',
+            id: 'tbSIEM-App-Agents-OSCAP-Severity',
             width: 25
           }
         ]
@@ -675,7 +675,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Daily scans evolution',
-            id: 'Wazuh-App-Agents-OSCAP-Daily-scans-evolution'
+            id: 'tbSIEM-App-Agents-OSCAP-Daily-scans-evolution'
           }
         ]
       },
@@ -684,12 +684,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top 5 - Alerts',
-            id: 'Wazuh-App-Agents-OSCAP-Top-5-Alerts',
+            id: 'tbSIEM-App-Agents-OSCAP-Top-5-Alerts',
             width: 50
           },
           {
             title: 'Top 5 - High risk alerts',
-            id: 'Wazuh-App-Agents-OSCAP-Top-5-High-risk-alerts',
+            id: 'tbSIEM-App-Agents-OSCAP-Top-5-High-risk-alerts',
             width: 50
           }
         ]
@@ -699,7 +699,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-OSCAP-Last-alerts'
+            id: 'tbSIEM-App-Agents-OSCAP-Last-alerts'
           }
         ]
       }
@@ -740,12 +740,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts over time',
-            id: 'Wazuh-App-Agents-PM-Events-over-time',
+            id: 'tbSIEM-App-Agents-PM-Events-over-time',
             width: 50
           },
           {
             title: 'Rule distribution',
-            id: 'Wazuh-App-Agents-PM-Top-5-rules',
+            id: 'tbSIEM-App-Agents-PM-Top-5-rules',
             width: 50
           }
         ]
@@ -755,7 +755,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Events per control type evolution',
-            id: 'Wazuh-App-Agents-PM-Events-per-agent-evolution'
+            id: 'tbSIEM-App-Agents-PM-Events-per-agent-evolution'
           }
         ]
       },
@@ -764,7 +764,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-PM-Alerts-summary'
+            id: 'tbSIEM-App-Agents-PM-Alerts-summary'
           }
         ]
       }
@@ -777,17 +777,17 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Groups',
-            id: 'Wazuh-App-Agents-Audit-Groups',
+            id: 'tbSIEM-App-Agents-Audit-Groups',
             width: 33
           },
           {
             title: 'Commands',
-            id: 'Wazuh-App-Agents-Audit-Commands',
+            id: 'tbSIEM-App-Agents-Audit-Commands',
             width: 33
           },
           {
             title: 'Files',
-            id: 'Wazuh-App-Agents-Audit-Files',
+            id: 'tbSIEM-App-Agents-Audit-Files',
             width: 34
           }
         ]
@@ -797,7 +797,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts over time',
-            id: 'Wazuh-App-Agents-Audit-Alerts-over-time'
+            id: 'tbSIEM-App-Agents-Audit-Alerts-over-time'
           }
         ]
       },
@@ -806,7 +806,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Agents-Audit-Last-alerts'
+            id: 'tbSIEM-App-Agents-Audit-Last-alerts'
           }
         ]
       }
@@ -819,12 +819,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts evolution by organization',
-            id: 'Wazuh-App-Overview-GitHub-Alerts-Evolution-By-Organization',
+            id: 'tbSIEM-App-Overview-GitHub-Alerts-Evolution-By-Organization',
             width: 60
           },
           {
             title: 'Top 5 organizations by alerts',
-            id: 'Wazuh-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
+            id: 'tbSIEM-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
             width: 40
           }
         ]
@@ -834,12 +834,12 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Top alerts by action type and organization',
-            id: 'Wazuh-App-Overview-GitHub-Alert-Action-Type-By-Organization',
+            id: 'tbSIEM-App-Overview-GitHub-Alert-Action-Type-By-Organization',
             width: 40
           },
           {
             title: 'Users with more alerts',
-            id: 'Wazuh-App-Overview-GitHub-Users-With-More-Alerts',
+            id: 'tbSIEM-App-Overview-GitHub-Users-With-More-Alerts',
             width: 60
           }
         ]
@@ -849,7 +849,7 @@ export const agentVisualizations = {
         vis: [
           {
             title: 'Alerts summary',
-            id: 'Wazuh-App-Overview-GitHub-Alert-Summary',
+            id: 'tbSIEM-App-Overview-GitHub-Alert-Summary',
           }
         ]
       }

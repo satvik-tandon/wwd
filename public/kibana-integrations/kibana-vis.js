@@ -222,7 +222,7 @@ class KibanaVis extends Component {
     const timefilter = getDataPlugin().query.timefilter.timefilter;
     try {
       const discoverList = this.discoverPendingUpdates.getList();
-      const isAgentStatus = this.visID === 'Wazuh-App-Overview-General-Agents-status';
+      const isAgentStatus = this.visID === 'tbSIEM-App-Overview-General-Agents-status';
       const timeFilterSeconds = this.calculateTimeFilterSeconds(timefilter.getTime());
       const timeRange =
         isAgentStatus && timeFilterSeconds < 900
@@ -406,14 +406,14 @@ class KibanaVis extends Component {
             }
           }, 1000);
         }
-      } else if (this.visID !== 'Wazuh-App-Overview-General-Agents-status') {
+      } else if (this.visID !== 'tbSIEM-App-Overview-General-Agents-status') {
         this.$rootScope.rendered = 'false';
       }
     }
   };
 
   showDateRangePicker = () => {
-    return !this.deadField && !this.state.visRefreshingIndex && this.visID === 'Wazuh-App-Overview-General-Agents-status'
+    return !this.deadField && !this.state.visRefreshingIndex && this.visID === 'tbSIEM-App-Overview-General-Agents-status'
   }
 
   DateRangePickerComponent = () => {

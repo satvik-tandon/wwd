@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-PM-Events-over-time',
+    _id: 'tbSIEM-App-Agents-PM-Events-over-time',
     _type: 'visualization',
     _source: {
       title: 'Events over time',
@@ -116,7 +116,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-PM-Top-5-rules',
+    _id: 'tbSIEM-App-Agents-PM-Top-5-rules',
     _type: 'visualization',
     _source: {
       title: 'Top 5 rules',
@@ -170,7 +170,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-PM-Events-per-agent-evolution',
+    _id: 'tbSIEM-App-Agents-PM-Events-per-agent-evolution',
     _source: {
       title: 'Events per control type evolution',
       visState: JSON.stringify({
@@ -259,7 +259,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-PM-Alerts-summary',
+    _id: 'tbSIEM-App-Agents-PM-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',

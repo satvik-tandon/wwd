@@ -13,7 +13,7 @@ import { UI_COLOR_AGENT_STATUS } from "../../../../common/constants";
 
 export default [
   {
-    _id: 'Wazuh-App-Overview-General-Agents-status',
+    _id: 'tbSIEM-App-Overview-General-Agents-status',
     _source: {
       title: 'Agents status',
       visState: JSON.stringify({
@@ -113,7 +113,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Metric-alerts',
+    _id: 'tbSIEM-App-Overview-General-Metric-alerts',
     _source: {
       title: 'Metric alerts',
       visState: JSON.stringify({
@@ -163,7 +163,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Level-12-alerts',
+    _id: 'tbSIEM-App-Overview-General-Level-12-alerts',
     _source: {
       title: 'Level 12 alerts',
       visState: JSON.stringify({
@@ -241,7 +241,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Authentication-failure',
+    _id: 'tbSIEM-App-Overview-General-Authentication-failure',
     _source: {
       title: 'Authentication failure',
       visState: JSON.stringify({
@@ -336,7 +336,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Authentication-success',
+    _id: 'tbSIEM-App-Overview-General-Authentication-success',
     _source: {
       title: 'Authentication success',
       visState: JSON.stringify({
@@ -416,7 +416,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alert-level-evolution',
+    _id: 'tbSIEM-App-Overview-General-Alert-level-evolution',
     _source: {
       title: 'Alert level evolution',
       visState: JSON.stringify({
@@ -519,7 +519,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-Top-Mitre',
+    _id: 'tbSIEM-App-Overview-General-Alerts-Top-Mitre',
     _source: {
       title: 'Alerts',
       visState: JSON.stringify({
@@ -567,7 +567,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Top-5-agents',
+    _id: 'tbSIEM-App-Overview-General-Top-5-agents',
     _source: {
       title: 'Top 5 agents',
       visState: JSON.stringify({
@@ -615,7 +615,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Top-5-agents-Evolution',
+    _id: 'tbSIEM-App-Overview-General-Top-5-agents-Evolution',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -720,7 +720,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-General-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -806,7 +806,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-evolution-Top-5-agents',
+    _id: 'tbSIEM-App-Overview-General-Alerts-evolution-Top-5-agents',
     _type: 'visualization',
     _source: {
       title: 'Alerts evolution Top 5 agents',

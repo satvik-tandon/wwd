@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Statistics-remoted-Recv-bytes',
+    _id: 'tbSIEM-App-Statistics-remoted-Recv-bytes',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics remoted Recv bytes',
@@ -38,7 +38,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-remoted-event-count',
+    _id: 'tbSIEM-App-Statistics-remoted-event-count',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics remoted event count',
@@ -65,7 +65,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-remoted-messages',
+    _id: 'tbSIEM-App-Statistics-remoted-messages',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics remoted messages',
@@ -92,7 +92,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-remoted-tcp-sessions',
+    _id: 'tbSIEM-App-Statistics-remoted-tcp-sessions',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics remoted tcp sessions',
@@ -119,7 +119,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Overview-Events-Decoded',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Overview-Events-Decoded',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Overview events decoded',
@@ -146,7 +146,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Syscheck',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Syscheck',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Syscheck',
@@ -173,7 +173,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Syscollector',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Syscollector',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Syscollector',
@@ -200,7 +200,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Rootcheck',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Rootcheck',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Rootcheck',
@@ -227,7 +227,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-SCA',
+    _id: 'tbSIEM-App-Statistics-Analysisd-SCA',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics SCA',
@@ -254,7 +254,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-HostInfo',
+    _id: 'tbSIEM-App-Statistics-Analysisd-HostInfo',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics HostInfo',
@@ -281,7 +281,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Other',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Other',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Other',
@@ -309,7 +309,7 @@ export default [
   },
 
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Events-By-Node',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Events-By-Node',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Events by Node',
@@ -346,7 +346,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Events-Dropped-By-Node',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Events-Dropped-By-Node',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Events Dropped by Node',
@@ -383,7 +383,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Statistics-Analysisd-Queues-Usage',
+    _id: 'tbSIEM-App-Statistics-Analysisd-Queues-Usage',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Statistics Queues Usage',

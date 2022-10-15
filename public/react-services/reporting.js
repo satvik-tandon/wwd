@@ -51,7 +51,7 @@ export class ReportingService {
     const monitoringEnabled = this.wazuhConfig.getConfig()['wazuh.monitoring.enabled'];
     if (!monitoringEnabled) {
       const visArray = idArray.filter((vis) => {
-        return vis !== 'Wazuh-App-Overview-General-Agents-status';
+        return vis !== 'tbSIEM-App-Overview-General-Agents-status';
       });
       return visArray;
     }

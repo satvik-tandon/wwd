@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-Audit-Groups',
+    _id: 'tbSIEM-App-Overview-Audit-Groups',
     _source: {
       title: 'Groups',
       visState: JSON.stringify({
@@ -49,7 +49,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Audit-Agents',
+    _id: 'tbSIEM-App-Overview-Audit-Agents',
     _source: {
       title: 'Agents',
       visState: JSON.stringify({
@@ -87,7 +87,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Audit-Commands',
+    _id: 'tbSIEM-App-Overview-Audit-Commands',
     _source: {
       title: 'Commands',
       visState: JSON.stringify({
@@ -125,7 +125,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Audit-Files',
+    _id: 'tbSIEM-App-Overview-Audit-Files',
     _source: {
       title: 'Files',
       visState: JSON.stringify({
@@ -163,7 +163,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Audit-Alerts-over-time',
+    _id: 'tbSIEM-App-Overview-Audit-Alerts-over-time',
     _source: {
       title: 'Alerts over time',
       visState: JSON.stringify({
@@ -263,7 +263,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Audit-Last-alerts',
+    _id: 'tbSIEM-App-Overview-Audit-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Last alerts',

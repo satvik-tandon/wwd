@@ -13,7 +13,7 @@ import { UI_COLOR_AGENT_STATUS } from "../../../../common/constants";
 
 export default [
   {
-    _id: 'Wazuh-App-Overview-Office-Agents-status',
+    _id: 'tbSIEM-App-Overview-Office-Agents-status',
     _source: {
       title: 'Agents status',
       visState: JSON.stringify({
@@ -113,7 +113,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-Alerts',
+    _id: 'tbSIEM-App-Overview-Office-Metric-Alerts',
     _source: {
       title: 'Metric alerts',
       visState: JSON.stringify({
@@ -163,7 +163,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-Max-Rule-Level',
+    _id: 'tbSIEM-App-Overview-Office-Metric-Max-Rule-Level',
     _source: {
       title: 'Max Rule Level',
       visState: JSON.stringify({
@@ -229,7 +229,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-Suspicious-Downloads',
+    _id: 'tbSIEM-App-Overview-Office-Metric-Suspicious-Downloads',
     _source: {
       title: 'Suspicious Downloads',
       visState: JSON.stringify({
@@ -301,7 +301,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-Malware-Alerts',
+    _id: 'tbSIEM-App-Overview-Office-Metric-Malware-Alerts',
     _source: {
       title: 'Malware Alerts',
       visState: JSON.stringify({
@@ -373,7 +373,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-FullAccess-Permissions',
+    _id: 'tbSIEM-App-Overview-Office-Metric-FullAccess-Permissions',
     _source: {
       title: 'Full Access Permissions',
       visState: JSON.stringify({
@@ -445,7 +445,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Level-12-Alerts',
+    _id: 'tbSIEM-App-Overview-Office-Level-12-Alerts',
     _source: {
       title: 'Level 12 alerts',
       visState: JSON.stringify({
@@ -523,7 +523,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Authentication-failure',
+    _id: 'tbSIEM-App-Overview-Office-Authentication-failure',
     _source: {
       title: 'Authentication failure',
       visState: JSON.stringify({
@@ -618,7 +618,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Authentication-success',
+    _id: 'tbSIEM-App-Overview-Office-Authentication-success',
     _source: {
       title: 'Authentication success',
       visState: JSON.stringify({
@@ -698,7 +698,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Alert-Level-Evolution',
+    _id: 'tbSIEM-App-Overview-Office-Alert-Level-Evolution',
     _source: {
       title: 'Alert level evolution',
       visState: JSON.stringify({
@@ -801,7 +801,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-Office-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -887,7 +887,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Metric-Stats',
+    _id: 'tbSIEM-App-Overview-Office-Metric-Stats',
     _type: 'visualization',
     _source: {
       title: 'Stats',
@@ -961,7 +961,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-IPs-By-User-Table',
+    _id: 'tbSIEM-App-Overview-Office-IPs-By-User-Table',
     _type: 'visualization',
     _source: {
       title: 'Registered IPs for User',
@@ -1054,7 +1054,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-User-Operation-Level-Table',
+    _id: 'tbSIEM-App-Overview-Office-User-Operation-Level-Table',
     _type: 'visualization',
     _source: {
       title: 'User Operations',
@@ -1147,7 +1147,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Client-IP-Operation-Level-Table',
+    _id: 'tbSIEM-App-Overview-Office-Client-IP-Operation-Level-Table',
     _type: 'visualization',
     _source: {
       title: 'Client IP Operations',
@@ -1240,7 +1240,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Top-Events-Pie',
+    _id: 'tbSIEM-App-Overview-Office-Top-Events-Pie',
     _type: 'visualization',
     _source: {
       title: 'Top Events',
@@ -1316,7 +1316,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Alerts-Evolution-By-User',
+    _id: 'tbSIEM-App-Overview-Office-Alerts-Evolution-By-User',
     _type: 'visualization',
     _source: {
       title: 'Alerts evolution over time',
@@ -1457,7 +1457,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-User-By-Operation-Result',
+    _id: 'tbSIEM-App-Overview-Office-User-By-Operation-Result',
     _type: 'visualization',
     _source: {
       title: 'User by Operation result',
@@ -1550,7 +1550,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Rule-Description-Level-Table',
+    _id: 'tbSIEM-App-Overview-Office-Rule-Description-Level-Table',
     _type: 'visualization',
     _source: {
       title: 'Rule Description by Level',
@@ -1626,7 +1626,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Severity-By-User-Histogram',
+    _id: 'tbSIEM-App-Overview-Office-Severity-By-User-Histogram',
     _type: 'visualization',
     _source: {
       title: 'Severity by user',
@@ -1750,7 +1750,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Rule-Level-Histogram',
+    _id: 'tbSIEM-App-Overview-Office-Rule-Level-Histogram',
     _type: 'visualization',
     _source: {
       title: 'Rule level histrogram',
@@ -1892,7 +1892,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-IPs-By-User-Barchart',
+    _id: 'tbSIEM-App-Overview-Office-IPs-By-User-Barchart',
     _type: 'visualization',
     _source: {
       title: 'IPs by user',
@@ -2031,7 +2031,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Severity-By-User-Barchart',
+    _id: 'tbSIEM-App-Overview-Office-Severity-By-User-Barchart',
     _type: 'visualization',
     _source: {
       title: 'Severity by user',
@@ -2170,7 +2170,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Top-Users-By-Subscription-Barchart',
+    _id: 'tbSIEM-App-Overview-Office-Top-Users-By-Subscription-Barchart',
     _type: 'visualization',
     _source: {
       title: 'Top User By Subscription',
@@ -2310,7 +2310,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Location',
+    _id: 'tbSIEM-App-Overview-Office-Location',
     _type: 'visualization',
     _source: {
       title: 'Geolocation map',
@@ -2378,7 +2378,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Country-Tag-Cloud',
+    _id: 'tbSIEM-App-Overview-Office-Country-Tag-Cloud',
     _type: 'visualization',
     _source: {
       title: 'Country of origin',
@@ -2431,7 +2431,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Alerts-Evolution-By-UserID',
+    _id: 'tbSIEM-App-Overview-Office-Alerts-Evolution-By-UserID',
     _type: 'visualization',
     _source: {
       title: 'Alerts by user',
@@ -2576,7 +2576,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Top-Users',
+    _id: 'tbSIEM-App-Overview-Office-Top-Users',
     _type: 'visualization',
     _source: {
       title: 'Top Office Users',
@@ -2635,7 +2635,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Office-Top-Operations',
+    _id: 'tbSIEM-App-Overview-Office-Top-Operations',
     _type: 'visualization',
     _source: {
       title: 'Top Operations',

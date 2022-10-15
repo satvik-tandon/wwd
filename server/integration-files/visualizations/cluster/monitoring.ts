@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Cluster-monitoring-Overview',
+    _id: 'tbSIEM-App-Cluster-monitoring-Overview',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Cluster Overview',
@@ -34,7 +34,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Cluster-monitoring-Overview-Manager',
+    _id: 'tbSIEM-App-Cluster-monitoring-Overview-Manager',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Cluster Overview Manager',
@@ -57,7 +57,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Cluster-monitoring-Overview-Node',
+    _id: 'tbSIEM-App-Cluster-monitoring-Overview-Node',
     _source: {
       title: 'Wazuh App Cluster Overview Node',
       visState: JSON.stringify({
@@ -142,7 +142,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Cluster-monitoring-Overview-Node-Pie',
+    _id: 'tbSIEM-App-Cluster-monitoring-Overview-Node-Pie',
     _type: 'visualization',
     _source: {
       title: 'Wazuh App Cluster Overview Node Pie',
