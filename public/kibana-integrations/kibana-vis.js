@@ -232,7 +232,7 @@ class KibanaVis extends Component {
         ? [
             {
               meta: {
-                index: 'wazuh-monitoring-*',
+                index: 'tbSIEM-monitoring-*',
                 alias: null,
                 negate: false,
                 disabled: false,
