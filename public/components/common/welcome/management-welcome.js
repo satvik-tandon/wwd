@@ -146,16 +146,16 @@ class ManagementWelcome extends Component {
                 <EuiSpacer size="m" />
                 <EuiFlexGroup>
                   <EuiFlexItem>
-//                     <EuiCard
-//                       layout="horizontal"
-//                       className="homSynopsis__card"
-//                       icon={
-//                         <EuiIcon size="xl" type="uptimeApp" color="primary" />
-//                       }
-//                       title="Status"
-//                       onClick={() => this.switchSection('status')}
-//                       description="Manage your tbSIEM cluster status."
-//                     />
+{/* <EuiCard
+                      layout="horizontal"
+                      className="homSynopsis__card"
+                      icon={
+                        <EuiIcon size="xl" type="uptimeApp" color="primary" />
+                      }
+                      title="Status"
+                      onClick={() => this.switchSection('status')}
+                      description="Manage your tbSIEM cluster status."
+                    /> */}               />
                   </EuiFlexItem>
                   <EuiFlexItem>
                     <EuiCard
