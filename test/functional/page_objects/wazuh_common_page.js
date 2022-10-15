@@ -30,8 +30,8 @@ export function WazuhCommonProvider({ getService, getPageObjects }) {
     async OpenSecurityEvents() {
       log.debug('Open Security events');
       await PageObjects.common.navigateToApp('settings');
-      await appsMenu.clickLink('Wazuh');
-      await appsMenu.clickLink('Wazuh');
+      await appsMenu.clickLink('tbSIEM');
+      await appsMenu.clickLink('tbSIEM');
       await testSubjects.click('overviewWelcomeGeneral');
     }
 
@@ -43,8 +43,8 @@ export function WazuhCommonProvider({ getService, getPageObjects }) {
     async OpenIntegrityMonitoring() {
       log.debug('Open Security events');
       await PageObjects.common.navigateToApp('settings');
-      await appsMenu.clickLink('Wazuh');
-      await appsMenu.clickLink('Wazuh');
+      await appsMenu.clickLink('tbSIEM');
+      await appsMenu.clickLink('tbSIEM');
       await testSubjects.click('overviewWelcomeFim');
     }
 

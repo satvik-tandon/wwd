@@ -71,7 +71,7 @@ export class ReportingService {
       const appliedFilters = await this.visHandlers.getAppliedFilters(syscollectorFilters);
 
       const array = await this.vis2png.checkArray(idArray);
-      const name = `wazuh-${isAgents ? 'agents' : 'overview'}-${tab}-${
+      const name = `tbSIEM-${isAgents ? 'agents' : 'overview'}-${tab}-${
         (Date.now() / 1000) | 0
       }.pdf`;
 
@@ -96,7 +96,7 @@ export class ReportingService {
       this.$rootScope.reportBusy = false;
       this.$rootScope.reportStatus = false;
       this.$rootScope.$applyAsync();
-      ErrorHandler.info('Success. Go to Wazuh > Management > Reporting', 'Reporting');
+      ErrorHandler.info('Success. Go to tbSIEM > Management > Reporting', 'Reporting');
 
       return;
     } catch (error) {
@@ -112,7 +112,7 @@ export class ReportingService {
       this.$rootScope.reportStatus = 'Generating PDF document...';
       this.$rootScope.$applyAsync();
 
-      const docType = type === 'agentConfig' ? `wazuh-agent-${obj.id}` : `wazuh-group-${obj.name}`;
+      const docType = type === 'agentConfig' ? `tSIEM-agent-${obj.id}` : `tbSIEM-group-${obj.name}`;
 
       const name = `${docType}-configuration-${(Date.now() / 1000) | 0}.pdf`;
       const browserTimezone = moment.tz.guess(true);
@@ -134,7 +134,7 @@ export class ReportingService {
       this.$rootScope.reportBusy = false;
       this.$rootScope.reportStatus = false;
       this.$rootScope.$applyAsync();
-      ErrorHandler.info('Success. Go to Wazuh > Management > Reporting', 'Reporting');
+      ErrorHandler.info('Success. Go to tbSIEM > Management > Reporting', 'Reporting');
 
       return;
     } catch (error) {

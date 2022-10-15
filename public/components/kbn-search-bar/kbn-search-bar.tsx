@@ -92,7 +92,7 @@ const onFiltersUpdate = (filters, props) => {
 };
 
 KbnSearchBar.defaultProps = {
-  appName: 'wazuh',
+  appName: 'tbSIEM',
 };
 
 const hoc = withPluginPlatformContext(KbnSearchBar);

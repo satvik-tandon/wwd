@@ -31,7 +31,7 @@ jest.mock('../lib/reporting/printer', () => {
 const getMockerUserContext = (username: string) => ({ username, hashUsername: md5(username) });
 
 const mockContext = (username: string) => ({
-  wazuh: {
+  tbSIEM: {
     security: {
       getCurrentUser: () => getMockerUserContext(username)
     }
@@ -67,14 +67,14 @@ describe('[security] Report endpoints guard related to a file. Parameter defines
 
   it.each`
 		testTitle                     | username       | filename                                             | endpointProtected
-		${'Execute endpoint handler'} | ${'admin'}     | ${'wazuh-module-overview-general-1234.pdf'}          | ${false}
-		${'Endpoint protected'}       | ${'admin'}     | ${'../wazuh-module-overview-general-1234.pdf'}       | ${true}
-		${'Endpoint protected'}       | ${'admin'}     | ${'wazuh-module-overview-../general-1234.pdf'}       | ${true}
-		${'Endpoint protected'}       | ${'admin'}     | ${'custom../wazuh-module-overview-general-1234.pdf'} | ${true}
-		${'Execute endpoint handler'} | ${'../../etc'} | ${'wazuh-module-agents-001-general-1234.pdf'}        | ${false}
-		${'Endpoint protected'}       | ${'../../etc'} | ${'../wazuh-module-agents-001-general-1234.pdf'}     | ${true}
-		${'Endpoint protected'}       | ${'../../etc'} | ${'wazuh-module-overview-../general-1234.pdf'}       | ${true}
-		${'Endpoint protected'}       | ${'../../etc'} | ${'custom../wazuh-module-overview-general-1234.pdf'} | ${true}
+		${'Execute endpoint handler'} | ${'admin'}     | ${'tbSIEM-module-overview-general-1234.pdf'}          | ${false}
+		${'Endpoint protected'}       | ${'admin'}     | ${'../tbSIEM-module-overview-general-1234.pdf'}       | ${true}
+		${'Endpoint protected'}       | ${'admin'}     | ${'tbSIEM-module-overview-../general-1234.pdf'}       | ${true}
+		${'Endpoint protected'}       | ${'admin'}     | ${'custom../tbSIEM-module-overview-general-1234.pdf'} | ${true}
+		${'Execute endpoint handler'} | ${'../../etc'} | ${'tbSIEM-module-agents-001-general-1234.pdf'}        | ${false}
+		${'Endpoint protected'}       | ${'../../etc'} | ${'../tbSIEM-module-agents-001-general-1234.pdf'}     | ${true}
+		${'Endpoint protected'}       | ${'../../etc'} | ${'tbSIEM-module-overview-../general-1234.pdf'}       | ${true}
+		${'Endpoint protected'}       | ${'../../etc'} | ${'custom../tbSIEM-module-overview-general-1234.pdf'} | ${true}
 	`(`$testTitle
 	username: $username
 	filename: $filename
@@ -116,10 +116,10 @@ describe('[security] GET /reports/{name}', () => {
 
   it.each`
 		titleTest               | username       | filename                               | valid
-		${'Get report'}         | ${'admin'}     | ${'wazuh-module-overview-1234.pdf'}    | ${true}
-		${'Endpoint protected'} | ${'admin'}     | ${'../wazuh-module-overview-1234.pdf'} | ${false}
-		${'Get report'}         | ${'../../etc'} | ${'wazuh-module-overview-1234.pdf'}    | ${true}
-		${'Endpoint protected'} | ${'../../etc'} | ${'../wazuh-module-overview-1234.pdf'} | ${false}
+		${'Get report'}         | ${'admin'}     | ${'tbSIEM-module-overview-1234.pdf'}    | ${true}
+		${'Endpoint protected'} | ${'admin'}     | ${'../tbSIEM-module-overview-1234.pdf'} | ${false}
+		${'Get report'}         | ${'../../etc'} | ${'tbSIEM-module-overview-1234.pdf'}    | ${true}
+		${'Endpoint protected'} | ${'../../etc'} | ${'../tbSIEM-module-overview-1234.pdf'} | ${false}
 	`(`$titleTest: GET /reports/$filename
 	username: $username
 	valid: $valid`, async ({ username, filename, valid }) => {
@@ -167,7 +167,7 @@ describe('[security] POST /reports', () => {
         },
         tables: [],
         section: 'overview',
-        indexPatternTitle: 'wazuh-alerts-*',
+        indexPatternTitle: 'tbSIEM-alerts-*',
         apiId: 'default',
         tab: moduleID
       },
@@ -180,7 +180,7 @@ describe('[security] POST /reports', () => {
 
     if (valid) {
       expect(response.body.success).toBe(true);
-      expect(response.body.message).toMatch(new RegExp(`Report wazuh-module-overview-${moduleID}`));
+      expect(response.body.message).toMatch(new RegExp(`Report tbSIEM-module-overview-${moduleID}`));
     } else {
       expect(response.body.message).toBe('5040 - You shall not pass!');
     };
@@ -196,12 +196,12 @@ describe('[security] DELETE /reports/<filename>', () => {
 
   it.each`
 		titleTest               | username        | filename                                    | valid
-		${'Delete report'}      | ${'admin'}      | ${'wazuh-module-overview-1234.pdf'}         | ${true}
-		${'Endpoint protected'} | ${'admin'}      | ${'../wazuh-module-overview-1234.pdf'}      | ${false}
-		${'Endpoint protected'} | ${'admin'}      | ${'custom../wazuh-module-overview-1234.pdf'}| ${false}
-		${'Delete report'}      | ${'../../etc'}  | ${'wazuh-module-overview-1234.pdf'}         | ${true}
-		${'Endpoint protected'} | ${'../../etc'}  | ${'../wazuh-module-overview-1234.pdf'}      | ${false}
-		${'Endpoint protected'} | ${'../../etc'}  | ${'custom../wazuh-module-overview-1234.pdf'}| ${false}
+		${'Delete report'}      | ${'admin'}      | ${'tbSIEM-module-overview-1234.pdf'}         | ${true}
+		${'Endpoint protected'} | ${'admin'}      | ${'../tbSIEM-module-overview-1234.pdf'}      | ${false}
+		${'Endpoint protected'} | ${'admin'}      | ${'custom../tbSIEM-module-overview-1234.pdf'}| ${false}
+		${'Delete report'}      | ${'../../etc'}  | ${'tbSIEM-module-overview-1234.pdf'}         | ${true}
+		${'Endpoint protected'} | ${'../../etc'}  | ${'../tbSIEM-module-overview-1234.pdf'}      | ${false}
+		${'Endpoint protected'} | ${'../../etc'}  | ${'custom../tbSIEM-module-overview-1234.pdf'}| ${false}
 	`(`[security] DELETE /reports/$filename
 	username: $username
 	valid: $valid`, async ({ filename, username, valid }) => {

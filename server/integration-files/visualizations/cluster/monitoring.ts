@@ -14,9 +14,9 @@ export default [
     _id: 'tbSIEM-App-Cluster-monitoring-Overview',
     _type: 'visualization',
     _source: {
-      title: 'Wazuh App Cluster Overview',
+      title: 'tbSIEM App Cluster Overview',
       visState: JSON.stringify({
-        title: 'Wazuh App Cluster Overview',
+        title: 'tbSIEM App Cluster Overview',
         type: 'timelion',
         params: { expression: '.es(*)', interval: 'auto' },
         aggs: [],
@@ -26,7 +26,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -37,9 +37,9 @@ export default [
     _id: 'tbSIEM-App-Cluster-monitoring-Overview-Manager',
     _type: 'visualization',
     _source: {
-      title: 'Wazuh App Cluster Overview Manager',
+      title: 'tbSIEM App Cluster Overview Manager',
       visState: JSON.stringify({
-        title: 'Wazuh App Cluster Overview Manager',
+        title: 'tbSIEM App Cluster Overview Manager',
         type: 'timelion',
         params: { expression: '.es(q=agent.id:000)', interval: 'auto' },
         aggs: [],
@@ -49,7 +49,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -59,9 +59,9 @@ export default [
   {
     _id: 'tbSIEM-App-Cluster-monitoring-Overview-Node',
     _source: {
-      title: 'Wazuh App Cluster Overview Node',
+      title: 'tbSIEM App Cluster Overview Node',
       visState: JSON.stringify({
-        title: 'Wazuh App Cluster Overview Node',
+        title: 'tbSIEM App Cluster Overview Node',
         type: 'histogram',
         params: {
           type: 'histogram',
@@ -133,7 +133,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -145,9 +145,9 @@ export default [
     _id: 'tbSIEM-App-Cluster-monitoring-Overview-Node-Pie',
     _type: 'visualization',
     _source: {
-      title: 'Wazuh App Cluster Overview Node Pie',
+      title: 'tbSIEM App Cluster Overview Node Pie',
       visState: JSON.stringify({
-        title: 'Wazuh App Cluster Overview Node Pie',
+        title: 'tbSIEM App Cluster Overview Node Pie',
         type: 'pie',
         params: {
           type: 'pie',
@@ -182,7 +182,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

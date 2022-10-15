@@ -24,13 +24,7 @@ export const ClusterDisabled = withErrorBoundary (class ClusterDisabled extends 
         body={
           <Fragment>
             {!this.props.enabled && (
-              <p>
-                Visit the documentation on{' '}
-                <a href={webDocumentationLink('user-manual/configuring-cluster/index.html')}>
-                  this link
-                </a>{' '}
-                to learn about how to enable it.
-              </p>
+              <p></p>
             )}
             {!this.props.running && (
               <p>The cluster is enabled but it is not running.</p>

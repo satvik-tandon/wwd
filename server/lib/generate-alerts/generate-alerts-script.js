@@ -105,7 +105,7 @@ function generateAlert(params) {
       name: 'master',
     },
     cluster: {
-      name: 'wazuh',
+      name: 'tbSIEM',
     },
     id: '1580123327.49031',
     predecoder: {},
@@ -372,7 +372,7 @@ function generateAlert(params) {
         vmInstanceId: '4980113928800839680.000000',
         vmInstanceName: '531339229531.instance-1',
       },
-      logName: 'projects/wazuh-dev/logs/dns.googleapis.com%2Fdns_queries',
+      logName: 'projects/tbSIEM-dev/logs/dns.googleapis.com%2Fdns_queries',
       receiveTimestamp: '2019-11-11T02:42:05.05853152Z',
       resource: {
         labels: {
