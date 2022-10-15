@@ -1,7 +1,7 @@
 /*
- * Wazuh app - React component for building the management welcome screen.
+ * tbSIEM app - React component for building the management welcome screen.
  *
- * Copyright (C) 2015-2022 Wazuh, Inc.
+ * Copyright (C) 2015-2022 tbSIEM, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -145,18 +145,6 @@ class ManagementWelcome extends Component {
               <EuiCard title description betaBadgeLabel="Status and reports">
                 <EuiSpacer size="m" />
                 <EuiFlexGroup>
-                <EuiFlexItem>
-                    <EuiCard
-                      layout="horizontal"
-                      className="homSynopsis__card"
-                      icon={
-                        <EuiIcon size="xl" type="visualizeApp" color="primary" />
-                      }
-                      title="Statistics"
-                      onClick={() => this.switchSection('statistics')}
-                      description="Information about the tbSIEM environment"
-                    />
-                  </EuiFlexItem>
                   {/* <EuiFlexItem>
                     <EuiCard
                       layout="horizontal"
@@ -214,6 +202,22 @@ class ManagementWelcome extends Component {
                       onClick={() => this.switchSection('reporting')}
                       description="Check your stored tbSIEM reports."
                     />
+                  </EuiFlexItem>
+                </EuiFlexGroup>
+                <EuiFlexGroup>
+                  <EuiFlexItem>
+                    <EuiCard
+                      layout="horizontal"
+                      className="homSynopsis__card"
+                      icon={
+                        <EuiIcon size="xl" type="visualizeApp" color="primary" />
+                      }
+                      title="Statistics"
+                      onClick={() => this.switchSection('statistics')}
+                      description="Information about the tbSIEM environment"
+                    />
+                  </EuiFlexItem>
+                  <EuiFlexItem>
                   </EuiFlexItem>
                 </EuiFlexGroup>
               </EuiCard>
