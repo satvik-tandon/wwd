@@ -18,8 +18,8 @@ export const PLUGIN_VERSION_SHORT = version.split('.').splice(0,2).join('.');
 
 // Index patterns - Wazuh alerts
 export const WAZUH_INDEX_TYPE_ALERTS = 'alerts';
-export const WAZUH_ALERTS_PREFIX = 'wazuh-alerts-';
-export const WAZUH_ALERTS_PATTERN = 'wazuh-alerts-*';
+export const WAZUH_ALERTS_PREFIX = 'tbSIEM-alerts-';
+export const WAZUH_ALERTS_PATTERN = 'tbSIEM-alerts-*';
 
 // Job - Wazuh monitoring
 export const WAZUH_INDEX_TYPE_MONITORING = "monitoring";
