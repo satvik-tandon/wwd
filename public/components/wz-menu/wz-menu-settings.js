@@ -71,11 +71,11 @@ class WzMenuSettings extends Component {
         cyTestId: WAZUH_MENU_SETTINGS_SECTIONS_CY_TEST_ID.MISCELLANEOUS,
         text: 'Miscellaneous',
       },
-      about: {
-        id: WAZUH_MENU_SETTINGS_SECTIONS_ID.ABOUT,
-        cyTestId: WAZUH_MENU_SETTINGS_SECTIONS_CY_TEST_ID.ABOUT,
-        text: 'About',
-      },
+//       about: {
+//         id: WAZUH_MENU_SETTINGS_SECTIONS_ID.ABOUT,
+//         cyTestId: WAZUH_MENU_SETTINGS_SECTIONS_CY_TEST_ID.ABOUT,
+//         text: 'About',
+//       },
     };
     return (auxSettings);
   }
