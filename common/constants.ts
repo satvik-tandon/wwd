@@ -90,7 +90,7 @@ export const WAZUH_SAMPLE_ALERTS_CATEGORIES_TYPE_ALERTS = {
 };
 
 // Security
-export const WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY = 'OpenSearch Dashboards Security';
+export const WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY = 'tbSIEM Dashboards Security';
 
 export const WAZUH_SECURITY_PLUGINS = [
   WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY,
@@ -363,8 +363,8 @@ export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'tbSIEM-dashboard';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_UPGRADE_PLATFORM = 'upgrade-guide';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_TROUBLESHOOTING = 'user-manual/elasticsearch/troubleshooting.html';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/tbSIEM-dashboard/config-file.html';
-export const PLUGIN_PLATFORM_URL_GUIDE = 'https://opensearch.org/docs/1.2/opensearch/index/';
-export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'OpenSearch guide';
+export const PLUGIN_PLATFORM_URL_GUIDE = 'https://tech-bridge.biz/';
+export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'tbSIEM guide';
 
 export const PLUGIN_PLATFORM_REQUEST_HEADERS = {
   'osd-xsrf': 'kibana'
@@ -405,4 +405,4 @@ export const UI_ORDER_AGENT_STATUS = [
 ];
 
 // Documentation
-export const DOCUMENTATION_WEB_BASE_URL = "https://documentation.wazuh.com";
+export const DOCUMENTATION_WEB_BASE_URL = "https://tech-bridge.biz/contact-us/";
