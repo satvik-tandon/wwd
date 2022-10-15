@@ -71,11 +71,11 @@ class WzMenuManagement extends Component {
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS_AND_REPORTS,
         text: 'Status and reports',
       },
-      // status: {
-      //   id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATUS,
-      //   cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS,
-      //   text: 'Status',
-      // },
+      status: {
+        id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATUS,
+        cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS,
+        text: 'Status',
+      },
       cluster: {
         id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.CLUSTER,
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.CLUSTER,
