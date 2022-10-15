@@ -71,11 +71,11 @@ class WzMenuManagement extends Component {
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS_AND_REPORTS,
         text: 'Status and reports',
       },
-      status: {
-        id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATUS,
-        cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS,
-        text: 'Status',
-      },
+//       status: {
+//         id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.STATUS,
+//         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.STATUS,
+//         text: 'Status',
+//       },
       cluster: {
         id: WAZUH_MENU_MANAGEMENT_SECTIONS_ID.CLUSTER,
         cyTestId: WAZUH_MENU_MANAGEMENT_SECTIONS_CY_TEST_ID.CLUSTER,
@@ -157,7 +157,7 @@ class WzMenuManagement extends Component {
         disabled: true,
         icon: <EuiIcon type="reportingApp" color="primary" />,
         items: [
-          this.createItem(this.managementSections.status),
+//           this.createItem(this.managementSections.status),
           this.createItem(this.managementSections.cluster),
           this.createItem(this.managementSections.statistics),
           this.createItem(this.managementSections.logs),
