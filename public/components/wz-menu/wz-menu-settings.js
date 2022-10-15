@@ -89,7 +89,7 @@ class WzMenuSettings extends Component {
       this.createItem(availableSettings.configuration),
       this.createItem(availableSettings.logs),
       this.createItem(availableSettings.miscellaneous),
-      this.createItem(availableSettings.about),
+//       this.createItem(availableSettings.about),
     ]
     return (auxItems);
   }
