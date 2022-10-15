@@ -370,7 +370,7 @@ export class WazuhElasticCtrl {
         ) {
           const defaultStr = aux_source.kibanaSavedObjectMeta.searchSourceJSON;
 
-          const isMonitoring = defaultStr.includes('wazuh-monitoring');
+          const isMonitoring = defaultStr.includes('tbSIEM-monitoring');
           if (isMonitoring) {
             if (namespace && namespace !== 'default') {
               if (
@@ -383,7 +383,7 @@ export class WazuhElasticCtrl {
               }
             }
             aux_source.kibanaSavedObjectMeta.searchSourceJSON = defaultStr.replace(
-              /wazuh-monitoring/g,
+              /tbSIEM-monitoring/g,
               monitoringPattern[monitoringPattern.length - 1] === '*' ||
                 (namespace && namespace !== 'default')
                 ? monitoringPattern
@@ -391,7 +391,7 @@ export class WazuhElasticCtrl {
             );
           } else {
             aux_source.kibanaSavedObjectMeta.searchSourceJSON = defaultStr.replace(
-              /wazuh-alerts/g,
+              /tbSIEM-alerts/g,
               id
             );
           }
@@ -400,7 +400,7 @@ export class WazuhElasticCtrl {
         // Replace index-pattern for selector visualizations
         if (typeof (aux_source || {}).visState === 'string') {
           aux_source.visState = aux_source.visState.replace(
-            /wazuh-alerts/g,
+            /tbSIEM-alerts/g,
             id
           );
         }
@@ -446,7 +446,7 @@ export class WazuhElasticCtrl {
       for (const element of app_objects) {
         // Stringify and replace index-pattern for visualizations
         aux_source = JSON.stringify(element._source);
-        aux_source = aux_source.replace(/wazuh-alerts/g, id);
+        aux_source = aux_source.replace(/tbSIEM-alerts/g, id);
         aux_source = JSON.parse(aux_source);
 
         // Bulk source
@@ -468,18 +468,18 @@ export class WazuhElasticCtrl {
           } else {
             if (title.startsWith('tbSIEM App Statistics')) {
               const { searchSourceJSON } = bulk_content.visualization.kibanaSavedObjectMeta;
-              bulk_content.visualization.kibanaSavedObjectMeta.searchSourceJSON = searchSourceJSON.replace('wazuh-statistics-*', pattern_name);
+              bulk_content.visualization.kibanaSavedObjectMeta.searchSourceJSON = searchSourceJSON.replace('tbSIEM-statistics-*', pattern_name);
             }
             if (title.startsWith('tbSIEM App Statistics') && name !== '-' && name !== 'all' && visState.params.expression.includes('q=')) {
               const expressionRegex = /q='\*'/gi;
               const _visState = bulk_content.visualization.visStateByNode
                 ? JSON.parse(bulk_content.visualization.visStateByNode)
                 : visState;
-              query += _visState.params.expression.replace(/wazuh-statistics-\*/g, pattern_name).replace(expressionRegex, `q="nodeName.keyword:${name} AND apiName.keyword:${master_node}"`)
+              query += _visState.params.expression.replace(/tbSIEM-statistics-\*/g, pattern_name).replace(expressionRegex, `q="nodeName.keyword:${name} AND apiName.keyword:${master_node}"`)
                 .replace("NODE_NAME", name)
             } else if (title.startsWith('tbSIEM App Statistics')) {
               const expressionRegex = /q='\*'/gi
-              query += visState.params.expression.replace(/wazuh-statistics-\*/g, pattern_name).replace(expressionRegex, `q="apiName.keyword:${master_node}"`)
+              query += visState.params.expression.replace(/tbSIEM-statistics-\*/g, pattern_name).replace(expressionRegex, `q="apiName.keyword:${master_node}"`)
             } else {
               query = visState.params.expression;
             }
