@@ -825,7 +825,7 @@ export class WazuhElasticCtrl {
         body: data.body
       });
     } catch (error) {
-      log('tSIEM:alerts', error.message || error);
+      log('tbSIEM:alerts', error.message || error);
       return ErrorResponse(error.message || error, 4010, 500, response);
     }
   }
