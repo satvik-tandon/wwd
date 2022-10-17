@@ -357,12 +357,12 @@ export const REPORTS_PAGE_HEADER_TEXT = ' support@tech-bridge.biz\nhttps://tech-
 
 // Plugin platform
 export const PLUGIN_PLATFORM_NAME = 'tbSIEM dashboard';
-export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/tbSIEM-dashboard/data/tbSIEM/';
-export const PLUGIN_PLATFORM_INSTALLATION_USER = 'tbSIEM-dashboard';
-export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'tbSIEM-dashboard';
+export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/wazuh-dashboard/data/tbSIEM/';
+export const PLUGIN_PLATFORM_INSTALLATION_USER = 'wazuh-dashboard';
+export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'wazuh-dashboard';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_UPGRADE_PLATFORM = 'upgrade-guide';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_TROUBLESHOOTING = 'user-manual/elasticsearch/troubleshooting.html';
-export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/tbSIEM-dashboard/config-file.html';
+export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/wazuh-dashboard/config-file.html';
 export const PLUGIN_PLATFORM_URL_GUIDE = 'https://tech-bridge.biz/';
 export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'tbSIEM guide';
 
