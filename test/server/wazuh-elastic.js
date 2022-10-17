@@ -10,7 +10,7 @@ const headers = {
   headers: { ...PLUGIN_PLATFORM_REQUEST_HEADERS, 'content-type': 'application/json' }
 };
 
-describe('wazuh-elastic', () => {
+describe('tbSIEM', () => {
   describe('Checking index patterns', () => {
     it('GET /elastic/known-fields/{pattern}', async () => {
       const res = await needle(
