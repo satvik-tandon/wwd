@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-FIM-Events-summary',
+    _id: 'tbSIEM-App-Overview-FIM-Events-summary',
     _type: 'visualization',
     _source: {
       title: 'Events summary',
@@ -85,7 +85,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -93,7 +93,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-FIM-Top-5-rules',
+    _id: 'tbSIEM-App-Overview-FIM-Top-5-rules',
     _type: 'visualization',
     _source: {
       title: 'Top 5 rules',
@@ -139,7 +139,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -147,7 +147,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-FIM-Top-5-agents-pie',
+    _id: 'tbSIEM-App-Overview-FIM-Top-5-agents-pie',
     _type: 'visualization',
     _source: {
       title: 'Top 5 agents pie',
@@ -187,7 +187,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { language: 'lucene', query: '' },
           filter: [],
         }),
@@ -195,7 +195,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-FIM-Common-actions',
+    _id: 'tbSIEM-App-Overview-FIM-Common-actions',
     _type: 'visualization',
     _source: {
       title: 'Common actions',
@@ -235,7 +235,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { language: 'lucene', query: '' },
           filter: [],
         }),
@@ -243,7 +243,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Alerts-by-action-over-time',
+    _id: 'tbSIEM-App-Agents-FIM-Alerts-by-action-over-time',
     _source: {
       title: 'Alerts by action over time',
       visState: JSON.stringify({
@@ -337,7 +337,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -346,7 +346,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-FIM-top-agents-user',
+    _id: 'tbSIEM-App-Overview-FIM-top-agents-user',
     _type: 'visualization',
     _source: {
       title: 'Top users',
@@ -424,12 +424,12 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -447,7 +447,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-FIM-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-FIM-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -525,7 +525,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

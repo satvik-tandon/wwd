@@ -1,7 +1,7 @@
 /*
- * Wazuh app - React component for building the management welcome screen.
+ * tbSIEM app - React component for building the management welcome screen.
  *
- * Copyright (C) 2015-2022 Wazuh, Inc.
+ * Copyright (C) 2015-2022 tbSIEM, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -70,7 +70,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Rules"
                       onClick={() => this.switchSection('rules')}
-                      description="Manage your Wazuh cluster rules."
+                      description="Manage your tbSIEM cluster rules."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -86,7 +86,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Decoders"
                       onClick={() => this.switchSection('decoders')}
-                      description="Manage your Wazuh cluster decoders."
+                      description="Manage your tbSIEM cluster decoders."
                     />
                   </EuiFlexItem>
                 </EuiFlexGroup>
@@ -104,7 +104,7 @@ class ManagementWelcome extends Component {
                       }
                       title="CDB lists"
                       onClick={() => this.switchSection('lists')}
-                      description="Manage your Wazuh cluster CDB lists."
+                      description="Manage your tbSIEM cluster CDB lists."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -134,7 +134,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Configuration"
                       onClick={() => this.switchSection('configuration')}
-                      description="Manage your Wazuh cluster configuration."
+                      description="Manage your tbSIEM cluster configuration."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem />
@@ -145,16 +145,16 @@ class ManagementWelcome extends Component {
               <EuiCard title description betaBadgeLabel="Status and reports">
                 <EuiSpacer size="m" />
                 <EuiFlexGroup>
-                  <EuiFlexItem>
+                <EuiFlexItem>
                     <EuiCard
                       layout="horizontal"
                       className="homSynopsis__card"
                       icon={
-                        <EuiIcon size="xl" type="uptimeApp" color="primary" />
+                        <EuiIcon size="xl" type="visualizeApp" color="primary" />
                       }
-                      title="Status"
-                      onClick={() => this.switchSection('status')}
-                      description="Manage your Wazuh cluster status."
+                      title="Statistics"
+                      onClick={() => this.switchSection('statistics')}
+                      description="Information about the tbSIEM environment"
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -170,7 +170,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Cluster"
                       onClick={() => this.switchSection('monitoring')}
-                      description="Visualize your Wazuh cluster."
+                      description="Visualize your tbSIEM cluster."
                     />
                   </EuiFlexItem>
                 </EuiFlexGroup>
@@ -184,7 +184,7 @@ class ManagementWelcome extends Component {
                       }
                       title="Logs"
                       onClick={() => this.switchSection('logs')}
-                      description="Logs from your Wazuh cluster."
+                      description="Logs from your tbSIEM cluster."
                     />
                   </EuiFlexItem>
                   <EuiFlexItem>
@@ -200,24 +200,8 @@ class ManagementWelcome extends Component {
                       }
                       title="Reporting"
                       onClick={() => this.switchSection('reporting')}
-                      description="Check your stored Wazuh reports."
+                      description="Check your stored tbSIEM reports."
                     />
-                  </EuiFlexItem>
-                </EuiFlexGroup>
-                <EuiFlexGroup>
-                  <EuiFlexItem>
-                    <EuiCard
-                      layout="horizontal"
-                      className="homSynopsis__card"
-                      icon={
-                        <EuiIcon size="xl" type="visualizeApp" color="primary" />
-                      }
-                      title="Statistics"
-                      onClick={() => this.switchSection('statistics')}
-                      description="Information about the Wazuh environment"
-                    />
-                  </EuiFlexItem>
-                  <EuiFlexItem>
                   </EuiFlexItem>
                 </EuiFlexGroup>
               </EuiCard>

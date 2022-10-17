@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Tag-cloud',
+    _id: 'tbSIEM-App-Overview-HIPAA-Tag-cloud',
     _source: {
       title: 'Most common alerts',
       visState: JSON.stringify({
@@ -51,7 +51,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -60,7 +60,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Top-10-requirements',
+    _id: 'tbSIEM-App-Overview-HIPAA-Top-10-requirements',
     _source: {
       title: 'Top 10 requirements',
       visState: JSON.stringify({
@@ -117,7 +117,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -126,7 +126,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Top-10-agents',
+    _id: 'tbSIEM-App-Overview-HIPAA-Top-10-agents',
     _source: {
       title: 'Most active agents',
       visState: JSON.stringify({
@@ -184,7 +184,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -193,7 +193,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Metrics',
+    _id: 'tbSIEM-App-Overview-HIPAA-Metrics',
     _source: {
       title: 'Stats',
       visState: JSON.stringify({
@@ -242,7 +242,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -251,7 +251,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-HIPAA-Alerts-summary',
     _source: {
       title: 'Alerts summary',
       visState: JSON.stringify({
@@ -372,7 +372,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -381,7 +381,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Heatmap',
+    _id: 'tbSIEM-App-Overview-HIPAA-Heatmap',
     _source: {
       title: 'Alerts volume by agent',
       visState: JSON.stringify({
@@ -496,7 +496,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -505,7 +505,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Top-10-requirements-over-time-by-agent',
+    _id: 'tbSIEM-App-Overview-HIPAA-Top-10-requirements-over-time-by-agent',
     _source: {
       title: 'Requirements distribution by agent',
       visState: JSON.stringify({
@@ -627,7 +627,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -636,7 +636,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-HIPAA-Top-requirements-over-time',
+    _id: 'tbSIEM-App-Overview-HIPAA-Top-requirements-over-time',
     _source: {
       title: 'Requirements evolution over time',
       visState: JSON.stringify({
@@ -757,7 +757,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),

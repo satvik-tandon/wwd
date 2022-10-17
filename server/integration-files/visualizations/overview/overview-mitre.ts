@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Overview-MITRE',
+    _id: 'tbSIEM-App-Overview-MITRE',
     _source: {
       title: 'Mitre attack count',
       visState: JSON.stringify({
@@ -57,7 +57,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -66,7 +66,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Alerts-Evolution',
+    _id: 'tbSIEM-App-Overview-MITRE-Alerts-Evolution',
     _source: {
       title: 'Mitre alerts evolution',
       visState: JSON.stringify({
@@ -190,7 +190,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -199,7 +199,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Attacks-By-Agent',
+    _id: 'tbSIEM-App-Overview-MITRE-Attacks-By-Agent',
     _source: {
       title: 'Mitre techniques by agent',
       visState: JSON.stringify({
@@ -257,7 +257,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -266,7 +266,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Attacks-By-Technique',
+    _id: 'tbSIEM-App-Overview-MITRE-Attacks-By-Technique',
     _source: {
       title: 'Attacks by technique',
       visState: JSON.stringify({
@@ -379,7 +379,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -388,7 +388,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Top-Tactics-By-Agent',
+    _id: 'tbSIEM-App-Overview-MITRE-Top-Tactics-By-Agent',
     _source: {
       title: 'Top tactics by agent',
       visState: JSON.stringify({
@@ -510,7 +510,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -519,7 +519,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Top-Tactics',
+    _id: 'tbSIEM-App-Overview-MITRE-Top-Tactics',
     _source: {
       title: 'Top tactics',
       visState: JSON.stringify({
@@ -576,7 +576,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { language: 'lucene', query: '' },
         }),
@@ -585,7 +585,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-MITRE-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-MITRE-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -661,7 +661,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

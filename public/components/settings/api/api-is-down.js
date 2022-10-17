@@ -85,7 +85,7 @@ export const ApiIsDown = withErrorBoundary (class ApiIsDown extends Component {
           numErr = numErr + 1;
           const code = ((error || {}).data || {}).code;
           const downReason = typeof error === 'string' ? error :
-            (error || {}).message || ((error || {}).data || {}).message || 'Wazuh is not reachable';
+            (error || {}).message || ((error || {}).data || {}).message || 'tbSIEM is not reachable';
           const status = code === 3099 ? 'down' : 'unknown';
           entries[idx].status = { status, downReason };
         }
@@ -126,20 +126,20 @@ export const ApiIsDown = withErrorBoundary (class ApiIsDown extends Component {
   }
 
   render() {
-    const apiExample = `# Example Wazuh API configuration
+    const apiExample = `# Example tbSIEM API configuration
 hosts:
     - production:
         url: https://172.16.1.2
         port: 55000
-        username: wazuh-wui
-        password: wazuh-wui
+        username: tbSIEM-wui
+        password: tbSIEM-wui
         run_as: false
 `;
 
     const checkConnectionChildren = (
       <div>
         <EuiText>
-          Check that the {PLUGIN_PLATFORM_NAME} server can reach the configured Wazuh API(s).
+          Check that the {PLUGIN_PLATFORM_NAME} server can reach the configured tbSIEM API(s).
         </EuiText>
         <EuiSpacer />
         <EuiButton
@@ -155,7 +155,7 @@ hosts:
             </EuiButtonEmpty>
           )}
         <EuiSpacer />
-        <EuiText>Already configured Wazuh API(s)</EuiText>
+        <EuiText>Already configured tbSIEM API(s)</EuiText>
         <EuiSpacer />
         {(!this.state.error && (
           <EuiBasicTable
@@ -227,7 +227,7 @@ hosts:
 
     const steps = [
       {
-        title: 'Check the Wazuh API service status',
+        title: 'Check the tbSIEM API service status',
         children: (
           <div>
             <EuiText>For Systemd</EuiText>
@@ -268,7 +268,7 @@ hosts:
         <EuiFlexItem className="min-guide-width">
           <EuiPanel>
             <EuiText>
-              <h2>Wazuh API seems to be down</h2>
+              <h2>tbSIEM API seems to be down</h2>
             </EuiText>
             <EuiSpacer />
             <EuiSteps firstStepNumber={1} steps={steps} />

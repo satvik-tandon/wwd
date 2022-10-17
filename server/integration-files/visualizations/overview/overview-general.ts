@@ -13,7 +13,7 @@ import { UI_COLOR_AGENT_STATUS } from "../../../../common/constants";
 
 export default [
   {
-    _id: 'Wazuh-App-Overview-General-Agents-status',
+    _id: 'tbSIEM-App-Overview-General-Agents-status',
     _source: {
       title: 'Agents status',
       visState: JSON.stringify({
@@ -104,7 +104,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-monitoring',
+          index: 'tbSIEM-monitoring',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -113,7 +113,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Metric-alerts',
+    _id: 'tbSIEM-App-Overview-General-Metric-alerts',
     _source: {
       title: 'Metric alerts',
       visState: JSON.stringify({
@@ -157,13 +157,13 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON:
-          '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+          '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       },
     },
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Level-12-alerts',
+    _id: 'tbSIEM-App-Overview-General-Level-12-alerts',
     _source: {
       title: 'Level 12 alerts',
       visState: JSON.stringify({
@@ -207,7 +207,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               $state: {
@@ -216,7 +216,7 @@ export default [
               meta: {
                 alias: null,
                 disabled: false,
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 key: 'rule.level',
                 negate: false,
                 params: {
@@ -241,7 +241,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Authentication-failure',
+    _id: 'tbSIEM-App-Overview-General-Authentication-failure',
     _source: {
       title: 'Authentication failure',
       visState: JSON.stringify({
@@ -285,11 +285,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 type: 'phrases',
                 key: 'rule.groups',
                 value: 'win_authentication_failed, authentication_failed, authentication_failures',
@@ -336,7 +336,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Authentication-success',
+    _id: 'tbSIEM-App-Overview-General-Authentication-success',
     _source: {
       title: 'Authentication success',
       visState: JSON.stringify({
@@ -380,11 +380,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -416,7 +416,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alert-level-evolution',
+    _id: 'tbSIEM-App-Overview-General-Alert-level-evolution',
     _source: {
       title: 'Alert level evolution',
       visState: JSON.stringify({
@@ -510,7 +510,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -519,7 +519,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-Top-Mitre',
+    _id: 'tbSIEM-App-Overview-General-Alerts-Top-Mitre',
     _source: {
       title: 'Alerts',
       visState: JSON.stringify({
@@ -558,7 +558,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -567,7 +567,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Top-5-agents',
+    _id: 'tbSIEM-App-Overview-General-Top-5-agents',
     _source: {
       title: 'Top 5 agents',
       visState: JSON.stringify({
@@ -606,7 +606,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -615,7 +615,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Top-5-agents-Evolution',
+    _id: 'tbSIEM-App-Overview-General-Top-5-agents-Evolution',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -711,7 +711,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -720,7 +720,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-General-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -798,7 +798,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -806,7 +806,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-General-Alerts-evolution-Top-5-agents',
+    _id: 'tbSIEM-App-Overview-General-Alerts-evolution-Top-5-agents',
     _type: 'visualization',
     _source: {
       title: 'Alerts evolution Top 5 agents',
@@ -887,7 +887,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

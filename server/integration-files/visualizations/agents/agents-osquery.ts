@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-Osquery-monst-common-rules-being-fired',
+    _id: 'tbSIEM-App-Agents-Osquery-monst-common-rules-being-fired',
     _type: 'visualization',
     _source: {
       title: 'Most common rules being fired',
@@ -72,7 +72,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -80,7 +80,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-added',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-added',
     _type: 'visualization',
     _source: {
       title: 'Top 5 added',
@@ -120,12 +120,12 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -143,7 +143,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Top-5-removed',
+    _id: 'tbSIEM-App-Overview-Osquery-Top-5-removed',
     _type: 'visualization',
     _source: {
       title: 'Top 5 removed',
@@ -183,12 +183,12 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -206,7 +206,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-Evolution',
+    _id: 'tbSIEM-App-Agents-Osquery-Evolution',
     _type: 'visualization',
     _source: {
       title: 'Evolution over time',
@@ -300,7 +300,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -308,7 +308,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-top-5-packs-being-used',
+    _id: 'tbSIEM-App-Agents-Osquery-top-5-packs-being-used',
     _type: 'visualization',
     _source: {
       title: 'Top 5 packs being used',
@@ -348,7 +348,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -356,7 +356,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-most-common-osquery-actions',
+    _id: 'tbSIEM-App-Agents-Osquery-most-common-osquery-actions',
     _type: 'visualization',
     _source: {
       title: 'Most common Osquery actions',
@@ -396,7 +396,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -404,7 +404,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-events-per-pack-over-time',
+    _id: 'tbSIEM-App-Agents-Osquery-events-per-pack-over-time',
     _type: 'visualization',
     _source: {
       title: 'Events per pack over time',
@@ -494,7 +494,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -502,7 +502,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Osquery-events-over-time',
+    _id: 'tbSIEM-App-Agents-Osquery-events-over-time',
     _type: 'visualization',
     _source: {
       title: 'Osquery events over time',
@@ -577,7 +577,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),
@@ -585,7 +585,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Overview-Osquery-Alerts-summary',
+    _id: 'tbSIEM-App-Overview-Osquery-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -697,7 +697,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           query: { query: '', language: 'lucene' },
           filter: [],
         }),

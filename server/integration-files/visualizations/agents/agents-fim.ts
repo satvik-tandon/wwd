@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-FIM-Users',
+    _id: 'tbSIEM-App-Agents-FIM-Users',
     _source: {
       title: 'Most active users',
       visState: JSON.stringify({
@@ -50,7 +50,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -59,7 +59,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Actions',
+    _id: 'tbSIEM-App-Agents-FIM-Actions',
     _source: {
       title: 'Actions',
       visState: JSON.stringify({
@@ -98,7 +98,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -107,7 +107,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Events',
+    _id: 'tbSIEM-App-Agents-FIM-Events',
     _source: {
       title: 'Events',
       visState: JSON.stringify({
@@ -224,7 +224,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -233,7 +233,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Files-added',
+    _id: 'tbSIEM-App-Agents-FIM-Files-added',
     _source: {
       title: 'Files added',
       visState: JSON.stringify({
@@ -262,11 +262,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 type: 'phrases',
                 key: 'syscheck.event',
                 value: 'added, readded',
@@ -304,7 +304,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Files-modified',
+    _id: 'tbSIEM-App-Agents-FIM-Files-modified',
     _source: {
       title: 'Files modified',
       visState: JSON.stringify({
@@ -333,11 +333,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -369,7 +369,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Files-deleted',
+    _id: 'tbSIEM-App-Agents-FIM-Files-deleted',
     _source: {
       title: 'Files deleted',
       visState: JSON.stringify({
@@ -398,11 +398,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -434,7 +434,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-FIM-Alerts-summary',
+    _id: 'tbSIEM-App-Agents-FIM-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -495,7 +495,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

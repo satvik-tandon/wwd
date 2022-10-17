@@ -21,7 +21,7 @@ function mockContextCreator(loggerLevel: string) {
   };
 
   const ctx = {
-    wazuh: {
+    tbSIEM: {
       logger: {
         info: createLogger('info'),
         warn: createLogger('warn'),
@@ -60,7 +60,7 @@ jest.mock('../../lib/logger', () => ({
 }));
 
 jest.mock('../../lib/get-configuration', () => ({
-    getConfiguration: () => ({pattern: 'wazuh-alerts-*'})
+    getConfiguration: () => ({pattern: 'tbSIEM-alerts-*'})
 }));
 
 beforeAll(() => {
@@ -87,7 +87,7 @@ describe("[initialize] `wazuh-registry.json` not created", () => {
     await jobInitializeRun(mockContext);
     const contentRegistry = JSON.parse(fs.readFileSync(WAZUH_DATA_CONFIG_REGISTRY_PATH, 'utf8'));
     
-    expect(contentRegistry.name).toMatch('Wazuh App');
+    expect(contentRegistry.name).toMatch('tbSIEM App');
     expect(contentRegistry['app-version']).toMatch(packageInfo.version);
     expect(contentRegistry['revision']).toMatch(packageInfo.revision);
     expect(typeof contentRegistry.installationDate).toBe('string');
@@ -101,7 +101,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
     const contentRegistryFile = [
         {
           before: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -109,7 +109,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
               hosts: {}
           },
           after: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -119,7 +119,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
         },
         {
           before: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': '0.0.0',
               revision: '0',
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -127,7 +127,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
               hosts: {}
           },
           after: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -137,7 +137,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
         },
         {
           before: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': '0.0.0',
               revision: '0',
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -165,7 +165,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
               }
           },
           after: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -195,7 +195,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
         },
         {
           before: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': '0.0.0',
               revision: '0',
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -222,7 +222,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
               }
           },
           after: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -252,7 +252,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
         },
         {
           before: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': '0.0.0',
               revision: '0',
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -277,7 +277,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
               }
           },
           after: {
-              name: 'Wazuh App',
+              name: 'tbSIEM App',
               'app-version': packageInfo.version,
               revision: packageInfo.revision,
               installationDate: '2022-07-25T13:55:04.363Z',
@@ -330,7 +330,7 @@ describe("[initialize] `wazuh-registry.json` created", () => {
       await jobInitializeRun(mockContext);
       const contentRegistryFile = JSON.parse(fs.readFileSync(WAZUH_DATA_CONFIG_REGISTRY_PATH, 'utf8'));
       
-      expect(contentRegistryFile.name).toMatch('Wazuh App');
+      expect(contentRegistryFile.name).toMatch('tbSIEM App');
       expect(contentRegistryFile['app-version']).toMatch(contentRegistryExpected['app-version']);
       expect(contentRegistryFile['revision']).toMatch(contentRegistryExpected.revision);
       expect(typeof contentRegistryFile.installationDate).toBe('string');

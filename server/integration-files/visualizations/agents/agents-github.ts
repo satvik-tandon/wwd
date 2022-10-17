@@ -12,7 +12,7 @@
 
 export default [
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alerts-Evolution-By-Organization',
+    _id: 'tbSIEM-App-Overview-GitHub-Alerts-Evolution-By-Organization',
     _source: {
       title: 'Alerts evolution by organization',
       visState: JSON.stringify({
@@ -146,13 +146,13 @@ export default [
       description: '',
       version: 1,
       kibanaSavedObjectMeta: {
-        searchSourceJSON: '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+        searchSourceJSON: '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       }
     },
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
+    _id: 'tbSIEM-App-Overview-GitHub-Top-5-Organizations-By-Alerts',
     _source: {
       title: 'Top 5 organizations by alerts',
       visState: JSON.stringify({
@@ -201,13 +201,13 @@ export default [
       description: '',
       version: 1,
       kibanaSavedObjectMeta: {
-        searchSourceJSON: '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+        searchSourceJSON: '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       }
     },
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Users-With-More-Alerts',
+    _id: 'tbSIEM-App-Overview-GitHub-Users-With-More-Alerts',
     _source: {
       title: 'Users with more alerts',
       visState: JSON.stringify({
@@ -335,13 +335,13 @@ export default [
       description: '',
       version: 1,
       kibanaSavedObjectMeta: {
-        searchSourceJSON: '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+        searchSourceJSON: '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       }
     },
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alert-Action-Type-By-Organization',
+    _id: 'tbSIEM-App-Overview-GitHub-Alert-Action-Type-By-Organization',
     _source: {
       title: 'Top alerts by alert action type and organization',
       visState: JSON.stringify({
@@ -406,13 +406,13 @@ export default [
       description: '',
       version: 1,
       kibanaSavedObjectMeta: {
-        searchSourceJSON: '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+        searchSourceJSON: '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       }
     },
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Overview-GitHub-Alert-Summary',
+    _id: 'tbSIEM-App-Overview-GitHub-Alert-Summary',
     _source: {
       title: 'Alert summary',
       visState: JSON.stringify({
@@ -494,7 +494,7 @@ export default [
       description: '',
       version: 1,
       kibanaSavedObjectMeta: {
-        searchSourceJSON: '{"index":"wazuh-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
+        searchSourceJSON: '{"index":"tbSIEM-alerts","filter":[],"query":{"query":"","language":"lucene"}}',
       }
     },
     _type: 'visualization',

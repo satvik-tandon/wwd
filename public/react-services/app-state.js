@@ -458,7 +458,7 @@ export class AppState {
   }
 
   static checkCookies() {
-    getCookies().set('appName', 'wazuh', { path: window.location.pathname });
+    getCookies().set('appName', 'tbSIEM', { path: window.location.pathname });
     return !!getCookies().get('appName')
   }
 }

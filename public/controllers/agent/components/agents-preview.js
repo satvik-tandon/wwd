@@ -279,7 +279,7 @@ export const AgentsPreview = compose(
                         <div style={{ height: this.props.resultState !== 'loading' ? '180px' : 0 }}>
                           <WzReduxProvider>
                             <KibanaVis
-                              visID={'Wazuh-App-Overview-General-Agents-status'}
+                              visID={'tbSIEM-App-Overview-General-Agents-status'}
                               tab={'general'}
                             />
                           </WzReduxProvider>

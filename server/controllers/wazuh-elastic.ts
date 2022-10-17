@@ -1,5 +1,5 @@
 /*
- * Wazuh app - Class for Wazuh-Elastic functions
+ * Wazuh app - Class for Wazuh functions
  * Copyright (C) 2015-2022 Wazuh, Inc.
  *
  * This program is free software; you can redistribute it and/or modify

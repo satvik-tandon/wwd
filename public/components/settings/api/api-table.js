@@ -85,7 +85,7 @@ export const ApiTable = compose(withErrorBoundary, withReduxProvider)(class ApiT
           numErr = numErr + 1;
           const code = ((error || {}).data || {}).code;
           const downReason = typeof error === 'string' ? error :
-            (error || {}).message || ((error || {}).data || {}).message || 'Wazuh is not reachable';
+            (error || {}).message || ((error || {}).data || {}).message || 'tbSIEM is not reachable';
           const status = code === 3099 ? 'down' : 'unknown';
           entries[idx].status = { status, downReason };
           if(entries[idx].id === this.props.currentDefault){ // if the selected API is down, we remove it so a new one will selected
@@ -131,7 +131,7 @@ export const ApiTable = compose(withErrorBoundary, withReduxProvider)(class ApiT
             ? error
             : (error || {}).message ||
               ((error || {}).data || {}).message ||
-              'Wazuh is not reachable';
+              'tbSIEM is not reachable';
         const status = code === 3099 ? 'down' : 'unknown';
         entries[idx].status = { status, downReason };
         throw error;
@@ -325,7 +325,7 @@ export const ApiTable = compose(withErrorBoundary, withReduxProvider)(class ApiT
                 <EuiFlexGroup>
                   <EuiFlexItem>
                     <EuiTitle>
-                      <h2>Wazuh API configuration</h2>
+                      <h2>tbSIEM API configuration</h2>
                     </EuiTitle>
                   </EuiFlexItem>
                 </EuiFlexGroup>

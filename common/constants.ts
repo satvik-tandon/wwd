@@ -18,13 +18,13 @@ export const PLUGIN_VERSION_SHORT = version.split('.').splice(0,2).join('.');
 
 // Index patterns - Wazuh alerts
 export const WAZUH_INDEX_TYPE_ALERTS = 'alerts';
-export const WAZUH_ALERTS_PREFIX = 'wazuh-alerts-';
-export const WAZUH_ALERTS_PATTERN = 'wazuh-alerts-*';
+export const WAZUH_ALERTS_PREFIX = 'tbSIEM-alerts-';
+export const WAZUH_ALERTS_PATTERN = 'tbSIEM-alerts-*';
 
 // Job - Wazuh monitoring
 export const WAZUH_INDEX_TYPE_MONITORING = "monitoring";
-export const WAZUH_MONITORING_PREFIX = "wazuh-monitoring-";
-export const WAZUH_MONITORING_PATTERN = "wazuh-monitoring-*";
+export const WAZUH_MONITORING_PREFIX = "tbSIEM-monitoring-";
+export const WAZUH_MONITORING_PATTERN = "tbSIEM-monitoring-*";
 export const WAZUH_MONITORING_TEMPLATE_NAME = "wazuh-agent";
 export const WAZUH_MONITORING_DEFAULT_INDICES_SHARDS = 1;
 export const WAZUH_MONITORING_DEFAULT_INDICES_REPLICAS = 0;
@@ -35,7 +35,7 @@ export const WAZUH_MONITORING_DEFAULT_CRON_FREQ = '0 * * * * *';
 
 // Job - Wazuh statistics
 export const WAZUH_INDEX_TYPE_STATISTICS = "statistics";
-export const WAZUH_STATISTICS_DEFAULT_PREFIX = "hello";
+export const WAZUH_STATISTICS_DEFAULT_PREFIX = "tbSIEM";
 export const WAZUH_STATISTICS_DEFAULT_NAME = "statistics";
 export const WAZUH_STATISTICS_PATTERN = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}-*`;
 export const WAZUH_STATISTICS_TEMPLATE_NAME = `${WAZUH_STATISTICS_DEFAULT_PREFIX}-${WAZUH_STATISTICS_DEFAULT_NAME}`;
@@ -54,7 +54,7 @@ export const WAZUH_ROLE_ADMINISTRATOR_ID = 1;
 export const WAZUH_ROLE_ADMINISTRATOR_NAME = 'administrator';
 
 // Sample data
-export const WAZUH_SAMPLE_ALERT_PREFIX = 'wazuh-alerts-4.x-';
+export const WAZUH_SAMPLE_ALERT_PREFIX = 'tbSIEM-alerts-4.x-';
 export const WAZUH_SAMPLE_ALERTS_INDEX_SHARDS = 1;
 export const WAZUH_SAMPLE_ALERTS_INDEX_REPLICAS = 0;
 export const WAZUH_SAMPLE_ALERTS_CATEGORY_SECURITY = 'security';
@@ -90,7 +90,7 @@ export const WAZUH_SAMPLE_ALERTS_CATEGORIES_TYPE_ALERTS = {
 };
 
 // Security
-export const WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY = 'OpenSearch Dashboards Security';
+export const WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY = 'tbSIEM Dashboards Security';
 
 export const WAZUH_SECURITY_PLUGINS = [
   WAZUH_SECURITY_PLUGIN_OPENSEARCH_DASHBOARDS_SECURITY,
@@ -346,25 +346,25 @@ export const UI_TOAST_COLOR = {
 };
 
 // Assets
-export const ASSETS_BASE_URL_PREFIX = '/plugins/wazuh/assets/';
-export const ASSETS_PUBLIC_URL = '/plugins/wazuh/public/assets/';
+export const ASSETS_BASE_URL_PREFIX = '/plugins/tbSIEM/assets/';
+export const ASSETS_PUBLIC_URL = '/plugins/tbSIEM/public/assets/';
 
 // Reports
-export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH = 'images/logo_reports.png';
-export const REPORTS_PRIMARY_COLOR = '#256BD1';
-export const REPORTS_PAGE_FOOTER_TEXT = 'Copyright © 2022 Wazuh, Inc.';
-export const REPORTS_PAGE_HEADER_TEXT = 'info@wazuh.com\nhttps://wazuh.com';
+export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH = 'images/logo_reports.JPG';
+export const REPORTS_PRIMARY_COLOR = '#d15925';
+export const REPORTS_PAGE_FOOTER_TEXT = 'TechBridge Consultancy Services LLP';
+export const REPORTS_PAGE_HEADER_TEXT = ' support@tech-bridge.biz\nhttps://tech-bridge.biz/';
 
 // Plugin platform
-export const PLUGIN_PLATFORM_NAME = 'Wazuh dashboard';
-export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/wazuh-dashboard/data/wazuh/';
+export const PLUGIN_PLATFORM_NAME = 'tbSIEM dashboard';
+export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/wazuh-dashboard/data/tbSIEM/';
 export const PLUGIN_PLATFORM_INSTALLATION_USER = 'wazuh-dashboard';
 export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'wazuh-dashboard';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_UPGRADE_PLATFORM = 'upgrade-guide';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_TROUBLESHOOTING = 'user-manual/elasticsearch/troubleshooting.html';
 export const PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_APP_CONFIGURATION = 'user-manual/wazuh-dashboard/config-file.html';
-export const PLUGIN_PLATFORM_URL_GUIDE = 'https://opensearch.org/docs/1.2/opensearch/index/';
-export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'OpenSearch guide';
+export const PLUGIN_PLATFORM_URL_GUIDE = 'https://tech-bridge.biz/';
+export const PLUGIN_PLATFORM_URL_GUIDE_TITLE = 'tbSIEM guide';
 
 export const PLUGIN_PLATFORM_REQUEST_HEADERS = {
   'osd-xsrf': 'kibana'
@@ -405,4 +405,4 @@ export const UI_ORDER_AGENT_STATUS = [
 ];
 
 // Documentation
-export const DOCUMENTATION_WEB_BASE_URL = "https://documentation.wazuh.com";
+export const DOCUMENTATION_WEB_BASE_URL = "https://tech-bridge.biz/contact-us/";

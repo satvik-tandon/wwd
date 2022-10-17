@@ -24,19 +24,19 @@ export const drilldownRulesConfig = {
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-Office-Top-Operations" tab="office" {...props} />
+            <VisCard id="tbSIEM-App-Overview-Office-Top-Operations" tab="office" {...props} />
           ),
         },
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-Office-Top-Users" tab="office" {...props} />
+            <VisCard id="tbSIEM-App-Overview-Office-Top-Users" tab="office" {...props} />
           ),
         },
         {
           width: 40,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-Office-Country-Tag-Cloud" tab="office" {...props} />
+            <VisCard id="tbSIEM-App-Overview-Office-Country-Tag-Cloud" tab="office" {...props} />
           ),
         },
       ],
@@ -48,7 +48,7 @@ export const drilldownRulesConfig = {
           width: 100,
           component: (props) => (
             <VisCard
-              id="Wazuh-App-Overview-Office-Alerts-Evolution-By-UserID"
+              id="tbSIEM-App-Overview-Office-Alerts-Evolution-By-UserID"
               tab="office"
               {...props}
             />

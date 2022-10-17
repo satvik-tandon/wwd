@@ -25,20 +25,20 @@ export const drilldownUserConfig = {
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-Office-Metric-Stats" tab="office" {...props} />
+            <VisCard id="tbSIEM-App-Overview-Office-Metric-Stats" tab="office" {...props} />
           ),
         },
         {
           width: 30,
           component: (props) => (
-            <VisCard id="Wazuh-App-Overview-Office-Top-Events-Pie" tab="office" {...props} />
+            <VisCard id="tbSIEM-App-Overview-Office-Top-Events-Pie" tab="office" {...props} />
           ),
         },
         {
           width: 40,
           component: (props) => (
             <VisCard
-              id={'Wazuh-App-Overview-Office-Client-IP-Operation-Level-Table'}
+              id={'tbSIEM-App-Overview-Office-Client-IP-Operation-Level-Table'}
               tab="office"
               {...props}
             />
@@ -53,7 +53,7 @@ export const drilldownUserConfig = {
           width: 100,
           component: (props) => (
             <VisCard
-              id="Wazuh-App-Overview-Office-Alerts-Evolution-By-User"
+              id="tbSIEM-App-Overview-Office-Alerts-Evolution-By-User"
               tab="office"
               {...props}
             />

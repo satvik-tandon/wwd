@@ -402,24 +402,24 @@ class AgentsWelcome extends Component {
 
   getRequirementVis() {
     if (this.state.selectedRequirement === 'pci') {
-      return 'Wazuh-App-Agents-Welcome-Top-PCI';
+      return 'tbSIEM-App-Agents-Welcome-Top-PCI';
     }
     if (this.state.selectedRequirement === 'gdpr') {
-      return 'Wazuh-App-Agents-Welcome-Top-GDPR';
+      return 'tbSIEM-App-Agents-Welcome-Top-GDPR';
     }
     if (this.state.selectedRequirement === 'hipaa') {
-      return 'Wazuh-App-Agents-Welcome-Top-HIPAA';
+      return 'tbSIEM-App-Agents-Welcome-Top-HIPAA';
     }
     if (this.state.selectedRequirement === 'nist') {
-      return 'Wazuh-App-Agents-Welcome-Top-NIST-800-53';
+      return 'tbSIEM-App-Agents-Welcome-Top-NIST-800-53';
     }
     if (this.state.selectedRequirement === 'gpg13') {
-      return 'Wazuh-App-Agents-Welcome-Top-GPG-13';
+      return 'tbSIEM-App-Agents-Welcome-Top-GPG-13';
     }
     if (this.state.selectedRequirement === 'tsc') {
-      return 'Wazuh-App-Agents-Welcome-Top-TSC';
+      return 'tbSIEM-App-Agents-Welcome-Top-TSC';
     }
-    return 'Wazuh-App-Agents-Welcome-Top-PCI'
+    return 'tbSIEM-App-Agents-Welcome-Top-PCI'
   }
 
   renderMitrePanel() {
@@ -486,7 +486,7 @@ class AgentsWelcome extends Component {
           <div style={{ height: this.props.resultState !== 'loading' ? '225px' : 0 }}>
             <WzReduxProvider>
               <KibanaVis
-                visID={'Wazuh-App-Agents-Welcome-Events-Evolution'}
+                visID={'tbSIEM-App-Agents-Welcome-Events-Evolution'}
                 tab={'welcome'}
               ></KibanaVis>
             </WzReduxProvider>
@@ -564,7 +564,7 @@ class AgentsWelcome extends Component {
               {this.state.widthWindow < 1150 && (
                 <Fragment>
                   <EuiFlexGrid columns={2}>
-                    <EuiFlexItem key={'Wazuh-App-Agents-Welcome-MITRE-Top-Tactics'} >
+                    <EuiFlexItem key={'tbSIEM-App-Agents-Welcome-MITRE-Top-Tactics'} >
                       {this.renderMitrePanel()}
                     </EuiFlexItem>
                     {this.renderCompliancePanel()}
@@ -575,7 +575,7 @@ class AgentsWelcome extends Component {
                   </EuiFlexGroup>
                   <EuiSpacer size='m' />
                   <EuiFlexGroup>
-                    <EuiFlexItem key={'Wazuh-App-Agents-Welcome-Events-Evolution'} > {/* Events count evolution */}
+                    <EuiFlexItem key={'tbSIEM-App-Agents-Welcome-Events-Evolution'} > {/* Events count evolution */}
                       {this.renderEventCountVisualization()}
                     </EuiFlexItem>
                   </EuiFlexGroup>
@@ -591,7 +591,7 @@ class AgentsWelcome extends Component {
                     <EuiFlexGrid columns={2}>
                       <EuiFlexItem>
                         <EuiFlexGroup>
-                          <EuiFlexItem key={'Wazuh-App-Agents-Welcome-MITRE-Top-Tactics'} >
+                          <EuiFlexItem key={'tbSIEM-App-Agents-Welcome-MITRE-Top-Tactics'} >
                             {this.renderMitrePanel()}
                           </EuiFlexItem>
                           {this.renderCompliancePanel()}
@@ -601,7 +601,7 @@ class AgentsWelcome extends Component {
                     </EuiFlexGrid>
                     <EuiSpacer size="l" />
                     <EuiFlexGroup>
-                      <EuiFlexItem key={'Wazuh-App-Agents-Welcome-Events-Evolution'} > {/* Events count evolution */}
+                      <EuiFlexItem key={'tbSIEM-App-Agents-Welcome-Events-Evolution'} > {/* Events count evolution */}
                         {this.renderEventCountVisualization()}
                       </EuiFlexItem>
                       <EuiFlexItem>

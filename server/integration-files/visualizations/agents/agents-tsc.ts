@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-TSC-Groups',
+    _id: 'tbSIEM-App-Agents-TSC-Groups',
     _source: {
       title: 'Top 5 rule groups',
       visState: JSON.stringify({
@@ -40,7 +40,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -49,7 +49,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-TSC-Rule',
+    _id: 'tbSIEM-App-Agents-TSC-Rule',
     _source: {
       title: 'Top 5 rules',
       visState: JSON.stringify({
@@ -78,7 +78,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -87,7 +87,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-TSC-Requirement',
+    _id: 'tbSIEM-App-Agents-TSC-Requirement',
     _source: {
       title: 'Top 5 requirements',
       visState: JSON.stringify({
@@ -116,7 +116,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -125,7 +125,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-TSC-Rule-level-distribution',
+    _id: 'tbSIEM-App-Agents-TSC-Rule-level-distribution',
     _source: {
       title: 'Rule level distribution',
       visState: JSON.stringify({
@@ -164,7 +164,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -173,7 +173,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-TSC-Requirements',
+    _id: 'tbSIEM-App-Agents-TSC-Requirements',
     _source: {
       title: 'Requirements',
       visState: JSON.stringify({
@@ -253,7 +253,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -262,7 +262,7 @@ export default [
     _type: 'visualization',
   },
   {
-    _id: 'Wazuh-App-Agents-TSC-Last-alerts',
+    _id: 'tbSIEM-App-Agents-TSC-Last-alerts',
     _type: 'visualization',
     _source: {
       title: 'Last alerts',
@@ -323,7 +323,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),

@@ -11,7 +11,7 @@
  */
 export default [
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Last-Files-Pie',
+    _id: 'tbSIEM-App-Agents-Virustotal-Last-Files-Pie',
     _type: 'visualization',
     _source: {
       title: 'Last files',
@@ -48,7 +48,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -56,7 +56,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Files-Table',
+    _id: 'tbSIEM-App-Agents-Virustotal-Files-Table',
     _type: 'visualization',
     _source: {
       title: 'Files',
@@ -117,7 +117,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
@@ -125,7 +125,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Total-Malicious',
+    _id: 'tbSIEM-App-Agents-Virustotal-Total-Malicious',
     _type: 'visualization',
     _source: {
       title: 'Total Malicious',
@@ -162,11 +162,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -197,7 +197,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Total-Positives',
+    _id: 'tbSIEM-App-Agents-Virustotal-Total-Positives',
     _type: 'visualization',
     _source: {
       title: 'Total Positives',
@@ -234,11 +234,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -255,7 +255,7 @@ export default [
             },
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: true,
                 disabled: false,
                 alias: null,
@@ -286,7 +286,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Malicious-Evolution',
+    _id: 'tbSIEM-App-Agents-Virustotal-Malicious-Evolution',
     _type: 'visualization',
     _source: {
       title: 'Malicious Evolution',
@@ -366,11 +366,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -387,7 +387,7 @@ export default [
             },
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: true,
                 disabled: false,
                 alias: null,
@@ -418,7 +418,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Total',
+    _id: 'tbSIEM-App-Agents-Virustotal-Total',
     _type: 'visualization',
     _source: {
       title: 'Total',
@@ -455,11 +455,11 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [
             {
               meta: {
-                index: 'wazuh-alerts',
+                index: 'tbSIEM-alerts',
                 negate: false,
                 disabled: false,
                 alias: null,
@@ -481,7 +481,7 @@ export default [
     },
   },
   {
-    _id: 'Wazuh-App-Agents-Virustotal-Alerts-summary',
+    _id: 'tbSIEM-App-Agents-Virustotal-Alerts-summary',
     _type: 'visualization',
     _source: {
       title: 'Alerts summary',
@@ -559,7 +559,7 @@ export default [
       version: 1,
       kibanaSavedObjectMeta: {
         searchSourceJSON: JSON.stringify({
-          index: 'wazuh-alerts',
+          index: 'tbSIEM-alerts',
           filter: [],
           query: { query: '', language: 'lucene' },
         }),
