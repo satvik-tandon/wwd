@@ -124,7 +124,7 @@ export function createTableRowDirective($compile: ng.ICompileService) {
 
       function getDiscoverPath(){
         const pathName = `${location.pathname}#`;
-        return `${location.origin}${pathName.replace('tbSIEM#', 'discover')}`;
+        return `${location.origin}${pathName.replace('wazuh#', 'discover')}`;
       }
 
       // create a tr element that lists the value for each *column*
