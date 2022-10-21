@@ -39,7 +39,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
   public setup(core: CoreSetup, plugins: WazuhSetupPlugins): WazuhSetup {
     const UI_THEME = core.uiSettings.get('theme:darkMode') ? 'dark' : 'light';
     core.application.register({
-      id: `wazuh`,
+      id: `tbSIEM`,
       title: 'tbSIEM',
       icon: core.http.basePath.prepend(getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
       mount: async (params: AppMountParameters) => {
@@ -78,7 +78,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
             return {
               status: response.data.isWazuhDisabled,
               category: {
-                id: 'wazuh',
+                id: 'tbSIEM',
                 label: 'tbSIEM',
                 order: 0,
                 euiIconType: core.http.basePath.prepend(response.data.logoSidebar ? getAssetURL(response.data.logoSidebar) : getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
@@ -92,7 +92,7 @@ export class WazuhPlugin implements Plugin<WazuhSetup, WazuhStart, WazuhSetupPlu
         }
       },
       category: {
-        id: 'wazuh',
+        id: 'tbSIEM',
         label: 'tbSIEM',
         order: 0,
         euiIconType: core.http.basePath.prepend(getThemeAssetURL('tbSIEM_mini.JPG', UI_THEME)),
