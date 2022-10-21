@@ -12,8 +12,8 @@ function buildAxiosOptions(method: string, path: string, data: any = {}, headers
   };
 }
 
-describe.skip('tbSIEM', () => {
-  describe('tbSIEM API - /elastic/security/current-platform', () => {
+describe.skip('wazuh', () => {
+  describe('Wazuh API - /elastic/security/current-platform', () => {
     test('[200] Returns the current security platform as string or boolean', () => {
       const options = buildAxiosOptions('get', '/elastic/security/current-platform');
       return axios(options).then((response) => {
@@ -56,9 +56,9 @@ describe.skip('tbSIEM', () => {
   //   });
   // });
 
-  describe('tbSIEM API - /elastic/template/{pattern}', () => {
+  describe('Wazuh API - /elastic/template/{pattern}', () => {
     test('[200] Check if there is some template with the pattern', () => {
-      const options = buildAxiosOptions('get', '/elastic/template/tbSIEM-alerts-*');
+      const options = buildAxiosOptions('get', '/elastic/template/wazuh-alerts-*');
       return axios(options).then((response) => {
         expect(response.status).toBe(200);
         expect(typeof response.data.status).toBe('boolean');
@@ -67,9 +67,9 @@ describe.skip('tbSIEM', () => {
     });
   });
 
-  describe('tbSIEM API - /elastic/index-patterns/{pattern}', () => {
+  describe('Wazuh API - /elastic/index-patterns/{pattern}', () => {
     test('[200] Check if there an index pattern with the pattern', () => {
-      const options = buildAxiosOptions('get', '/elastic/index-patterns/tbSIEM-alerts-*');
+      const options = buildAxiosOptions('get', '/elastic/index-patterns/wazuh-alerts-*');
       return axios(options).then((response) => {
         expect(response.status).toBe(200);
         expect(typeof response.data.status).toBe('boolean');
@@ -88,7 +88,7 @@ describe.skip('tbSIEM', () => {
   //   });
   // });
 
-  describe('tbSIEM API - /elastic/samplealerts', () => {
+  describe('Wazuh API - /elastic/samplealerts', () => {
     test('[200] Check if there an sample data indices', () => {
       const options = buildAxiosOptions('get', '/elastic/samplealerts');
       return axios(options).then((response) => {
@@ -98,7 +98,7 @@ describe.skip('tbSIEM', () => {
     });
   });
 
-  describe('tbSIEM API - /elastic/samplealerts/{category}', () => {
+  describe('Wazuh API - /elastic/samplealerts/{category}', () => {
     test('[200] Check if there an sample data index of Security category', () => {
       const options = buildAxiosOptions('get', '/elastic/samplealerts/security');
       return axios(options).then((response) => {
@@ -127,7 +127,7 @@ describe.skip('tbSIEM', () => {
     });
   });
 
-  describe('tbSIEM API - /elastic/samplealerts/{category}', () => {
+  describe('Wazuh API - /elastic/samplealerts/{category}', () => {
     let userToken = null;
     beforeAll(() => {
       const optionsAuthenticate = buildAxiosOptions('post', '/api/login', {
@@ -306,7 +306,7 @@ describe.skip('tbSIEM', () => {
   //   });
   // });
 
-  describe('tbSIEM API - /elastic/statistics', () => {
+  describe('Wazuh API - /elastic/statistics', () => {
     test('[200] Check if there an sample data index of Security category', () => {
       const options = buildAxiosOptions('get', '/elastic/statistics');
       return axios(options).then((response) => {
