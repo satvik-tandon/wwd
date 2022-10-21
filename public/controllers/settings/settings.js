@@ -72,10 +72,10 @@ export class SettingsController {
       store.dispatch(updateGlobalBreadcrumb(breadcrumb));
 
       const location = this.$location.search();
-      if (location && location.tab) {
-        this.tab = location.tab;
-        if(this.tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
-      }
+      // if (location && location.tab) {
+      //   this.tab = location.tab;
+      //   if(this.tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
+      // }
       // Set component props
       this.setComponentProps();
       // Loading data
@@ -145,8 +145,8 @@ export class SettingsController {
       { id: 'sample_data', name: 'Sample data' },
       { id: 'configuration', name: 'Configuration' },
       { id: 'logs', name: 'Logs' },
-      { id: 'miscellaneous', name: 'Miscellaneous'},
-      { id: 'about', name: 'About' }
+      { id: 'miscellaneous', name: 'Miscellaneous'}
+      // { id: 'about', name: 'About' }
     ];
     this.settingsTabsProps = {
       clickAction: tab => {
@@ -171,11 +171,11 @@ export class SettingsController {
    * This switch to a selected tab
    * @param {Object} tab
    */
-  switchTab(tab) {
-    if(tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
-    this.tab = tab;
-    this.$location.search('tab', this.tab);
-  }
+  // switchTab(tab) {
+  //   if(tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
+  //   this.tab = tab;
+  //   this.$location.search('tab', this.tab);
+  // }
 
   // Get current API index
   getCurrentAPIIndex() {
