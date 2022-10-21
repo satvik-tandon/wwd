@@ -49,16 +49,16 @@ const CONSOLE_COLORS_CODES = {
 const main = () => {
   // Check Wazuh API url argument is defined
   if(!WAZUH_API_URL){
-    exitWithMessage('Wazuh API url is not defined.');
+    exitWithMessage('tbSIEM API url is not defined.');
   };
   // Check Wazuh API url argument is valid
   if(!WAZUH_API_URL.startsWith('http') ){
-    exitWithMessage(`Wazuh API url is not valid. It should start with "http". Example: https://172.16.1.2:55000`);
+    exitWithMessage(`tbSIEM API url is not valid. It should start with "http". Example: https://172.16.1.2:55000`);
   };
   
   // Log the configuration:
   console.log('--------------- Configuration ---------------');
-  console.log(`Wazuh API url: ${WAZUH_API_URL}`);
+  console.log(`tbSIEM API url: ${WAZUH_API_URL}`);
   console.log(`Output directory: ${OUTPUT_DIRECTORY}`);
   console.log(`Output endpoints mode: ${OUTPUT_MODE_FULL ? 'Full': 'Simple'}`);
   console.log('----------------------------------------------')
@@ -103,11 +103,11 @@ const generateAPIEndpointsInformation = async () => {
 const generateAPISecurityActionsInformation = async () => {
   // Check Wazuh API url argument is defined
   if(!WAZUH_API_URL){
-    exitWithMessage('Wazuh API url is not defined.');
+    exitWithMessage('tbSIEM API url is not defined.');
   };
   // Check Wazuh API url argument is valid
   if(!WAZUH_API_URL.startsWith('http') ){
-    exitWithMessage(`Wazuh API url is not valid. It should start with "http". Example: https://172.16.1.2:55000`);
+    exitWithMessage(`tbSIEM API url is not valid. It should start with "http". Example: https://172.16.1.2:55000`);
   };
   const username = 'wazuh';
   const password = 'wazuh';

@@ -36,7 +36,7 @@ export async function getWzConfig($q, genericReq, wazuhConfig) {
     wazuhConfig.setConfig(defaultConfig);
   } catch (error) {
     wazuhConfig.setConfig(defaultConfig);
-    console.log('Error parsing wazuh.yml, using default values.'); // eslint-disable-line
+    console.log('Error parsing tbSIEM.yml, using default values.'); // eslint-disable-line
     console.log(error.message || error); // eslint-disable-line
   }
   return $q.resolve(defaultConfig);

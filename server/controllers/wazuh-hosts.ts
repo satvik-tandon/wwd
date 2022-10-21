@@ -60,7 +60,7 @@ export class WazuhHostsCtrl {
           }
         })
       }
-      log('wazuh-hosts:getHostsEntries', error.message || error);
+      log('tbSIEM-hosts:getHostsEntries', error.message || error);
       return ErrorResponse(error.message || error, 2001, 500, response);
     }
   }
@@ -106,7 +106,7 @@ export class WazuhHostsCtrl {
       const { cluster_info } = request.body;
       await this.updateRegistry.updateClusterInfo(id, cluster_info);
       log(
-        'wazuh-hosts:updateClusterInfo',
+        'tbSIEM-hosts:updateClusterInfo',
         `API entry ${id} hostname updated`,
         'debug'
       );
@@ -114,9 +114,9 @@ export class WazuhHostsCtrl {
         body: { statusCode: 200, message: 'ok' }
       });
     } catch (error) {
-      log('wazuh-hosts:updateClusterInfo', error.message || error);
+      log('tbSIEM-hosts:updateClusterInfo', error.message || error);
       return ErrorResponse(
-        `Could not update data in wazuh-registry.json due to ${error.message || error}`,
+        `Could not update data in tbSIEM-registry.json due to ${error.message || error}`,
         2012,
         500,
         response
@@ -133,15 +133,15 @@ export class WazuhHostsCtrl {
   async removeOrphanEntries(context: RequestHandlerContext, request: OpenSearchDashboardsRequest, response: OpenSearchDashboardsResponseFactory) {
     try {
       const { entries } = request.body;
-      log('wazuh-hosts:cleanRegistry', 'Cleaning registry', 'debug');
+      log('tbSIEM-hosts:cleanRegistry', 'Cleaning registry', 'debug');
       await this.updateRegistry.removeOrphanEntries(entries);
       return response.ok({
         body: { statusCode: 200, message: 'ok' }
       });
     } catch (error) {
-      log('wazuh-hosts:cleanRegistry', error.message || error);
+      log('tbSIEM-hosts:cleanRegistry', error.message || error);
       return ErrorResponse(
-        `Could not clean entries in the wazuh-registry.json due to ${error.message || error}`,
+        `Could not clean entries in the tbSIEM-registry.json due to ${error.message || error}`,
         2013,
         500,
         response

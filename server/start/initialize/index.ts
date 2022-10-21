@@ -89,13 +89,13 @@ export function jobInitializeRun(context) {
     } catch (error) {
       log('initialize:saveConfiguration', error.message || error);
       context.wazuh.logger.error(
-        'Error creating wazuh-registry.json file.'
+        'Error creating tbSIEM-registry.json file.'
       );
     }
   };
 
   /**
-   * Checks if the .wazuh-registry.json file exists:
+   * Checks if the .tbSIEM-registry.json file exists:
    * - yes: check the plugin version and revision match the values stored in the registry file.
    *  If not, then it migrates the data rebuilding the registry file.
    * - no: create the file with empty hosts
@@ -103,7 +103,7 @@ export function jobInitializeRun(context) {
   const checkWazuhRegistry = async () => {
     log(
       'initialize:checkwazuhRegistry',
-      'Checking wazuh-registry.json file.',
+      'Checking tbSIEM-registry.json file.',
       'debug'
     );
 
@@ -114,7 +114,7 @@ export function jobInitializeRun(context) {
     if (!fs.existsSync(WAZUH_DATA_CONFIG_REGISTRY_PATH)) {
       log(
         'initialize:checkwazuhRegistry',
-        'wazuh-registry.json file does not exist. Initializing configuration.',
+        'tbSIEM-registry.json file does not exist. Initializing configuration.',
         'debug'
       );
 
@@ -131,11 +131,11 @@ export function jobInitializeRun(context) {
       if (isUpgradedApp) { 
         log(
           'initialize:checkwazuhRegistry',
-          'Wazuh app revision or version changed, regenerating wazuh-registry.json.',
+          'Wazuh app revision or version changed, regenerating tbSIEM-registry.json.',
           'info'
         );
 
-        // Rebuild the registry file `wazuh-registry.json`
+        // Rebuild the registry file `tbSIEM-registry.json`
 
         // Get the supported extensions for the installed plugin
         const supportedDefaultExtensionsConfiguration = Object.entries(WAZUH_DEFAULT_APP_CONFIG)
@@ -176,7 +176,7 @@ export function jobInitializeRun(context) {
     }
   };
 
-  // Init function. Check for wazuh-registry.json file exists.
+  // Init function. Check for tbSIEM-registry.json file exists.
   const init = async () => {
     await checkWazuhRegistry();
   };

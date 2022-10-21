@@ -1,5 +1,5 @@
 /*
- * Wazuh app - Class for Wazuh-API functions
+ * Wazuh app - Class for tbSIEM-API functions
  * Copyright (C) 2015-2022 Wazuh, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -53,7 +53,7 @@ export class WazuhApiCtrl {
               });
             }
           } catch (error) {
-            log('wazuh-api:getToken', error.message || error);
+            log('tbSIEM-api:getToken', error.message || error);
           }
         }
       }
@@ -81,7 +81,7 @@ export class WazuhApiCtrl {
       });
     } catch (error) {
       const errorMessage = ((error.response || {}).data || {}).detail || error.message || error;
-      log('wazuh-api:getToken', errorMessage);
+      log('tbSIEM-api:getToken', errorMessage);
       return ErrorResponse(
         `Error getting the authorization token: ${errorMessage}`,
         3000,
@@ -92,7 +92,7 @@ export class WazuhApiCtrl {
   }
 
   /**
-   * Returns if the wazuh-api configuration is working
+   * Returns if the tbSIEM-api configuration is working
    * @param {Object} context
    * @param {Object} request
    * @param {Object} response
@@ -108,7 +108,7 @@ export class WazuhApiCtrl {
         throw new Error('Could not find Wazuh API entry on wazuh.yml');
       }
 
-      log('wazuh-api:checkStoredAPI', `${id} exists`, 'debug');
+      log('tbSIEM-api:checkStoredAPI', `${id} exists`, 'debug');
 
       // Fetch needed information about the cluster and the manager itself
       const responseManagerInfo = await context.wazuh.api.client.asInternalUser.request(
@@ -185,7 +185,7 @@ export class WazuhApiCtrl {
           }
 
           if (api.cluster_info) {
-            // Update cluster information in the wazuh-registry.json
+            // Update cluster information in the tbSIEM-registry.json
             await this.updateRegistry.updateClusterInfo(id, api.cluster_info);
 
             // Hide Wazuh API secret, username, password
@@ -251,10 +251,10 @@ export class WazuhApiCtrl {
             } catch (error) { } // eslint-disable-line
           }
         } catch (error) {
-          log('wazuh-api:checkStoredAPI', error.message || error);
+          log('tbSIEM-api:checkStoredAPI', error.message || error);
           return ErrorResponse(error.message || error, 3020, 500, response);
         }
-        log('wazuh-api:checkStoredAPI', error.message || error);
+        log('tbSIEM-api:checkStoredAPI', error.message || error);
         return ErrorResponse(error.message || error, 3002, 500, response);
       }
     }
@@ -289,7 +289,7 @@ export class WazuhApiCtrl {
   }
 
   /**
-   * This check the wazuh-api configuration received in the POST body will work
+   * This check the tbSIEM-api configuration received in the POST body will work
    * @param {Object} context
    * @param {Object} request
    * @param {Object} response
@@ -300,13 +300,13 @@ export class WazuhApiCtrl {
       let apiAvailable = null;
       // const notValid = this.validateCheckApiParams(request.body);
       // if (notValid) return ErrorResponse(notValid, 3003, 500, response);
-      log('wazuh-api:checkAPI', `${request.body.id} is valid`, 'debug');
+      log('tbSIEM-api:checkAPI', `${request.body.id} is valid`, 'debug');
       // Check if a Wazuh API id is given (already stored API)
       const data = await this.manageHosts.getHostById(request.body.id);
       if (data) {
         apiAvailable = data;
       } else {
-        log('wazuh-api:checkAPI', `API ${request.body.id} not found`);
+        log('tbSIEM-api:checkAPI', `API ${request.body.id} not found`);
         return ErrorResponse(`The API ${request.body.id} was not found`, 3029, 500, response);
       }
       const options = { apiHostID: request.body.id };
@@ -330,7 +330,7 @@ export class WazuhApiCtrl {
         );
       }
 
-      log('wazuh-api:checkAPI', `${request.body.id} credentials are valid`, 'debug');
+      log('tbSIEM-api:checkAPI', `${request.body.id} credentials are valid`, 'debug');
       if (responseManagerInfo.status === 200 && responseManagerInfo.data) {
         let responseAgents = await context.wazuh.api.client.asInternalUser.request(
           'GET',
@@ -379,7 +379,7 @@ export class WazuhApiCtrl {
           );
 
           if (responseCluster.status === 200) {
-            log('wazuh-api:checkStoredAPI', `Wazuh API response is valid`, 'debug');
+            log('tbSIEM-api:checkStoredAPI', `Wazuh API response is valid`, 'debug');
             if (responseCluster.data.data.enabled === 'yes') {
               // If cluster mode is active
               let responseClusterLocal = await context.wazuh.api.client.asInternalUser.request(
@@ -415,7 +415,7 @@ export class WazuhApiCtrl {
         }
       }
     } catch (error) {
-      log('wazuh-api:checkAPI', error.message || error);
+      log('tbSIEM-api:checkAPI', error.message || error);
 
       if (error && error.response && error.response.status === 401) {
         return ErrorResponse(
@@ -452,7 +452,7 @@ export class WazuhApiCtrl {
       const status = (response.data || {}).status || 1
       const isDown = socketErrorCodes.includes(status);
 
-      isDown && log('wazuh-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
+      isDown && log('tbSIEM-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
 
       return isDown;
     }
@@ -488,7 +488,7 @@ export class WazuhApiCtrl {
 
       const isValid = execd && modulesd && wazuhdb && clusterd;
 
-      isValid && log('wazuh-api:checkDaemons', `Wazuh is ready`, 'debug');
+      isValid && log('tbSIEM-api:checkDaemons', `Wazuh is ready`, 'debug');
 
       if (path === '/ping') {
         return { isValid };
@@ -498,7 +498,7 @@ export class WazuhApiCtrl {
         throw new Error('Wazuh not ready yet');
       }
     } catch (error) {
-      log('wazuh-api:checkDaemons', error.message || error);
+      log('tbSIEM-api:checkDaemons', error.message || error);
       return Promise.reject(error);
     }
   }
@@ -548,8 +548,8 @@ export class WazuhApiCtrl {
       }
 
       if (!Object.keys(api).length) {
-        log('wazuh-api:makeRequest', 'Could not get host credentials');
-        //Can not get credentials from wazuh-hosts
+        log('tbSIEM-api:makeRequest', 'Could not get host credentials');
+        //Can not get credentials from tbSIEM-hosts
         return ErrorResponse('Could not get host credentials', 3011, 404, response);
       }
 
@@ -604,7 +604,7 @@ export class WazuhApiCtrl {
         } catch (error) {
           const isDown = (error || {}).code === 'ECONNREFUSED';
           if (!isDown) {
-            log('wazuh-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
+            log('tbSIEM-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
             return ErrorResponse(
               `ERROR3099 - ${error.message || 'Wazuh not ready yet'}`,
               3099,
@@ -615,7 +615,7 @@ export class WazuhApiCtrl {
         }
       }
 
-      log('wazuh-api:makeRequest', `${method} ${path}`, 'debug');
+      log('tbSIEM-api:makeRequest', `${method} ${path}`, 'debug');
 
       // Extract keys from parameters
       const dataProperties = Object.keys(data);
@@ -676,7 +676,7 @@ export class WazuhApiCtrl {
         );
       }
       const errorMsg = (error.response || {}).data || error.message
-      log('wazuh-api:makeRequest', errorMsg || error);
+      log('tbSIEM-api:makeRequest', errorMsg || error);
       if (devTools) {
         return response.ok({
           body: { error: '3013', message: errorMsg || error }
@@ -716,13 +716,13 @@ export class WazuhApiCtrl {
     if (!request.body.method) {
       return ErrorResponse('Missing param: method', 3015, 400, response);
     } else if (!request.body.method.match(/^(?:GET|PUT|POST|DELETE)$/)) {
-      log('wazuh-api:makeRequest', 'Request method is not valid.');
+      log('tbSIEM-api:makeRequest', 'Request method is not valid.');
       //Method is not a valid HTTP request method
       return ErrorResponse('Request method is not valid.', 3015, 400, response);
     } else if (!request.body.path) {
       return ErrorResponse('Missing param: path', 3016, 400, response);
     } else if (!request.body.path.startsWith('/')) {
-      log('wazuh-api:makeRequest', 'Request path is not valid.');
+      log('tbSIEM-api:makeRequest', 'Request path is not valid.');
       //Path doesn't start with '/'
       return ErrorResponse('Request path is not valid.', 3015, 400, response);
     } else {
@@ -760,7 +760,7 @@ export class WazuhApiCtrl {
 
       if (!tmpPath) throw new Error('An error occurred parsing path field');
 
-      log('wazuh-api:csv', `Report ${tmpPath}`, 'debug');
+      log('tbSIEM-api:csv', `Report ${tmpPath}`, 'debug');
       // Real limit, regardless the user query
       const params = { limit: 500 };
 
@@ -872,7 +872,7 @@ export class WazuhApiCtrl {
         throw new Error(`An error occurred fetching data from the Wazuh API${output && output.data && output.data.detail ? `: ${output.body.detail}` : ''}`);
       }
     } catch (error) {
-      log('wazuh-api:csv', error.message || error);
+      log('tbSIEM-api:csv', error.message || error);
       return ErrorResponse(error.message || error, 3034, 500, response);
     }
   }
@@ -897,7 +897,7 @@ export class WazuhApiCtrl {
       const source = JSON.parse(fs.readFileSync(this.updateRegistry.file, 'utf8'));
       if (source.installationDate && source.lastRestart) {
         log(
-          'wazuh-api:getTimeStamp',
+          'tbSIEM-api:getTimeStamp',
           `Installation date: ${source.installationDate}. Last restart: ${source.lastRestart}`,
           'debug'
         );
@@ -908,12 +908,12 @@ export class WazuhApiCtrl {
           }
         });
       } else {
-        throw new Error('Could not fetch wazuh-version registry');
+        throw new Error('Could not fetch tbSIEM-version registry');
       }
     } catch (error) {
-      log('wazuh-api:getTimeStamp', error.message || error);
+      log('tbSIEM-api:getTimeStamp', error.message || error);
       return ErrorResponse(
-        error.message || 'Could not fetch wazuh-version registry',
+        error.message || 'Could not fetch tbSIEM-version registry',
         4001,
         500,
         response
@@ -931,7 +931,7 @@ export class WazuhApiCtrl {
   async setExtensions(context: RequestHandlerContext, request: OpenSearchDashboardsRequest, response: OpenSearchDashboardsResponseFactory) {
     try {
       const { id, extensions } = request.body;
-      // Update cluster information in the wazuh-registry.json
+      // Update cluster information in the tbSIEM-registry.json
       await this.updateRegistry.updateAPIExtensions(id, extensions);
       return response.ok({
         body: {
@@ -939,7 +939,7 @@ export class WazuhApiCtrl {
         }
       });
     } catch (error) {
-      log('wazuh-api:setExtensions', error.message || error);
+      log('tbSIEM-api:setExtensions', error.message || error);
       return ErrorResponse(
         error.message || 'Could not set extensions',
         4001,
@@ -967,9 +967,9 @@ export class WazuhApiCtrl {
         }
       });
     } catch (error) {
-      log('wazuh-api:getExtensions', error.message || error);
+      log('tbSIEM-api:getExtensions', error.message || error);
       return ErrorResponse(
-        error.message || 'Could not fetch wazuh-version registry',
+        error.message || 'Could not fetch tbSIEM-version registry',
         4001,
         500,
         response
@@ -994,9 +994,9 @@ export class WazuhApiCtrl {
         }
       });
     } catch (error) {
-      log('wazuh-api:getSetupInfo', error.message || error);
+      log('tbSIEM-api:getSetupInfo', error.message || error);
       return ErrorResponse(
-        `Could not get data from wazuh-version registry due to ${error.message || error}`,
+        `Could not get data from tbSIEM-version registry due to ${error.message || error}`,
         4005,
         500,
         response
@@ -1044,7 +1044,7 @@ export class WazuhApiCtrl {
         body: syscollector
       });
     } catch (error) {
-      log('wazuh-api:getSyscollector', error.message || error);
+      log('tbSIEM-api:getSyscollector', error.message || error);
       return ErrorResponse(error.message || error, 3035, 500, response);
     }
   }
@@ -1068,7 +1068,7 @@ export class WazuhApiCtrl {
         body: { isWazuhDisabled, logoSidebar }
       });
     } catch (error) {
-      log('wazuh-api:isWazuhDisabled', error.message || error);
+      log('tbSIEM-api:isWazuhDisabled', error.message || error);
       return ErrorResponse(error.message || error, 3035, 500, response);
     }
 

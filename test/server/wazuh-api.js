@@ -19,7 +19,7 @@ describe('wazuh-api', () => {
 
     /* eslint-disable */
     if (!res.body || !res.body.length) {
-      console.log('There are no APIs stored in Elasticsearch, exiting...');
+      console.log('There are no APIs stored in tbSIEM, exiting...');
       process.exit(1);
     }
     /* eslint-enable */
