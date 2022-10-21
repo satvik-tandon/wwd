@@ -171,11 +171,11 @@ export class SettingsController {
    * This switch to a selected tab
    * @param {Object} tab
    */
-  // switchTab(tab) {
-  //   if(tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
-  //   this.tab = tab;
-  //   this.$location.search('tab', this.tab);
-  // }
+  switchTab(tab) {
+    if(tab==='about') store.dispatch(updateSelectedSettingsSection('about'));
+    this.tab = tab;
+    this.$location.search('tab', this.tab);
+  }
 
   // Get current API index
   getCurrentAPIIndex() {
