@@ -97,9 +97,9 @@ class SettingsLogs extends Component {
               </EuiButtonEmpty>
             </EuiFlexItem>
           </EuiFlexGroup>
-          <EuiText color="subdued" style={{ paddingBottom: '15px' }}>
+          {/* <EuiText color="subdued" style={{ paddingBottom: '15px' }}>
             Log file located at {getPluginDataPath('logs/wazuhapp.log')}
-          </EuiText>
+          </EuiText> */}
           {this.state.refreshingEntries && <EuiProgress size="xs" color="primary" />}
           {!this.state.refreshingEntries && (
             <div className="code-block-log-viewer-container">

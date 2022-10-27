@@ -73,9 +73,9 @@ const Title = () => {
 const SubTitle = () => {
   return (
     <EuiFlexItem >
-      <EuiText color="subdued" style={{ paddingBottom: '15px' }}>
+      {/* <EuiText color="subdued" style={{ paddingBottom: '15px' }}>
         Configuration file located at {getPluginDataPath('config/wazuh.yml')}
-      </EuiText>
+      </EuiText> */}
     </EuiFlexItem>
   )
 }
