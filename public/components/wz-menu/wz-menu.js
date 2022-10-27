@@ -678,7 +678,7 @@ export const WzMenu = withWindowSize(class WzMenu extends Component {
 
     return(
       <>
-        <EuiFlexItem grow={this.showSelectorsInPopover}>
+        {/* <EuiFlexItem grow={this.showSelectorsInPopover}>
           <p>Index pattern</p>
         </EuiFlexItem>
 
@@ -697,7 +697,7 @@ export const WzMenu = withWindowSize(class WzMenu extends Component {
               aria-label="Index pattern selector"
             />
           </div>
-        </EuiFlexItem>
+        </EuiFlexItem> */}
 
       </>
     )
