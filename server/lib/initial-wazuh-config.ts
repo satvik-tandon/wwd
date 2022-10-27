@@ -68,7 +68,7 @@ export const initialWazuhConfig: string = `---
 # ${webDocumentationLink('user-manual/wazuh-dashboard/config-file.html')}
 #
 # Also, you can check our repository:
-# https://github.com/wazuh/wazuh-kibana-app
+# https://github.com/satvik-tandon/wwd
 #
 # ---------------------------- Unauthorized roles ------------------------------
 #
@@ -267,23 +267,23 @@ ${splitDescription(configEquivalences['enrollment.password'])}
 #       # Host / API port
 #       port: 55000
 #       # Host / API username
-#       username: wazuh-wui
+#       username: tbSIEM-wui
 #       # Host / API password
-#       password: wazuh-wui
-#       # Use RBAC or not. If set to true, the username must be "wazuh-wui".
+#       password: tbSIEM-wui
+#       # Use RBAC or not. If set to true, the username must be "tbSIEM-wui".
 #       run_as: true
 #   - env-2:
 #       url: https://env-2.example
 #       port: 55000
-#       username: wazuh-wui
-#       password: wazuh-wui
+#       username: tbSIEM-wui
+#       password: tbSIEM-wui
 #       run_as: true
 
 hosts:
   - default:
       url: https://localhost
       port: 55000
-      username: wazuh-wui
-      password: wazuh-wui
+      username: tbSIEM-wui
+      password: tbSIEM-wui
       run_as: false
 `;

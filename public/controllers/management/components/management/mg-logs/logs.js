@@ -374,7 +374,7 @@ export default compose(
         await exportCsv(
           this.state.selectedNode ? `/cluster/${this.state.selectedNode}/logs` : '/manager/logs',
           Object.keys(filters).map((filter) => ({ name: filter, value: filters[filter] })),
-          `wazuh-${this.state.selectedNode ? `${this.state.selectedNode}-` : ''}ossec-log`
+          `tbSIEM-${this.state.selectedNode ? `${this.state.selectedNode}-` : ''}ossec-log`
         );
       } catch (error) {
         const options = {
@@ -423,7 +423,7 @@ export default compose(
           <EuiFlexGroup>
             <EuiFlexItem>
               <EuiTextColor color="subdued">
-                <p>List and filter Wazuh logs.</p>
+                <p>List and filter tbSIEM logs.</p>
               </EuiTextColor>
             </EuiFlexItem>
           </EuiFlexGroup>

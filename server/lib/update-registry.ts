@@ -26,7 +26,7 @@ export class UpdateRegistry {
    */
   async readContent() {
     try {
-      log('update-registry:readContent', 'Reading wazuh-registry.json content', 'debug');
+      log('update-registry:readContent', 'Reading tbSIEM-registry.json content', 'debug');
       const content = await fs.readFileSync(this.file, { encoding: 'utf-8' });
       return JSON.parse(content);
     } catch (error) {
@@ -70,7 +70,7 @@ export class UpdateRegistry {
    */
   async writeContent(content) {
     try {
-      log('update-registry:writeContent', 'Writting wazuh-registry.json content', 'debug');
+      log('update-registry:writeContent', 'Writting tbSIEM-registry.json content', 'debug');
       if (this.busy) {
         throw new Error('Another process is updating the registry file');
       }

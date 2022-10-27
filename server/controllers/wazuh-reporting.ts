@@ -1200,7 +1200,7 @@ export class WazuhReportingCtrl {
     } catch (error) {
       return ErrorResponse(error.message || error, 5029, 500, response);
     }
-  },({body:{ agents }, params: { moduleID }}) => `wazuh-module-${agents ? `agents-${agents}` : 'overview'}-${moduleID}-${this.generateReportTimestamp()}.pdf`)
+  },({body:{ agents }, params: { moduleID }}) => `tbSIEM-module-${agents ? `agents-${agents}` : 'overview'}-${moduleID}-${this.generateReportTimestamp()}.pdf`)
 
   /**
    * Create a report for the groups
@@ -1457,7 +1457,7 @@ export class WazuhReportingCtrl {
       log('reporting:createReportsGroups', error.message || error);
       return ErrorResponse(error.message || error, 5029, 500, response);
     }
-  }, ({params: { groupID }}) => `wazuh-group-configuration-${groupID}-${this.generateReportTimestamp()}.pdf`)
+  }, ({params: { groupID }}) => `tbSIEM-group-configuration-${groupID}-${this.generateReportTimestamp()}.pdf`)
 
   /**
    * Create a report for the agents
@@ -1704,7 +1704,7 @@ export class WazuhReportingCtrl {
       log('reporting:createReportsAgentsConfiguration', error.message || error);
       return ErrorResponse(error.message || error, 5029, 500, response);
     }
-  }, ({ params: { agentID }}) => `wazuh-agent-configuration-${agentID}-${this.generateReportTimestamp()}.pdf`)
+  }, ({ params: { agentID }}) => `tbSIEM-agent-configuration-${agentID}-${this.generateReportTimestamp()}.pdf`)
 
   /**
    * Create a report for the agents
@@ -1938,7 +1938,7 @@ export class WazuhReportingCtrl {
       log('reporting:createReportsAgents', error.message || error);
       return ErrorResponse(error.message || error, 5029, 500, response);
     }
-  }, ({params: { agentID }}) => `wazuh-agent-inventory-${agentID}-${this.generateReportTimestamp()}.pdf`)
+  }, ({params: { agentID }}) => `tbSIEM-agent-inventory-${agentID}-${this.generateReportTimestamp()}.pdf`)
 
   /**
    * Fetch the reports list

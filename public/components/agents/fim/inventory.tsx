@@ -127,13 +127,13 @@ export class Inventory extends Component {
 
   getStoreFilters(props) {
     const { section, selectView, agent } = props;
-    const filters = JSON.parse(window.localStorage.getItem(`wazuh-${section}-${selectView}-${((this.state || {}).selectedTabId || 'files')}-${agent['id']}`) || '{}');
+    const filters = JSON.parse(window.localStorage.getItem(`tbSIEM-${section}-${selectView}-${((this.state || {}).selectedTabId || 'files')}-${agent['id']}`) || '{}');
     return filters;
   }
 
   setStoreFilters(filters) {
     const { section, selectView, agent } = this.props;
-    window.localStorage.setItem(`wazuh-${section}-${selectView}-${(this.state || {}).selectedTabId || 'files'}-${agent['id']}`, JSON.stringify(filters))
+    window.localStorage.setItem(`tbSIEM-${section}-${selectView}-${(this.state || {}).selectedTabId || 'files'}-${agent['id']}`, JSON.stringify(filters))
   }
 
   onFiltersChange = (filters) => {

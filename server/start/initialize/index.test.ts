@@ -75,7 +75,7 @@ afterAll(() => {
   execSync(`rm -rf ${WAZUH_DATA_ABSOLUTE_PATH}`);
 });
 
-describe("[initialize] `wazuh-registry.json` not created", () => {
+describe("[initialize] `tbSIEM-registry.json` not created", () => {
     let mockContext = mockContextCreator('debug');
     afterEach(() => {
         // Remove <PLUGIN_PLATFORM_PATH>/data/wazuh/config/wazuh-registry file.
@@ -96,7 +96,7 @@ describe("[initialize] `wazuh-registry.json` not created", () => {
   });
 });
 
-describe("[initialize] `wazuh-registry.json` created", () => {
+describe("[initialize] `tbSIEM-registry.json` created", () => {
     let testID = 0;
     const contentRegistryFile = [
         {

@@ -356,7 +356,7 @@ export const REPORTS_PAGE_FOOTER_TEXT = 'TechBridge Consultancy Services LLP';
 export const REPORTS_PAGE_HEADER_TEXT = 'support@tech-bridge.biz\nhttps://tech-bridge.biz/';
 
 // Plugin platform
-export const PLUGIN_PLATFORM_NAME = 'Wazuh dashboard';
+export const PLUGIN_PLATFORM_NAME = 'tbSIEM dashboard';
 export const PLUGIN_PLATFORM_BASE_INSTALLATION_PATH = '/usr/share/wazuh-dashboard/data/wazuh/';
 export const PLUGIN_PLATFORM_INSTALLATION_USER = 'wazuh-dashboard';
 export const PLUGIN_PLATFORM_INSTALLATION_USER_GROUP = 'wazuh-dashboard';
