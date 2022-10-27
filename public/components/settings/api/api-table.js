@@ -325,7 +325,7 @@ export const ApiTable = compose(withErrorBoundary, withReduxProvider)(class ApiT
                 <EuiFlexGroup>
                   <EuiFlexItem>
                     <EuiTitle>
-                      <h2>Wazuh API configuration</h2>
+                      <h2>tbSIEM API configuration</h2>
                     </EuiTitle>
                   </EuiFlexItem>
                 </EuiFlexGroup>

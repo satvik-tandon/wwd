@@ -817,7 +817,7 @@ export class AgentsController {
     } catch (error) {
       if (!this.$scope.agent) {
         if ((error || {}).status === -1) {
-          this.$scope.emptyAgent = 'Wazuh API timeout.';
+          this.$scope.emptyAgent = 'tbSIEM API timeout.';
         }
       }
       if (error && typeof error === 'string' && error.includes('Agent does not exist')) {

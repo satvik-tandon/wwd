@@ -836,7 +836,7 @@ export class DevToolsController {
 
   parseError(error){
     if ((error || {}).status === -1) {
-      return 'Wazuh API is not reachable. Reason: timeout.';
+      return 'tbSIEM API is not reachable. Reason: timeout.';
     } else {
       const parsedError = ErrorHandler.handle(error, '', { silent: true });
       if (typeof parsedError === 'string') {

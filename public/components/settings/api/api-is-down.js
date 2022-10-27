@@ -126,7 +126,7 @@ export const ApiIsDown = withErrorBoundary (class ApiIsDown extends Component {
   }
 
   render() {
-    const apiExample = `# Example Wazuh API configuration
+    const apiExample = `# Example tbSIEM API configuration
 hosts:
     - production:
         url: https://172.16.1.2
@@ -139,7 +139,7 @@ hosts:
     const checkConnectionChildren = (
       <div>
         <EuiText>
-          Check that the {PLUGIN_PLATFORM_NAME} server can reach the configured Wazuh API(s).
+          Check that the {PLUGIN_PLATFORM_NAME} server can reach the configured tbSIEM API(s).
         </EuiText>
         <EuiSpacer />
         <EuiButton
@@ -155,7 +155,7 @@ hosts:
             </EuiButtonEmpty>
           )}
         <EuiSpacer />
-        <EuiText>Already configured Wazuh API(s)</EuiText>
+        <EuiText>Already configured tbSIEM API(s)</EuiText>
         <EuiSpacer />
         {(!this.state.error && (
           <EuiBasicTable
@@ -268,7 +268,7 @@ hosts:
         <EuiFlexItem className="min-guide-width">
           <EuiPanel>
             <EuiText>
-              <h2>Wazuh API seems to be down</h2>
+              <h2>tbSIEM API seems to be down</h2>
             </EuiText>
             <EuiSpacer />
             <EuiSteps firstStepNumber={1} steps={steps} />

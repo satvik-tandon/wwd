@@ -278,7 +278,7 @@ export class AgentsPreviewController {
         error: {
           error: error,
           message: error.message || error,
-          title: `Could not get the Wazuh API address: ${error.message || error}`,
+          title: `Could not get the tbSIEM API address: ${error.message || error}`,
         },
       };
       getErrorOrchestrator().handleError(options);

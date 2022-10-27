@@ -105,7 +105,7 @@ export class WazuhApiCtrl {
       const api = await this.manageHosts.getHostById(id);
       // Check Manage Hosts
       if (!Object.keys(api).length) {
-        throw new Error('Could not find Wazuh API entry on wazuh.yml');
+        throw new Error('Could not find tbSIEM API entry on tbSIEM.yml');
       }
 
       log('tbSIEM-api:checkStoredAPI', `${id} exists`, 'debug');
@@ -237,7 +237,7 @@ export class WazuhApiCtrl {
 
               if (this.checkResponseIsDown(responseManagerInfo)) {
                 return ErrorResponse(
-                  `ERROR3099 - ${response.data.detail || 'Wazuh not ready yet'}`,
+                  `ERROR3099 - ${response.data.detail || 'tbSIEM not ready yet'}`,
                   3099,
                   500,
                   response
@@ -379,7 +379,7 @@ export class WazuhApiCtrl {
           );
 
           if (responseCluster.status === 200) {
-            log('tbSIEM-api:checkStoredAPI', `Wazuh API response is valid`, 'debug');
+            log('tbSIEM-api:checkStoredAPI', `tbSIEM API response is valid`, 'debug');
             if (responseCluster.data.data.enabled === 'yes') {
               // If cluster mode is active
               let responseClusterLocal = await context.wazuh.api.client.asInternalUser.request(
@@ -435,7 +435,7 @@ export class WazuhApiCtrl {
       }
       if (error.code === 'EPROTO') {
         return ErrorResponse(
-          'Wrong protocol being used to connect to the Wazuh API',
+          'Wrong protocol being used to connect to the tbSIEM API',
           3005,
           500,
           response
@@ -452,7 +452,7 @@ export class WazuhApiCtrl {
       const status = (response.data || {}).status || 1
       const isDown = socketErrorCodes.includes(status);
 
-      isDown && log('tbSIEM-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
+      isDown && log('tbSIEM-api:makeRequest', 'tbSIEM API is online but tbSIEM is not ready yet');
 
       return isDown;
     }
@@ -604,9 +604,9 @@ export class WazuhApiCtrl {
         } catch (error) {
           const isDown = (error || {}).code === 'ECONNREFUSED';
           if (!isDown) {
-            log('tbSIEM-api:makeRequest', 'Wazuh API is online but Wazuh is not ready yet');
+            log('tbSIEM-api:makeRequest', 'tbSIEM API is online but tbSIEM is not ready yet');
             return ErrorResponse(
-              `ERROR3099 - ${error.message || 'Wazuh not ready yet'}`,
+              `ERROR3099 - ${error.message || 'tbSIEM not ready yet'}`,
               3099,
               500,
               response
@@ -635,7 +635,7 @@ export class WazuhApiCtrl {
       const responseIsDown = this.checkResponseIsDown(responseToken);
       if (responseIsDown) {
         return ErrorResponse(
-          `ERROR3099 - ${response.body.message || 'Wazuh not ready yet'}`,
+          `ERROR3099 - ${response.body.message || 'tbSIEM not ready yet'}`,
           3099,
           500,
           response
@@ -665,12 +665,12 @@ export class WazuhApiCtrl {
       }
       throw responseError && responseBody.detail
         ? { message: responseBody.detail, code: responseError }
-        : new Error('Unexpected error fetching data from the Wazuh API');
+        : new Error('Unexpected error fetching data from the tbSIEM API');
     } catch (error) {
       if (error && error.response && error.response.status === 401) {
         return ErrorResponse(
           error.message || error,
-          error.code ? `Wazuh API error: ${error.code}` : 3013,
+          error.code ? `tbSIEM API error: ${error.code}` : 3013,
           401,
           response
         );
@@ -687,7 +687,7 @@ export class WazuhApiCtrl {
         }
         return ErrorResponse(
           errorMsg.detail || error,
-          error.code ? `Wazuh API error: ${error.code}` : 3013,
+          error.code ? `tbSIEM API error: ${error.code}` : 3013,
           500,
           response
         );
@@ -869,7 +869,7 @@ export class WazuhApiCtrl {
       } else if (output && output.data && output.data.data && !output.data.data.total_affected_items) {
         throw new Error('No results');
       } else {
-        throw new Error(`An error occurred fetching data from the Wazuh API${output && output.data && output.data.detail ? `: ${output.body.detail}` : ''}`);
+        throw new Error(`An error occurred fetching data from the tbSIEM API${output && output.data && output.data.detail ? `: ${output.body.detail}` : ''}`);
       }
     } catch (error) {
       log('tbSIEM-api:csv', error.message || error);

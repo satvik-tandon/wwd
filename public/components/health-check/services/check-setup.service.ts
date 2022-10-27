@@ -34,7 +34,7 @@ export const checkSetupService = appInfo => async (checkLogger: CheckLogger) => 
     };
 
     if (!apiVersion) {
-      checkLogger.info('Error fetching Wazuh API version');
+      checkLogger.info('Error fetching tbSIEM API version');
     } else {
       const api = /v?(?<version>\d+)\.(?<minor>\d+)\.(?<path>\d+)/.exec(apiVersion);
       const appSplit = setupData.data.data['app-version'].split('.');
@@ -44,7 +44,7 @@ export const checkSetupService = appInfo => async (checkLogger: CheckLogger) => 
         api.groups.version !== appSplit[0] ||
         api.groups.minor !== appSplit[1]
       ) {
-        checkLogger.error(`Wazuh API and ${PLUGIN_APP_NAME} version mismatch. API version: ${apiVersion}. App version: ${setupData.data.data['app-version']}. At least, major and minor should match. Check more info about upgrading ${PLUGIN_APP_NAME} <a target='_blank' href='${webDocumentationLink(PLUGIN_PLATFORM_WAZUH_DOCUMENTATION_URL_PATH_UPGRADE_PLATFORM)}'>here</a>.`);
+        checkLogger.error(`tbSIEM API and ${PLUGIN_APP_NAME} version mismatch.`);
       }
     }
   }

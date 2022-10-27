@@ -37,7 +37,7 @@ export class ErrorHandler {
         origin.includes('/api/csv') ||
         origin.includes('/api/agents-unique');
       return isFromAPI
-        ? 'Wazuh API is not reachable. Reason: timeout.'
+        ? 'tbSIEM API is not reachable. Reason: timeout.'
         : 'Server did not respond';
     }
     if ((((error || {}).data || {}).errorData || {}).message)

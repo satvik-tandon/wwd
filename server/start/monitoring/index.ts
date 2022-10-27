@@ -349,7 +349,7 @@ async function getHostsConfiguration() {
 
     log(
       'monitoring:getConfig',
-      'There are no Wazuh API entries yet',
+      'There are no tbSIEM API entries yet',
       'debug'
     );
     return Promise.reject({

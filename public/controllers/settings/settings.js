@@ -533,7 +533,7 @@ export class SettingsController {
           this.apiIsDown = true;
           throw {
             message:
-              'Wazuh API not recheable, please review your configuration',
+              'tbSIEM API not recheable, please review your configuration',
             type: 'danger',
             closedEnabled: true
           };

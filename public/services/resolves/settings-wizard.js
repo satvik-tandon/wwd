@@ -34,7 +34,7 @@ export function settingsWizard(
       let fromWazuhHosts = false;
       if (parseInt(data.data.error) === 2) {
         !disableErrors &&
-          ErrorHandler.handle('Please set up Wazuh API credentials.', '', { warning: true });
+          ErrorHandler.handle('Please set up tbSIEM API credentials.', '', { warning: true });
       } else if (
         JSON.stringify(data).includes('socket hang up') ||
         ((data || {}).data || {}).apiIsDown ||
@@ -62,7 +62,7 @@ export function settingsWizard(
         ) {
           !disableErrors &&
             ErrorHandler.handle(
-              'Wrong Wazuh API credentials, please add a new API and/or modify the existing one'
+              'Wrong tbSIEM API credentials, please add a new API and/or modify the existing one'
             );
           if (!$location.path().includes('/settings')) {
             $location.search('_a', null);
@@ -169,10 +169,10 @@ export function settingsWizard(
             if (data.data.length > 0) {
               // Try to set some API entry as default
               const defaultApi = await tryToSetDefault(data.data);
-              setUpCredentials('Default Wazuh API has been updated.', defaultApi);
+              setUpCredentials('Default tbSIEM API has been updated.', defaultApi);
               $location.path('health-check');
             } else {
-              setUpCredentials('Please set up Wazuh API credentials.');
+              setUpCredentials('Please set up tbSIEM API credentials.');
             }
             deferred.resolve();
           })
@@ -198,15 +198,15 @@ export function settingsWizard(
               if (data.data.length > 0) {
                 // Try to set some as default
                 const defaultApi = await tryToSetDefault(data.data);
-                setUpCredentials('Default Wazuh API has been updated.', defaultApi);
+                setUpCredentials('Default tbSIEM API has been updated.', defaultApi);
                 $location.path('health-check');
               } else {
-                setUpCredentials('Please set up Wazuh API credentials.', false);
+                setUpCredentials('Please set up tbSIEM API credentials.', false);
               }
             }
           })
           .catch((error) => {
-            setUpCredentials('Please set up Wazuh API credentials.');
+            setUpCredentials('Please set up tbSIEM API credentials.');
           });
       }
     }
