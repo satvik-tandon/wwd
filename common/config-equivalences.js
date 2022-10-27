@@ -45,25 +45,25 @@ export const configEquivalences = {
   'ip.selector':
     'Define if the user is allowed to change the selected index pattern directly from the top menu bar.',
   'ip.ignore':
-    'Disable certain index pattern names from being available in index pattern selector from the Wazuh app.',
-  'wazuh.monitoring.enabled':
-    'Enable or disable the wazuh-monitoring index creation and/or visualization.',
-  'wazuh.monitoring.frequency':
-    'Frequency, in seconds, of API requests to get the state of the agents and create a new document in the wazuh-monitoring index with this data.',
-  'wazuh.monitoring.shards':
-    'Define the number of shards to use for the wazuh-monitoring-* indices.',
-  'wazuh.monitoring.replicas':
-    'Define the number of replicas to use for the wazuh-monitoring-* indices.',
-  'wazuh.monitoring.creation':
-    'Define the interval in which a new wazuh-monitoring index will be created.',
-  'wazuh.monitoring.pattern':
-    'Default index pattern to use for Wazuh monitoring.',
+    'Disable certain index pattern names from being available in index pattern selector from the tbSIEM app.',
+  'tbSIEM.monitoring.enabled':
+    'Enable or disable the tbSIEM-monitoring index creation and/or visualization.',
+  'tbSIEM.monitoring.frequency':
+    'Frequency, in seconds, of API requests to get the state of the agents and create a new document in the tbSIEM-monitoring index with this data.',
+  'tbSIEM.monitoring.shards':
+    'Define the number of shards to use for the tbSIEM-monitoring-* indices.',
+  'tbSIEM.monitoring.replicas':
+    'Define the number of replicas to use for the tbSIEM-monitoring-* indices.',
+  'tbSIEM.monitoring.creation':
+    'Define the interval in which a new tbSIEM-monitoring index will be created.',
+  'tbSIEM.monitoring.pattern':
+    'Default index pattern to use for tbSIEM monitoring.',
   hideManagerAlerts:
     'Hide the alerts of the manager in every dashboard.',
   'logs.level':
     'Logging level of the App.',
   'enrollment.dns':
-    'Specifies the Wazuh registration server, used for the agent enrollment.',
+    'Specifies the tbSIEM registration server, used for the agent enrollment.',
   'enrollment.password':
     'Specifies the password used to authenticate during the agent enrollment.',
   'cron.prefix':

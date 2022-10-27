@@ -17,12 +17,12 @@
   "license": "GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wazuh/wazuh-kibana-app.git"
+    "url": "https://github.com/satvik-tandon/wwd.git"
   },
   "bugs": {
-    "url": "https://github.com/wazuh/wazuh-kibana-app/issues"
+    "url": "https://tech-bridge.biz/contact-us/"
   },
-  "homepage": "https://www.wazuh.com/",
+  "homepage": "https://tech-bridge.biz/",
   "scripts": {
     "pretty": "prettier --single-quote \"{,!(node_modules)/**/}*.js\" --write",
     "tslint": "tslint -c .tslint.yml server/**/*.ts server/**/*.tsx public/**/*.ts public/**/*.tsx",
