@@ -350,7 +350,7 @@ export const ASSETS_BASE_URL_PREFIX = '/plugins/tbSIEM/assets/';
 export const ASSETS_PUBLIC_URL = '/plugins/tbSIEM/public/assets/';
 
 // Reports
-export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH = '';
+export const REPORTS_LOGO_IMAGE_ASSETS_RELATIVE_PATH = 'images/1px.png';
 export const REPORTS_PRIMARY_COLOR = 'C12200';
 export const REPORTS_PAGE_FOOTER_TEXT = 'TechBridge Consultancy Services LLP';
 export const REPORTS_PAGE_HEADER_TEXT = 'support@tech-bridge.biz\nhttps://tech-bridge.biz/';
