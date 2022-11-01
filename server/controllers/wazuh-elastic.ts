@@ -391,7 +391,7 @@ export class WazuhElasticCtrl {
             );
           } else {
             aux_source.kibanaSavedObjectMeta.searchSourceJSON = defaultStr.replace(
-              /wazuh-alerts/g,
+              /tbSIEM-alerts/g,
               id
             );
           }
@@ -400,7 +400,7 @@ export class WazuhElasticCtrl {
         // Replace index-pattern for selector visualizations
         if (typeof (aux_source || {}).visState === 'string') {
           aux_source.visState = aux_source.visState.replace(
-            /wazuh-alerts/g,
+            /tbSIEM-alerts/g,
             id
           );
         }
@@ -446,7 +446,7 @@ export class WazuhElasticCtrl {
       for (const element of app_objects) {
         // Stringify and replace index-pattern for visualizations
         aux_source = JSON.stringify(element._source);
-        aux_source = aux_source.replace(/wazuh-alerts/g, id);
+        aux_source = aux_source.replace(/tbSIEM-alerts/g, id);
         aux_source = JSON.parse(aux_source);
 
         // Bulk source
